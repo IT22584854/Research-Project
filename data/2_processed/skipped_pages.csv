@@ -1,0 +1,10 @@
+clean_rel,source_url,source_pdf,site,title,reason
+CSHW_CastleStreetWomen_p13.md,http://www.cshw.health.gov.lk/units,,CSHW_CastleStreetWomen,404,title_404
+CSHW_CastleStreetWomen_p3.md,https://www.cshw.health.gov.lk/?page_id=13,,CSHW_CastleStreetWomen,404,title_404
+HPB_HealthTopics_p0.md,https://www.hpb.health.gov.lk/en/health-topics,,HPB_HealthTopics,404!,body_404_not_found
+HPB_HealthTopics_p2.md,https://hpb.health.gov.lk/404,,HPB_HealthTopics,404!,body_404_not_found
+NEH_NationalEyeHospital_p2.md,https://nationaleyehospital.health.gov.lk/contact.html,,NEH_NationalEyeHospital,Not Found,title_404
+NIHS_HealthSciences_p0.md,https://www.nihs.gov.lk/,,NIHS_HealthSciences,BEGIN WordPress <IfModule mod_rewrite.c> RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L] RewriteCond %{REQUEST_FILENAME} !-f RewriteCond %{REQUEST_FILENAME} !-d RewriteRule . /index.php [,body_404_not_found
+NIHS_HealthSciences_p1.md,https://www.nihs.gov.lk/404.html,,NIHS_HealthSciences,BEGIN WordPress <IfModule mod_rewrite.c> RewriteEngine On RewriteBase / RewriteRule ^index.php$ - [L] RewriteCond %{REQUEST_FILENAME} !-f RewriteCond %{REQUEST_FILENAME} !-d RewriteRule . /index.php [,body_404_not_found
+NMRA_MedicinesInfo_p0.md,https://www.nmra.gov.lk/index.php?option=com_content&view=article&id=138&lang=en,,NMRA_MedicinesInfo,Page not found,title_404
+pdf_md/PDF_EXTRACT_EPID_Reports_vol_46_no_45-english.md,,EPID_Reports_vol_46_no_45-english.pdf,EPID_Reports,SRI LANKA 2019,body_404_not_found

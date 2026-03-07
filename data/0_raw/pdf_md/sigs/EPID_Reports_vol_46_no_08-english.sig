@@ -1,0 +1,1 @@
+1463073-1771884942-v4_subprocess_per_pdf_textFirst_scale0p5_tablesOff_ocrRetrySizeGate

@@ -1,0 +1,170 @@
+Source PDF: EPID_Reports_vol_42_no_10-english.pdf
+
+<!-- image -->
+
+<!-- image -->
+
+## WEEKLY EPIDEMIOLOGICAL REPORT
+
+## A publication of the Epidemiology Unit Ministry of Health
+
+231, de Saram Place, Colombo 01000, Sri Lanka
+
+Tele: + 94 11 2695112, Fax: +94 11 2696583, E mail: epidunit@sltnet.lk
+
+Epidemiologist: +94 11 2681548, E mail: chepid@sltnet.lk
+
+Web: http://www.epid.gov.lk
+
+Vol. 42 No. 10                                                                  28
+
+## Pneumococcal  Disease
+
+Streptococcus pneumoniae bacteria, or pneumococcus,  can  cause  many  types  of  illnesses. Some of which can be life-threatening.
+
+it one of the two leading causes of death among young children.
+
+You have probably heard of pneumonia, which is an  infection  of  the  lungs.  Pneumonia  can  be caused by many different bacteria, viruses, and even  fungi.  Pneumococcus  is  one  of  the  most common causes of severe pneumonia.
+
+Besides  pneumonia,  pneumococcus  can  cause other types of infections too, such as:
+
+- Ear infections
+- Sinus infections
+- Meningitis  (infection  of  the  covering  around the brain and spinal cord)
+- Bacteremia (blood stream infection)
+
+Out of over 90 serotypes, only a small minority cause most disease.
+
+Some of these infections are considered 'invasive.'  Invasive  disease  means  that  germs invade  parts  of  the  body  that  are  normally  free from germs. For example, pneumococcal bacteria can invade the bloodstream, causing bacteremia, and the tissues and fluids surrounding the brain and spinal cord, causing meningitis. When this  happens,  disease  is  usually  very  severe, causing hospitalization or even death.
+
+## Epidemiology
+
+<!-- image -->
+
+- -Causes of under 5 child deaths in low-income countries-
+
+## What are the risk factors?
+
+## For Children:-
+
+- Younger than 2 years of age
+- In group child care
+- Who  have  certain  illnesses  (sickle  cell  disease, HIV infection, and chronic heart or lung conditions)
+- With  cochlear  implants  or  cerebrospinal  fluid (CSF) leaks (escape of the fluid that surrounds the brain and spinal cord)
+
+## For Adults:-
+
+Adults  65  years  of  age  and  older  are  at  increased risk for pneumococcal disease.
+
+Pneumonia is the most common form of serious pneumococcal disease and accounts for 18 %of child  deaths  in  developing  countries,  making
+
+Some adults 19 through 64 years of age are also at  increased  risk  for  pneumococcal  disease, including those:
+
+| ## Contents  Page  1. Leading Article - Pneumococcal -  Disease  2. Summary of selected notifiable diseases reported - (21 st - 27 th February 2015)  3. Surveillance of vaccine preventable diseases &amp; AFP - (21 st - 27 th February 2015)  1  3  4   |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+th  - 06 th  March 2015
+
+- With chronic illnesses (lung, heart, liver, or kidney disease; asthma; diabetes; or alcoholism)
+- With conditions that weaken the immune system (HIV/AIDS, cancer, or damaged/absent spleen)
+- Living in nursing homes or other long-term care facilities
+- With  cochlear  implants  or  cerebrospinal  fluid  (CSF)  leaks (escape of the fluid that surrounds the brain and spinal cord)
+- Who smoke cigarettes
+
+## Transmission
+
+Pneumococcal bacteria spread from person-to-person by direct contact with respiratory secretions, like saliva or mucus. Many people, especially children, have the bacteria in their nose or throat  at  one  time  or  another  without  being  ill.  This  is  called 'carriage.'
+
+## Pneumococcal vaccines
+
+There are 2 available pneumococcal conjugate vaccines (PCV) that  target  either  10  or  13  of  the  most  prevalent  serotypes. Currently available PCVs are safe and efficacious. WHO recommends  the  inclusion  of  PCVs  in  childhood  immunization programmes worldwide. In particular, countries with high childhood mortality (i.e. under 5 mortality rate of &gt;50 deaths/1000 births)  should  make the introduction of these multicomponent PCVs a high priority.
+
+Pneumococcal  conjugate  vaccine  (PCV13)  is  recommended for all children younger than 5 years old, all adults 65 years or older, and people 6 years or older with certain risk factors.
+
+Pneumococcal  polysaccharide  vaccine  (PPSV23)  is  recommended  for  all  adults  65  years  or  older.  People  2  years through 64 years of age who are at high risk of pneumococcal disease should also receive PPSV23.
+
+## Who should not get the vaccine?
+
+PCV13 (Pneumococcal Conjugate) vaccine
+
+Some children should not get PCV13 or should wait.
+
+Anyone  who  has  had  a  life-threatening  allergic  reaction  to  a dose of this vaccine, to an early pneumococcal vaccine called PCV7  (or  Prevnar),  or  to  any  vaccine  containing  diphtheria toxoid (for example, DTaP) should not get PCV13.
+
+Anyone  with  a  severe  allergy  to  any  component  of  PCV13 should not get the vaccine. Tell your doctor if the person being vaccinated has any severe allergies.
+
+Page  2
+
+PPV23 (Pneumococcal Polysaccharide) vaccine
+
+Some people should not get PPSV or should wait:
+
+- Anyone who has had a life-threatening  allergic  reaction  to PPSV should not get another dose.
+- Anyone  who  has  a  severe  allergy  to  any  component  of  a vaccine should not get that vaccine. Tell your provider if you have any severe allergies.
+- Anyone who is moderately or severely ill when the shot is scheduled  may  be  asked  to  wait  until  they  recover  before getting the vaccine. Someone with a mild illness can usually be vaccinated.
+
+Although there is no evidence that PPSV is harmful to either a pregnant woman or to her foetus, as a precaution, women with conditions  that  put  them  at  risk  for  pneumococcal  disease should be vaccinated before becoming pregnant, if possible.
+
+The  burden  of  pneumococcal  disease  is  substantially  higher among individuals who are infected with HIV. Since pneumococcal  conjugate  vaccines  have  been  shown  to  be  safe  and efficacious in HIV-infected children, WHO recommends prioritizing  the  introduction  of  PCV-7  in  countries  where  HIV  is  a significant cause of mortality.
+
+## Sources:
+
+Pneumococcal  Vaccination,  available  at http://www.cdc.gov/ vaccines/vpd-vac/pneumo/default.htm?s\_cid=cs\_797
+
+Pneumococcal disease, available at http://www.who.int/ immunization/diseases/pneumococcal/en/
+
+Pneumococcal  fact  sheet,  available  at http://www.gavi.org/ library/publications/gavi-fact-sheets/factsheet--pneumococcaldisease/
+
+## Compiled by Dr. C U D Gunasekara of the Epidemiology Unit
+
+## Table 1:  Selected notifiable diseases reported by Medical Officers of Health       21 st   -  27 th   Feb 2015 (09 th  Week)
+
+Source:  Weekly  Returns of Communicable   Diseases  (WRCD).
+
+*T= Timeliness refers to returns received on or before 27 th  February , 2015 Total number of reporting units 337 Number of reporting units data provided for the current week: 241 C** -Completeness
+
+| RDHS  Division  Dengue Fever  Dysentery  Encephalit  is  Enteric Fever  Food  Poisoning  Leptospirosi  s  Typhus Fever  Viral  Hepatitis  Human  Rabies  Chickenpox  Meningitis  Leishmani-  asis  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  T*  C**  Colombo  192  2849  4  39  1  3  2  15  0  13  3  37  0  1  1  13  0  1  2  70  0  3  0  0  88  13  Gampaha  24  1222  0  16  0  2  0  5  0  3  8  55  0  2  1  33  0  0  1  34  0  3  0  0  27  73  Kalutara  41  453  3  22  1  2  0  12  3  9  4  58  0  0  0  7  0  1  13  51  0  6  0  0  77  23  Kandy  5  380  0  33  0  0  0  9  0  1  1  14  0  17  0  49  0  0  2  62  0  3  0  1  17  83  Matale  21  258  2  17  0  0  0  3  2  2  1  15  0  1  2  9  0  0  2  3  0  2  1  3  77  23  NuwaraEliya  7  60  2  52  1  1  1  4  0  0  0  6  0  13  0  23  0  0  0  12  3  13  0  0  77  23  Galle  18  256  1  18  0  0  0  2  0  6  5  50  2  16  0  2  0  0  2  47  0  13  0  0  80  20  Hambantota  14  96  1  6  0  0  0  4  0  0  1  18  1  10  1  11  0  0  3  17  0  2  0  43  67  33  Matara  16  127  3  15  0  0  0  2  0  19  6  34  2  11  0  7  0  0  10  54  0  7  1  16  100  0  Jaffna  41  832  12  144  1  7  9  86  1  11  0  7  34  373  1  6  0  0  4  36  1  2  0  0  92  8  Kilinochchi  5  29  4  20  0  0  1  3  0  25  0  0  0  4  0  0  0  0  0  5  0  0  0  0  75  25  Mannar  4  65  0  2  0  0  0  4  0  1  0  8  3  10  0  0  0  0  0  0  0  0  0  0  80  20  Vavuniya  3  47  0  6  1  4  1  7  0  2  0  8  0  8  0  1  0  0  2  4  0  0  0  0  100  0  Mullaitivu  0  48  1  7  0  1  0  1  0  1  0  2  0  4  0  0  0  0  0  1  0  1  0  2  20  80  Batticaloa  58  645  1  38  0  2  0  1  0  0  0  1  0  0  0  0  0  0  3  9  2  5  0  0  79  21  Ampara  1  15  0  13  0  0  0  0  0  0  1  4  0  0  0  0  0  0  2  42  0  3  0  0  57  43  Trincomalee  35  220  2  8  0  0  1  10  0  22  0  4  0  2  0  0  0  0  1  7  0  1  0  0  83  17  Kurunegala  46  490  4  39  1  2  0  3  0  0  6  65  2  10  1  10  0  0  9  90  0  4  4  20  85  15  Puttalam  8  332  0  11  0  0  0  1  1  1  1  16  0  5  0  1  0  0  1  12  1  5  0  0  62  38  Anuradhapura  6  187  0  17  0  0  0  0  21  26  2  74  1  6  1  5  0  0  6  30  0  9  0  39  68  32  Polonnaruwa  12  94  3  12  0  1  1  4  0  0  2  32  0  1  0  2  0  0  4  31  1  10  3  18  86  14  Badulla  17  252  5  38  1  1  0  2  1  4  3  11  1  19  3  28  0  0  4  26  2  11  2  3  65  35  Monaragala  4  71  3  33  1  1  0  5  0  2  4  60  0  18  1  10  0  0  0  20  0  4  0  6  82  18  Ratnapura  8  275  4  76  0  3  0  8  0  1  12  67  0  16  7  95  0  0  6  13  0  8  0  3  72  28  Kegalle  6  159  3  19  0  2  0  21  0  0  5  49  1  8  2  26  0  0  6  40  0  9  0  0  82  18  Kalmune  11  304  0  31  0  0  0  0  0  11  0  1  0  0  0  0  0  0  1  32  0  2  0  0  62  38  SRILANKA  603  9766  58  732  8  32  16  212  29  160  65  696  47  555  21  338  0  2  84  748  10  126  11  154  71  29  WRCD   |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+Page  3
+
+Vol. 42 No. 10                                                                       28
+
+Table 2: Vaccine-Preventable Diseases  &amp;  AFP                                      21 st   -  27 th   Feb 2015 (09 th  Week)
+
+| Disease  No. of Cases  by Province  Number of  cases  during  current  week in  2015  Number of  cases  during  same  week in  2014  Total  number of  cases to  date in  2015  Total num-  ber of  cases to  date in  2014  Difference  between the  number of  cases to date  in 2014&amp; 2015  W  C  S  N  E  NW  NC  U  Sab  AFP*  00  00  00  00  00  00  00  00  00  00  04  10  16  -37.5%  Diphtheria  00  00  00  00  00  00  00  00  00  00  00  00  00  %  Measles  17  01  05  00  00  02  01  03  00  29  70  273  815  -66.5%  Tetanus  00  00  00  00  00  00  00  00  00  00  00  02  02  %  Whooping  Cough  01  00  00  00  00  00  00  00  00  01  00  16  09  +78.1%  Tuberculosis  116  37  33  07  18  00  00  20  20  251  249  1699  2052  -17.2%  Rubella  00  00  00  00  00  00  00  00  00  00  00  04  01  +300%  CRS**  00  00  00  00  00  00  00  00  00  00  00  00  00  %  Neonatal Teta-  nus  00  00  00  00  00  00  00  00  00  00  00  00  00  %  Japanese En-  cephalitis  00  00  00  00  00  00  00  00  00  00  00  03  16  -81.2%  Mumps  00  00  04  02  00  02  01  00  00  09  10  70  149  -53.0%   |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+## Key to Table 1 &amp; 2
+
+Provinces:                 W
+
+: Western, C : Central, S : Southern, N : North, E :  East, NC : North Central, NW : North Western, U : Uva, Sab : Sabaragamuwa.
+
+RDHS Divisions:    CB
+
+: Colombo, GM : Gampaha, KL : Kalutara, KD : Kandy, ML : Matale, NE : Nuwara Eliya, GL : Galle, HB : Hambantota, MT : Matara, JF : Jaffna,
+
+KN : Killinochchi, MN : Mannar, VA : Vavuniya, MU : Mullaitivu, BT : Batticaloa, AM : Ampara, TR : Trincomalee, KM : Kalmunai, KR : Kurunegala, PU : Puttalam,
+
+AP : Anuradhapura, PO : Polonnaruwa, BD : Badulla, MO : Moneragala, RP : Ratnapura, KG : Kegalle.
+
+## Data Sources:
+
+Weekly Return of Communicable Diseases: Diphtheria, Measles, Tetanus, Neonatal Tetanus, Whooping Cough, Chickenpox, Meningitis, Mumps., Rubella, CRS, Special Surveillance:  AFP* ( Acute Flaccid Paralysis ), Japanese Encephalitis
+
+CRS** = Congenital Rubella Syndrome
+
+AFP and all clinically confirmed Vaccine Preventable Diseases except Tuberculosis and Mumps should be investigated by the MOH
+
+## Dengue Prevention and Control Health Messages
+
+## Look for plants such as bamboo, bohemia, rampe and banana in your surroundings and maintain them
+
+## PRINTING OF THIS PUBLICATION  IS FUNDED BY THE WORLD HEALTH ORGANIZATION (WHO).
+
+Comments and contributions for publication in the WER Sri Lanka are welcome. However, the editor reserves the right to accept or reject items for publication. All correspondence should be mailed to The Editor, WER Sri Lanka, Epidemiological  Unit, P.O. Box 1567, Colombo or sent by E-mail to chepid@sltnet.lk. Prior approval should be obtained from the Epidemiology Unit before publishing data in this publication
+
+## ON STATE SERVICE
+
+Dr. P. PALIHAWADANA CHIEF EPIDEMIOLOGIST EPIDEMIOLOGY UNIT 231, DE SARAM PLACE COLOMBO 10

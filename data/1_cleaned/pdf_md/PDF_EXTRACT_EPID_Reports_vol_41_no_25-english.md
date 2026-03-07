@@ -1,0 +1,165 @@
+Source PDF: EPID_Reports_vol_41_no_25-english.pdf
+
+<!-- image -->
+
+## WEEKLY EPIDEMIOLOGICAL REPORT
+
+## A publication of the Epidemiology Unit Ministry of Health
+
+231, de Saram Place, Colombo 01000, Sri Lanka
+
+Tele: + 94 11 2695112, Fax: +94 11 2696583, E mail: [REDACTED_EMAIL]
+
+Epidemiologist: +94 11 2681548, E mail: [REDACTED_EMAIL]
+
+Web: http://www.epid.gov.lk
+
+Vol. 41 No.25                                                                         14
+
+## Family Health Programme - III
+
+This is the last in a series of three articles on the Family Health Programme.
+
+## Maternal  Death  Surveillance  and  Response system
+
+The  present  surveillance  system  of  the  Family Health Bureau (FHB) identifies almost all maternal deaths  in  the  country.  Every  probable  maternal death in the country is notified to the FHB within 24  hrs  of  occurrence  which  is  reviewed  at  field, institutional,  district  and  national  levels  subsequently.  Conducting  post-mortems  on  maternal deaths  was  made  mandatory  with  a  circular  in 2009.
+
+The National Maternal Mortality Reviews are conducted by the FHB in collaboration with technical experts  from  the  Sri  Lanka  College  of  Obstetricians and Gynecologists' and other relevant professional  bodies.  Maternal  death  case  scenarios are presented in the review, which give a comprehensive account on each notified maternal death based on field (H 677a) and institutional (H 677) maternal  death  investigation  reports,  pregnancy records,  other  field  records  and  post-mortem  reports.  The  cause  of  death  is  confirmed  and  the associated  factors  that  may  have  contributed  to death  are  discussed  in  detail.  This  provides  a platform  to  learn  lessons  from  the  mistakes  and translate  the  findings  into  action  at  national  and sub-national levels.
+
+## Analysis of Maternal Deaths
+
+The  leading  causes  of  maternal  deaths  in  2012 were  Obstetric  Haemorrhage  (22%),  Heart  disease  complicating  pregnancy  (18%),  Hypertensive disorders (13%) and Septic abortions (13%). Other common causes are Aminiotic fluid embolism (12%), Liver disease (10%), Respiratory disease  and  Pneumonia  (8%).  Underlying  medical causes have also contributed to a significant number of maternal deaths.
+
+## Child Care
+
+Family  Health  Programme  (FHP)  ensures  the
+
+## Contents
+
+1. Leading Article - Family Health Programme - III
+2. Summary of selected notifiable diseases reported -  (07 th - 13 th June 2014)
+3. Surveillance of vaccine preventable diseases &amp; AFP  - (07 th - 13 th June 2014)
+
+continuum of care during neonatal period, infancy, young  childhood,  preschool,  school  and  adolescent  years.  During  the  initial  postpartum  visits conducted within the first 42 days, the PHM provides basic domiciliary care to the  newborn. These  include,  assessment  of  general  health, breast  feeding,  screening  for  illnesses,  followed by advising mothers accordingly and making necessary referrals. Subsequent interventions for children include  immunization,  growth  assessment and promotion (which includes promotion of breast feeding  and complementary feeding), assessment  and  promotion  of  development,  food and  vitamin  supplementation  and  health  education to mothers.
+
+## Field and Clinic care
+
+Following  infant  registration,  care  is  given  to  the infant until 5 years of age at clinic and in the field. Home visits carried out  after 42  days  of delivery are  specifically  aimed  at  the  infant.  The  infants are  expected  to  visit  the  field  clinic  for  postnatal examination by the MOH at 4 weeks and subsequently  for  growth  monitoring  and  immunization according  to  the  schedule.  Weighing  is  mainly done  at  child  welfare  clinics  and  field  weighing posts which are conducted by PHMM.
+
+## Child Development and care for children with special needs
+
+The concept of early child care and development (ECCD) is an important component of the Family Health programme.
+
+The objectives of this component are,
+
+- To  ensure  that  all  children  receive  appropriate early child care and stimulation by their parents and care givers to have an optimal environment which facilitate reaching their genetic potential.
+- .To  enable  children  with  special  needs  to  optimally develop their mental, physical and social capacities to function as productive members of the society
+
+Page
+
+1
+
+3
+
+4
+
+th  - 20 th  June 2014
+
+## Infant and Child deaths
+
+Family Health Programme gathers data on the number of infant and child deaths, whether or not infant deaths were investigated and if investigated, the causes of deaths. Most of the infants  succumbed to congenital abnormalities and prematurity. Asphyxia happened to be the next common cause of infant deaths. Sepsis also contributed to one tenth of infant deaths.
+
+Congenital abnormalities remained the most frequent cause of death among 1 to 5 year age category. Accidents, respiratory illnesses  and  diarrhoeal  diseases  were  identified  as  the  next common causes of 1-5 child mortality.
+
+## Care for School Children and Adolescents
+
+FHB is  the  focal  point  of  the  school  health  programme. The Medical Officer of Health is responsible for implementation of the  school  health  Programme  in  collaboration  with  the  Zonal Educational Officers and School Principals. The Public Health Inspector  organizes  the  school  health  activities  at  the  local level. In the Municipality areas of Colombo, Kandy, Galle and Jaffna,  School  Medical  Officers  implement  the  School  Health Programme. The programme focuses on 5 major thematic areas which are,
+
+1.  School medical services including counselling
+2.  Maintenance of Healthy School Environment
+3.  Life  skills  based  Health  Education  (includes  Sexual  and Reproductive Health)
+4.  School Community Participation
+5.  Healthy school policies
+
+## Well Woman Clinic (WWC) Services
+
+Well Woman Clinic (WWC) services were incorporated into the FHP in 1996. The aim was to screen peri-menopausal women for  reproductive illnesses. These included breast and cervical malignancies  and  non-communicable  diseases;  diabetes,  hypertension. Obtaining cervical smears for cytology (PAP test), breast examination, testing urine for sugar and blood pressure measuring are being done at the clinic. Trained Medical Officers screen the women attending the clinic for the above conditions.  The  identified  problems  are  referred  to  appropriate centers  in  the  health  system.  The  follow-up  is  carried  out  by the area PHM.
+
+## , Care for women with special needs
+
+There is an important group of women with special needs who do not have access to the routine reproductive health services, but  requiring  special  attention  and  care.  This  group  includes institutionalized  women,  migrant  women,  displaced  and  marginalized  women  etc.  A  programme  has  been  developed  to address the reproductive health issues of migrant  women  and their family members, and this programme will be implemented in the field by the primary health care team.
+
+## Oral Health
+
+Oral Health component is also a part of the Family Health Programme and the services are delivered through Maternal and Child Health and School Health services. Advocacy for policy formulation, provision of technical expertise and national level monitoring  and  evaluation  also  come  under  the  Oral  Health Programme.
+
+## School Dental Services (SDS)
+
+The main objective of the SDS is to reduce morbidity due to common  oral  diseases  in  preschool  and  school  children  between the ages of 3-13 years by provision of oral health care services with emphasis on prevention. The services are delivered by the School Dental Therapists who work in School Dental Clinics.
+
+## Sources
+
+- Annual Report on Family Health Sri Lanka - 2012 published by the Family Health Bureau, Ministry of Health, Sri Lanka
+- Health  statistics  and  information  systems  (  World  Health  Organization) available from http://www.who.int/healthinfo/ statistics/indmaternalmortality/en/
+
+## Compiled by Dr. H. A. Shanika Rasanjalee of the Epidemiology Unit
+
+Table 1 : Water Quality Surveillance Number of microbiological water samples - May/ 2014
+
+| District  MOH areas  No: Expected *  No: Received  Colombo  12  72  61  Gampaha  15  90  NR  Kalutara  12  72  NR  Kalutara  NIHS  2  12  10  Kandy  23  138  0  Matale  12  72  NR  Nuwara Eliya  13  78  25  Galle  19  114  53  Matara  17  102  1  Hambantota  12  72  NR  Jaffna  11  66  0  Kilinochchi  4  24  0  Manner  5  30  0  Vavuniya  4  24  0  Mullatvu  4  24  0  Batticaloa  14  84  3  Ampara  7  42  NR  Trincomalee  11  66  NR  Kurunegala  23  138  64  Puttalam  9  54  19  Anuradhapura  19  114  0  Polonnaruwa  7  42  NR  Badulla  15  90  15  Moneragala  11  66  31  Rathnapura  18  108  73  Kegalle  11  66  34  Kalmunai  13  78  0   |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+* No of samples expected  (6 / MOH area / Month) NR = Return not received
+
+Page  2
+
+Table 1:  Selected notifiable diseases reported by Medical Officers of Health     07 th   -  13 th   June 2014 (24 th  Week)
+
+Source:  Weekly  Returns of Communicable   Diseases  (WRCD).
+
+*T= Timeliness refers to returns received on or before 13 th  June , 2014 Total number of reporting units 337 Number of reporting units data provided for the current week: 246 C** -Completeness
+
+= Cases reported during the current week. B = Cumulative cases for the year.
+
+| RDHS  Division  Dengue Fever  Dysentery  Encephalit  is  Enteric  Fever  Food  Poisoning  Leptospirosis  Typhus Fever  Viral  Hepatitis  Human  Rabies  Chickenpox  Meningitis  Leishmani-  asis  WRCD  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  T*  C**  Colombo  381  5648  0  69  0  8  1  48  0  153  0  62  0  1  1  18  0  0  5  267  1  26  0  3  75  25  Gampaha  98  2368  4  80  0  5  0  21  0  10  2  106  0  6  5  86  0  5  4  194  1  32  0  2  67  33  Kalutara  70  1022  2  80  0  4  0  22  1  50  2  129  0  0  0  7  0  0  7  146  0  39  0  0  54  46  Kandy  35  422  3  49  0  2  0  10  0  4  2  17  1  44  0  58  0  0  5  128  1  15  0  2  87  13  Matale  10  140  1  31  0  1  0  11  0  5  0  23  0  2  4  93  0  1  1  31  2  9  0  18  69  31  NuwaraEliya  9  106  4  148  0  1  0  13  0  65  0  6  2  37  0  19  0  0  3  55  2  12  0  0  77  23  Galle  36  423  4  52  0  4  0  3  0  26  1  98  4  42  1  4  0  0  8  284  0  22  0  3  95  5  Hambantota  20  210  2  22  0  4  0  9  0  9  1  53  0  44  1  9  0  0  0  98  1  21  4  184  92  8  Matara  20  155  1  28  0  3  0  20  2  12  3  35  0  21  0  20  0  0  4  120  0  21  4  44  100  0  Jaffna  17  468  3  230  0  4  4  138  1  46  0  6  2  252  0  8  0  0  1  70  1  17  0  0  92  8  Kilinochchi  0  30  0  54  0  1  0  14  0  0  0  0  0  16  0  0  0  0  0  14  0  3  0  8  50  50  Mannar  1  9  6  18  1  9  1  24  0  0  1  5  0  20  0  1  0  0  0  8  0  5  0  1  80  20  Vavuniya  12  65  1  21  0  0  0  10  0  14  0  9  0  4  0  1  0  0  0  5  1  9  0  1  50  50  Mullaitivu  2  60  2  36  0  0  1  9  0  13  0  8  0  8  0  0  0  1  0  4  0  4  0  5  80  20  Batticaloa  20  501  4  132  0  2  0  19  1  17  0  13  0  1  0  6  0  1  0  32  0  4  0  0  79  21  Ampara  1  76  1  24  0  1  0  1  0  8  0  14  1  10  0  3  0  1  4  59  0  4  0  6  71  29  Trincomalee  16  405  4  24  0  1  0  1  0  3  0  9  0  10  0  1  0  0  1  51  0  1  0  1  50  50  Kurunegala  51  585  4  63  0  13  0  14  1  12  1  61  1  33  0  18  0  0  3  245  4  36  2  71  70  30  Puttalam  11  258  5  25  0  1  0  10  0  9  0  49  0  20  0  3  0  2  1  59  1  5  1  5  85  15  Anuradhapura  2  182  0  45  0  2  0  0  0  11  0  54  0  24  0  3  0  0  2  107  0  21  7  141  26  74  Polonnaruwa  0  90  0  12  0  1  0  1  0  0  0  9  0  0  0  1  0  0  0  29  0  2  0  23  0  100  Badulla  23  244  4  52  0  7  1  8  2  5  0  31  2  43  1  65  0  0  0  39  6  56  0  0  65  35  Monaragala  8  108  1  29  0  2  0  3  1  33  0  54  4  78  0  70  0  2  1  49  0  14  1  15  91  9  Ratnapura  219  969  3  127  0  15  1  11  0  19  8  157  1  58  10  216  0  0  3  132  0  19  0  21  89  11  Kegalle  70  565  0  69  0  6  0  22  0  10  1  88  0  35  2  45  0  0  2  146  2  29  0  1  82  18  Kalmune  4  75  1  54  0  1  0  5  1  52  0  1  0  0  0  0  0  0  1  77  0  4  0  0  38  62  SRILANKA  1136  15184  60  1574  1  98  9  447  10  586  22  1097  18  809  25  755  0  13  56  2449  23  430  19  555  72  28   |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+Table 2: Vaccine-Preventable Diseases  &amp;  AFP                                     07 th   -  13 th   June 2014 (24 th  Week)
+
+| Disease  No. of Cases  by Province  Number of  cases  during  current  week in  2014  Number of  cases  during  same  week in  2013  Total  number of  cases to  date in  2014  Total num-  ber of  cases to  date in  2013  Difference  between the  number of  cases to date  in 2013&amp; 2014  W  C  S  N  E  NW  NC  U  Sab  AFP*  00  00  00  00  00  00  00  01  00  01  01  43  32  -34.3%  Diphtheria  00  00  00  00  00  00  00  00  00  00  -  00  -  %  Mumps  02  00  03  00  02  00  00  00  01  08  09  339  763  -55.6%  Measles  05  01  04  00  02  02  01  03  03  21  69  1881  696  +170.2%  Rubella  00  00  00  00  00  00  00  00  00  00  00  13  12  +8.3%  CRS**  00  00  00  00  00  00  00  00  00  00  00  03  05  -40%  Tetanus  00  00  00  00  00  00  00  00  00  00  00  08  10  -20%  Neonatal Teta-  nus  00  00  00  00  00  00  00  00  00  00  00  00  00  %  Japanese En-  cephalitis  00  00  00  00  00  00  00  00  00  00  06  18  225  -92%  Whooping  Cough  00  00  00  00  00  00  00  00  00  00  03  25  38  -34.2%  Tuberculosis  199  09  08  05  17  13  12  11  16  290  107  4727  3860  +22.4%   |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+## Key to Table 1 &amp; 2
+
+Provinces:                 W
+
+: Western, C : Central, S : Southern, N : North, E :  East, NC : North Central, NW : North Western, U : Uva, Sab : Sabaragamuwa.
+
+RDHS Divisions:    CB
+
+: Colombo, GM : Gampaha, KL : Kalutara, KD : Kandy, ML : Matale, NE : Nuwara Eliya, GL : Galle, HB : Hambantota, MT : Matara, JF : Jaffna,
+
+KN : Killinochchi, MN : Mannar, VA : Vavuniya, MU : Mullaitivu, BT : Batticaloa, AM : Ampara, TR : Trincomalee, KM : Kalmunai, KR : Kurunegala, PU : Puttalam,
+
+AP : Anuradhapura, PO : Polonnaruwa, BD : Badulla, MO : Moneragala, RP : Ratnapura, KG : Kegalle.
+
+## Data Sources:
+
+Weekly Return of Communicable Diseases: Diphtheria, Measles, Tetanus, Neonatal Tetanus, Whooping Cough, Chickenpox, Meningitis, Mumps., Rubella, CRS, Special Surveillance:  AFP* ( Acute Flaccid Paralysis ), Japanese Encephalitis
+
+CRS** = Congenital Rubella Syndrome
+
+AFP and all clinically confirmed Vaccine Preventable Diseases except Tuberculosis and Mumps should be investigated by the MOH
+
+| Influenza Surveillance in Sentinel Hospitals - ILI &amp; SARI  Month  Human  Animal  No Received  ILI  SARI  Infl A  Infl B  Pooled samples  Serum Samples  Positives  May  3632  63  33  19  0  214  385  0   |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+Source: Medical Research Institute &amp; Veterinary Research Institute
+
+## PRINTING OF THIS PUBLICATION  IS FUNDED BY THE WORLD HEALTH ORGANIZATION (WHO).
+
+Comments and contributions for publication in the WER Sri Lanka are welcome. However, the editor reserves the right to accept or reject items for publication. All correspondence should be mailed to The Editor, WER Sri Lanka, Epidemiological  Unit, P.O. Box 1567, Colombo or sent by E-mail to [REDACTED_EMAIL]. Prior approval should be obtained from the Epidemiology Unit before publishing data in this publication
+
+## ON STATE SERVICE
+
+Dr. P. PALIHAWADANA CHIEF EPIDEMIOLOGIST EPIDEMIOLOGY UNIT 231, DE SARAM PLACE COLOMBO 10

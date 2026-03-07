@@ -1,0 +1,78 @@
+{
+  "dataset_cleaning": {
+    "original_total_records": 4887,
+    "final_total_records": 3894,
+    "removed_records": 6,
+    "retention_rate": 0.7968078575813382,
+    "compression_ratio": 0.7968078575813382,
+    "noise_reduction_rate": 0.0012277470841006752,
+    "crawl_error_records_still_present": 0
+  },
+  "refusal_metrics": {
+    "total_refusal_containing_records": 499,
+    "answerable_records_heuristic": 2888,
+    "over_refusal_records": 0,
+    "over_refusal_rate": 0.0
+  },
+  "distribution_metrics": {
+    "task_entropy_normalized": 0.976216778675409,
+    "linguistic_diversity_index": 0.9683487115427678,
+    "source_entropy_bits": null,
+    "avg_assistant_response_length_words": 36.94517205957884,
+    "std_assistant_response_length_words": 50.36238934424074
+  },
+  "task_distribution": {
+    "mixed_language_qa": 477,
+    "bullet_points": 548,
+    "extractive_qa": 648,
+    "short_answer_qa": 726,
+    "rewrite_patient_friendly": 662,
+    "summarize": 612,
+    "classify_doc_type": 221
+  },
+  "language_distribution": {
+    "ta": 1086,
+    "en": 1792,
+    "si": 1016
+  },
+  "ttr": {
+    "total_tokens": 453409,
+    "vocab_size": 12472,
+    "type_token_ratio": 0.027507173435022243
+  },
+  "duplicates": {
+    "n_texts": 7788,
+    "duplicate_groups": 623,
+    "duplicated_items": 2622,
+    "duplicate_rate": 0.3366718027734977
+  },
+  "self_bleu": {
+    "self_bleu_mean": 0.08663401610217182,
+    "self_bleu_std": 0.12464715694970843,
+    "n_samples_used": 300,
+    "reference_pool_per_sample": 30
+  },
+  "vendi": {
+    "vendi_score_effective_rank": 55.63551330566406,
+    "normalized_vendi_score": 0.11127102661132812,
+    "n_samples_used": 500,
+    "embedding_backend": "sentence-transformers:all-MiniLM-L6-v2"
+  },
+  "context_answer_similarity": {
+    "mean_similarity": 0.4382561924648471,
+    "std_similarity": 0.27279056646523275,
+    "n_pairs_used": 1000,
+    "backend": "sentence-transformers:all-MiniLM-L6-v2"
+  },
+  "extractive_grounding": {
+    "n_extractive_records_evaluated": 648,
+    "exact_substring_match_count": 30,
+    "extractive_grounding_accuracy": 0.046296296296296294
+  },
+  "mutual_information": {
+    "mutual_information_task_language": 0.002186674623648771,
+    "mutual_information_task_response_length_bin": 0.2391641709617366,
+    "mutual_information_language_response_length_bin": 0.025398566647971743,
+    "response_length_bins": 5
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "processed_this_run": 375,
+  "written_this_run": 375,
+  "elapsed_sec": 3033.0,
+  "pending_path": "data/4_instruction/pending_multiturn.jsonl",
+  "split_mode": "train",
+  "eval_first": false,
+  "use_hybrid_models": false,
+  "teacher_model": "gpt-4o",
+  "teacher_fast": "gpt-4o-mini",
+  "teacher_strong": "gpt-4o"
+}

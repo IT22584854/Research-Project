@@ -1,0 +1,3 @@
+Source URL: https://hpb.health.gov.lk/technical-unit/family-health-nutrition-communication-behaviour-research?lang=ta
+
+Crawl4AI Error: This page is not fully supported. Error Message: All strings must be XML compatible: Unicode or ASCII, no NULL bytes or control characters Possible reasons: 1. The page may have restrictions that prevent crawling. 2. The page might not be fully loaded. Suggestions: - Try calling the crawl function with these parameters: magic=True, - Set headless=False to visualize what's happening on the page. If the issue persists, please check the page's structure and any potential anti-crawling measures. 

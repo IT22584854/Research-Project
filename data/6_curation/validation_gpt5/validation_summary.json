@@ -1,0 +1,25 @@
+{
+  "input_records": 1000,
+  "validator_records_loaded": 1000,
+  "merged_records": 1000,
+  "missing_records": 0,
+  "malformed_validator_outputs": 0,
+  "verdict_counts": {
+    "VALID": 602,
+    "INVALID": 398
+  },
+  "followup_consistency_counts": {
+    "consistent": 656,
+    "inconsistent": 344
+  },
+  "error_type_presence_counts": {
+    "hallucinations": 49,
+    "unsupported_claims": 356,
+    "quote_errors": 89
+  },
+  "paths": {
+    "validated_all": "data\\6_curation\\validation_gpt5\\curation_pool_1000_validated.jsonl",
+    "invalid_only": "data\\6_curation\\validation_gpt5\\curation_pool_1000_invalid.jsonl",
+    "summary": "data\\6_curation\\validation_gpt5\\validation_summary.json"
+  }
+}

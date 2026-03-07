@@ -1,0 +1,1 @@
+size_mtime:132680-1771886391-v5_meta_provenance_contentSig_textFirst_scale0p5_tablesOff_ocrRetrySizeGate

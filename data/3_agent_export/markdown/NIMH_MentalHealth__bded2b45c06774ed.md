@@ -1,0 +1,23 @@
+Doc ID: bded2b45c06774edcf7b17543835c939cf0a0cfc5a41c9eea0cf3b0e409d10a9
+Site: NIMH_MentalHealth
+Source URL: https://nimh.health.gov.lk/colombo-reach-ambulance-service
+Title: National Institute of Mental Health
+
+National Institute of Mental Health
+සුවපත් මනසක් දියුණුවේ රහසක්!
+Choose your language here 
+[ English ](https://nimh.health.gov.lk/en/colombo-reach-ambulance-service) [ සිංහල ](https://nimh.health.gov.lk/si/colombo-reach-ambulance-service) [ தமிழ் ](https://nimh.health.gov.lk/ta/colombo-reach-ambulance-service)
+Choose your language here 
+[ English ](https://nimh.health.gov.lk/en/colombo-reach-ambulance-service) [ සිංහල ](https://nimh.health.gov.lk/si/colombo-reach-ambulance-service) [ தமிழ் ](https://nimh.health.gov.lk/ta/colombo-reach-ambulance-service)
+Quick Links
+[Ethical Review Committee](https://nimh.health.gov.lk/en/ethical-review-committee/)
+[Colombo Out Reach Ambulance Service](https://nimh.health.gov.lk/en/colombo-reach-ambulance-service/)
+[Apply for training online](https://nimh.health.gov.lk/en/training-research/nimh-observership-application-form/)
+[Hall Schedule & Booking](https://nimh.health.gov.lk/en/event-schedule/)
+Contact Us
+Address: NIMH, Mulleriyawa New Town
+Telephone: [+94112578234 - 7](tel:+94112578234)
+National Mental Health Helpline: [1926](tel:1926)
+Day Treatment Centre: [+94112578556](tel:+94112578556)
+Dementia Hotline: [+94113140844](tel:+94113140844)
+[ Follow Us ](https://www.facebook.com/NIMH.Angoda/)

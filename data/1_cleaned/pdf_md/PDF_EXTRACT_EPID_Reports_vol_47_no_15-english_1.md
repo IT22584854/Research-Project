@@ -1,0 +1,161 @@
+Source PDF: EPID_Reports_vol_47_no_15-english_1.pdf
+
+<!-- image -->
+
+## SRI LANKA 2020
+
+## WEEKLY EPIDEMIOLOGICAL REPORT
+
+## A publication of the Epidemiology Unit
+
+Ministry of Health &amp; Indigenous Medical Services 231, de Saram Place, Colombo 01000, Sri Lanka Tele: + 94 11 2695112, Fax: +94 11 2696583, E mail: [REDACTED_EMAIL] Epidemiologist: +94 11 2681548, E mail: [REDACTED_EMAIL] Web: http://www.epid.gov.lk
+
+Vol. 47 No. 15                                                                                  04
+
+th -10 th  April 2020
+
+## Identified complications of COVID -19 Part II
+
+Septic  shock  was  reported  in  4%  to  8%  of  patients. Septic shock indicates profound circulatory,  cellular,  and  metabolic  deterioration  causing persistent  hypotension  despite  adequate  fluid replacement. It is associated with a greater risk of mortality than with sepsis alone.
+
+The criteria for overt Disseminated Intravascular Coagulation  which  was  induced  by  sepsis  was met  in  71%  of  COVID -19  patients.  They  revealed  longer  Prothrombin  Time  and  activated partial thromboplastin time. Levels of fibrin -related markers (D -dimer and fibrin degradation product)  were  significantly  higher  suggesting  a secondary hyperfibrinolysis condition in critically ill  patients. The fibrinogen level was also significantly  lower  in  patients.  Development  of  DIC results  when  monocytes  and  endothelial  cells are  activated  to  the  point  of  cytokine  release following  injury,  with  the  expression  of  tissue factor and secretion of the von -Willebrand factor. Circulation of free thrombin, uncontrolled by natural  anticoagulants,  can  activate  platelets  and stimulate  fibrinolysis.  Venous  thromboembolism also  has  been  reported  with  sever  COVID -19 which is associated with poor prognosis.
+
+In  the  middle  and  late  stages  of  the  disease, patients  often  develop  secondary  bacterial  or even fungal infections. This was reported in 6% to 10% of patients.
+
+Dysfunction  of  other  organs,  primarily  kidney failure was reported in 3% to 8% of patients who had elevated Blood Urea Nitrogen, serum creatinine, or albuminuria.
+
+Current evidence suggests that more than one -third of severe patients experienced various neu-
+
+## Contents
+
+1. Leading Article -Identified complications of COVID-19 Part II
+2. Summary of selected notifiable diseases reported (28 th -03 rd   March 2020)
+3. Surveillance of vaccine preventable diseases &amp; AFP (28 th -03 rd   March 2020)
+
+rological  complications  such  as  Acute  Hemorrhagic Necrotizing Encephalopathy (AHNE) and acute cerebrovascular diseases (ischemic stroke,  cerebral  haemorrhage)  who  died  later from  respiratory  failure.  Neurological  complications  manifest  with  Central  Nervous  System symptoms  (headache,  dizziness,  impaired  consciousness,  ataxia,  acute  cerebrovascular  disease,  and  epilepsy)  and  Peripheral  Nervous System (PNS) symptoms (hypogeusia, hyposmia, and neuralgia). AHNE is a rare complication  of  COVID -19  and  has  been  related  to intracranial  cytokine  storms,  which  result  in  a blood -brain -barrier breakdown, but without direct viral  invasion  or  para  infectious  demyelination. This  can  be  diagnosed  by  CT  and  MRI  brain images. Patients with neurological complications have a poor prognosis.
+
+Rhabdomyolysis  (skeletal  muscle  injury)  was reported as a late complication in one case report.  Rhabdomyolysis is  a  life -threatening  complication  that  manifests  with  myalgia,  fatigue, myoglobinuria, and acute renal failure. It is confirmed by elevated creatinine kinase levels.
+
+Acute  liver  failure  in  14%  to  53%  of  patients have also been reported to occur during the disease in severe cases. Those patient ' s AST and ALT levels were markedly elevated which is accompanied  by  slightly  elevated  serum  bilirubin levels and GGT. Serum Albumin is decreased in severe  cases.  Collateral  liver  damage  from  virally induced cytotoxic T cells and the induction of  a  dysregulated innate immune response is a more  probable  explanation  for  the  association between deranged liver markers and COVID -19
+
+## Page
+
+1
+
+3
+
+4
+
+## th -10 th    April  2020
+
+## WER Sri Lanka Vol. 47 No. 15                                                              04
+
+disease  severity.  The  liver  injury  occurred  in  COVID -19  patients may be due to the damage to bile duct cells, by the virus infection,  which  adversely  affects  liver  regeneration  and  immune response. A recent study conducted in Shanghai, China, reported that similar to the situation in SARS, antibiotics such as macrolides  or quinolone, anti -virals such  as  lopinavir/ ritonavir and steroids which are widely used for the treatment are all potential causes of liver injury during COVID -19. However, clinically significant liver injury is uncommon.
+
+Mild pancreatic injury (defined as elevated serum amylase or lipase  levels)  also  has  been  identified  as  a  complication  of COVID -19 patients. However, it is unknown whether this is a direct viral effect or due to the harmful immune response that occurs in some patients.
+
+Retrospective  reviews  of  pregnant  women  with  COVID -19 found that  women appeared to have fewer adverse maternal and  neonatal  complications.  Adverse  effects  on  the  newborn including fetal distress, premature labour, respiratory distress, thrombocytopenia, and abnormal liver function have been reported.  However,  there  is  currently  no  evidence  of  vertical transmission  in  pregnant  women  who  developed  COVID -19 pneumonia. As of Feb 4, 2020, no maternal deaths have been reported  but  miscarriage  (2%),  intrauterine  growth  restriction (10%)  preterm  birth  (39%),  pre -eclampsia,  premature  rupture of the membrane and stillbirth have been reported.
+
+The disease can be even fatal due to complications of this infection.  The  risk  of  death  was  primarily  associated  with  age, underlying chronic diseases, and the median interval from the appearance of initial symptoms to dyspnea. In this pandemic, Case Fatality Rate is estimated at approximately 3%, which is lower than that of another two widely contagious zoonotic coronavirus diseases, MERS -CoV (35%) and SARS -CoV (10%).
+
+Based on available information to date and clinical expertise, the  following  patient  categories  are  more  likely  to  develop COVID -19 and are at increased risk of developing serious illness leading to poorer outcomes.
+
+- Adults aged 65 years and older
+- Those  of  any  age  with  certain  underlying  pre -existing medical  problems,  particularly  if  not  well  controlled, such  as  cardiovascular disease  with complications, diabetes,  hypertension,  renal  failure  especially  stages IV, V or those on dialysis, or liver disease, chronic respiratory disease, moderate to severe uncontrolled asthma, people of any age with severe obesity (Body Mass Index ≥40)
+- People  who  are  immunocompromised  including  those who  are  on  cancer  treatment  or  systemic  steroids  or post solid organ or stem cell transplants.
+
+Patients with underlying cardiovascular diseases often demonstrated heart failure. Middle -aged and elderly patients with underlying  comorbid  systemic diseases  are  more susceptible to respiratory  failure,  are  more  frequently  critically  ill  and  may have a poorer prognosis whereas healthy, young adult patients were  less  susceptible  to  severe  disease.  People  with  certain disabilities might experience higher rates of chronic health conditions that put them at higher risk of getting complications of COVID -19 and serious illness. Adults with disabilities are three times  more  likely  to  have  heart  disease,  stroke,  diabetes,  or cancer than adults without disabilities. Pregnant women are at a  particularly  high  risk  of  2019 -nCoV  infection  because  they are  in  a  special  state  of  immune  suppression.  Physiologic adaptive  changes  during  pregnancy  (e.g.,  diaphragm  elevation, increased oxygen consumption, and oedema of respiratory tract mucosa) render them intolerant to hypoxia.
+
+As there is currently no effective drug against the novel CoV, people  who  have  cough,  fever  and  difficulty  breathing  must seek  medical  care  early  to  reduce  the  risk  of  developing  a more complicated infection. Patients can present with complications with or without respiratory symptoms and the clinicians should be vigilant enough to detect those cases.
+
+## Complied by: Dr. Timashini Wickramasinghe
+
+PG Trainee in Community Medicine -Epidemiology Unit, Ministry of Health
+
+## References:
+
+## https://www.who.int/health -topics/coronavirus#tab=tab\_1
+
+https://bestpractice.bmj.com/topics/en -gb/3000168/complications#referencePop335
+
+Liu,  K.,  Fang,  Y. -Y.,  Deng,  Y.,  Liu,  W.,  Wang,  M. -F.,  Ma,  J. -P.,  Liu,  H. -G.  (2020).  Clinical characteristics  of  novel  coronavirus  cases  in  tertiary  hospitals  in  Hubei  Province. Chinese Medical Journal , 0 , 1. https://doi.org/10.1097/cm9.0000000000000744.
+
+Burki, T. (2020). Outbreak of coronavirus disease 2019. The Lancet. Infectious Diseases , 20 (3), 292 -293. https://doi.org/10.1016/S1473 -3099(20)30076 -1.
+
+https://www.cdc.gov/coronavirus/2019
+
+-
+
+ncov/faq.html#conditions
+
+Huang, C., Wang, Y.,  Li,  X.,  Ren,  L.,  Zhao,  J.,  Hu,  Y.,  Cao,  B.  (2020).  Clinical  features  of patients infected with 2019 novel coronavirus in Wuhan, China. The Lancet , 395 (10223), 497 -506. https://doi.org/10.1016/S0140 -6736(20)30183 -5
+
+Wang, D., Hu, B., Hu, C., Zhu, F., Liu, X., Zhang, J., Peng, Z. (2020). Clinical Characteristics of  138  Hospitalized  Patients  with  2019  Novel  Coronavirus -Infected  Pneumonia  in  Wuhan, China. JAMA -Journal  of  the  American  Medical  Association , 323 (11),  1061 -1069. https:// doi.org/10.1001/jama.2020.1585.
+
+Sun, P., Qie, S., Liu, Z., Ren, J., Li, K., Xi, J. Clinical characteristics of hospitalized patients with  SARS -CoV -2 infection:  A  single  arm  meta -analysis. J  Med  Virol .  2020;1 -6. https:// doi.org/10.1002/jmv.257356.
+
+Dhama,  K.,  Sharun,  K.,  Tiwari,  R.,  Sircar,  S.,  Bhat,  S.  (2020). Coronavirus  Disease 2019 -COVID -19 . 2019 . Retrieved from https://www.preprints.org/manuscript/202003.0001
+
+Fan, Z., Chen, L., Li, J., Tian, C., Zhang, Y., Huang, S., Cheng, J. (2020). Clinical Features of COVID -19 Related Liver Damage. MedRxiv , 2020.02.26.20026971. https:// doi.org/10.1101/2020.02.26.20026971
+
+Xu, L., Liu, J., Lu, M., Yang, D., Zheng, X. Liver injury during highly pathogenic human coronavirus infections. Liver Int . 2020;00:1 -7. https://doi.org/10.1111/liv.14435
+
+Hua, A., O ' Gallagher, K., Sado, D., Byrne, J., Life -threatening cardiac tamponade complicating myo -pericarditis  in  COVID -19, European  Heart  Journal ,  ehaa253,  https://doi.org/10.1093/ eurheartj/ehaa253
+
+Xiong,  T.,  Redwood,  S.,  Prendergast,  B.,  Chen,  M.,  Coronaviruses  and  the  cardiovascular system:  acute  and  long -term  implications, European  Heart  Journal ,  ,  ehaa231,  https:// doi.org/10.1093/eurheartj/ehaa231
+
+Chen, T., Wu, D., Chen, H., Yan, W., Yang, D., Chen, G., Ning, Q. (2020). Clinical characteristics of 113 deceased patients with coronavirus disease 2019: retrospective study. Bmj , 1091 (March), m1091. https://doi.org/10.1136/bmj.m1091
+
+Mehta, P., Mcauley, D. F., Brown, M., Sanchez, E., Tattersall, R. S., Manson, J. J., Collaboration,  S.  (2020).  Correspondence  COVID -19 :  consider  cytokine  storm  syndromes  and. The
+
+Lancet , 6736 (20), 19 -20. https://doi.org/10.1016/S0140 -6736(20)30628 -0
+
+Pedersen, S. F., &amp; Ho, Y. -C. (2020). SARS -CoV -2: A Storm is Raging. The Journal of Clinical
+
+Page  2
+
+## Table 1:  Selected notifiable diseases reported by Medical Officers of Health      28 th -03 rd  April 2020 (14 th  Week)
+
+Source:  Weekly  Returns of Communicable   Diseases  (WRCD).
+
+| RDHS  Division  Dengue Fever  Dysentery  Encepha  litis  Enteric  Fever  Food  Poisoning  Leptospiro  sis  Typhus  Fever  Viral  Hepatitis  Human  Rabies  Chickenpox  Meningitis  Leishmani-  asis  WRCD  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  T*  C**  Colombo  2  2686  0  13  0  4  0  4  0  14  0  57  0  0  0  2  0  0  3  142  0  14  0  0  59  96  Gampaha  4  1597  0  3  0  0  0  4  0  19  0  37  0  1  0  1  0  0  0  190  0  8  0  17  52  90  Kalutara  15  921  0  5  0  4  0  3  0  1  3  97  0  7  0  1  0  0  6  144  0  9  0  0  60  85  Kandy  6  1084  1  7  0  1  0  7  0  6  0  15  1  37  0  3  0  0  4  97  0  14  0  25  63  99  Matale  2  432  0  3  0  2  0  1  0  4  0  16  0  2  0  2  0  1  0  34  0  1  2  122  58  100  NuwaraEliya  1  129  1  11  0  0  0  0  0  0  2  15  1  40  0  2  0  0  1  44  0  6  0  0  23  100  Galle  1  940  1  11  0  8  0  2  0  12  0  159  1  21  0  1  0  0  1  184  0  15  0  2  59  83  Hambantota  0  255  0  4  0  0  0  1  0  37  0  53  0  13  0  2  0  0  1  100  0  8  0  231  75  92  Matara  0  351  0  7  0  3  0  0  0  0  0  81  0  4  0  6  0  0  0  68  0  5  0  117  50  68  Jaffna  17  1722  0  35  0  0  2  16  0  16  0  10  7  433  0  0  0  1  7  66  1  4  0  0  34  93  Kilinochchi  1  104  3  19  0  0  0  3  0  0  0  6  0  17  0  0  0  0  0  4  0  4  0  4  64  100  Mannar  0  117  0  0  0  0  0  1  0  0  0  3  0  1  0  0  0  0  0  1  0  3  0  0  42  93  Vavuniya  2  228  0  4  0  0  0  3  0  0  0  30  0  1  0  0  0  0  1  11  0  3  0  1  59  100  Mullaitivu  1  62  0  4  0  0  0  3  0  1  0  10  0  3  1  1  0  1  0  2  0  0  0  5  41  76  Batticaloa  24  1983  2  38  0  2  0  0  0  4  0  13  0  0  0  0  0  1  8  63  0  9  0  1  62  97  Ampara  0  279  0  8  0  1  0  0  0  0  0  22  0  0  0  1  0  0  1  64  0  8  0  4  63  100  Trincomalee  18  2134  0  4  0  0  0  0  0  1  0  11  0  2  0  0  0  0  0  64  0  5  0  0  51  88  Kurunegala  1  645  0  5  0  4  0  2  0  29  0  54  0  10  0  1  0  0  0  225  0  8  0  153  56  90  Puttalam  0  331  0  6  0  1  0  2  0  1  0  15  0  9  0  0  0  1  4  58  0  16  0  2  66  92  Anuradhapur  1  306  0  8  0  1  0  2  0  19  0  114  0  12  0  1  0  1  0  92  0  16  0  81  55  86  Polonnaruwa  1  182  0  4  0  0  0  0  0  0  1  55  0  0  0  12  0  0  2  68  0  8  1  87  64  97  Badulla  3  357  0  8  0  2  0  2  0  3  0  101  0  17  0  6  0  0  4  92  0  15  0  4  60  99  Monaragala  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  Ratnapura  16  581  0  29  0  11  0  1  0  13  2  270  0  9  1  10  0  0  0  106  3  35  0  38  51  93  Kegalle  6  351  0  5  0  3  0  1  0  12  0  68  0  16  0  4  0  0  0  100  0  11  0  9  59  97  Kalmune  5  802  0  25  0  2  0  0  0  1  0  2  0  2  0  0  0  0  3  154  1  12  0  0  76  100  SRILANKA  127  18579  8  266  0  49  2  58  0  193  8  131  10  657  2  56  0  6  46  2173  5  237  3  903  57  89   |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+<!-- image -->
+
+| ## WER Sri Lanka - Vol. 47 No. 15                                                              04  th  -  10 th    April  2020  Table 2: Vaccine-Preventable Diseases  &amp;  AFP                                    28 th  -  03 rd  April 2020 (14 th  Week)  Disease  No. of Cases  by Province  Number of  cases  during  current  week in  2020  Number of  cases  during  same  week in  2019  Total num-  ber of  cases to  date in  2020  Total num-  ber of cases  to date in  2019  Difference  between the  number of  cases to date in  2020 &amp; 2019  W  C  S  N  E  NW  NC  U  Sab  AFP*  00  00  00  00  00  00  00  00  00  01  02  09  27  -  64 %  Diphtheria  00  00  00  00  00  00  00  00  00  00  00  00  00  0 %  Mumps  00  00  00  00  00  00  00  00  00  07  05  54  102  -  47.0 %  Measles  00  00  00  01  00  00  00  00  00  01  07  22  56  -  60.7 %  Rubella  00  00  00  00  00  00  00  00  00  00  00  00  00  0 %  CRS**  00  00  00  00  00  00  00  00  00  00  00  00  00  0 %  Tetanus  00  00  00  00  00  00  00  00  00  00  01  03  04  0 %  Neonatal Tetanus  00  00  00  00  00  00  00  00  00  00  00  00  00  -  25 %  Japanese En-  cephalitis  00  00  00  00  00  00  00  00  00  00  00  06  07  200 %  Whooping Cough  00  00  00  00  01  00  00  00  00  01  01  03  23  -  86.9 %  Tuberculosis  00  00  00  00  00  00  00  00  00  00  180  1455  2409  -  39.6 %   |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+## Key to Table 1 &amp; 2
+
+Provinces:                 W
+
+: Western, C : Central, S : Southern, N : North, E :  East, NC : North Central, NW : North Western, U : Uva, Sab : Sabaragamuwa.
+
+RDHS Divisions:    CB
+
+: Colombo, GM : Gampaha, KL : Kalutara, KD : Kandy, ML : Matale, NE : Nuwara Eliya, GL : Galle, HB : Hambantota, MT : Matara, JF : Jaffna,
+
+KN : Killinochchi, MN : Mannar, VA : Vavuniya, MU : Mullaitivu, BT : Batticaloa, AM : Ampara, TR : Trincomalee, KM : Kalmunai, KR : Kurunegala, PU : Puttalam,
+
+AP : Anuradhapura, PO : Polonnaruwa, BD : Badulla, MO : Moneragala, RP : Ratnapura, KG : Kegalle.
+
+## Data Sources:
+
+Weekly Return of Communicable Diseases:
+
+Special Surveillance:  AFP* (
+
+Diphtheria, Measles, Tetanus, Neonatal Tetanus, Whooping Cough, Chickenpox, Meningitis, Mumps., Rubella, CRS, Acute Flaccid Paralysis ), Japanese Encephalitis
+
+CRS** = Congenital Rubella Syndrome
+
+Dengue Prevention and Control Health Messages
+
+Look for plants such as bamboo, bohemia, rampe and banana in your surroundings and maintain them free of water collection.
+
+Comments and contributions for publication in the WER Sri Lanka are welcome. However, the editor reserves the right to accept or reject items for publication. All correspondence should be mailed to The Editor, WER Sri Lanka, Epidemiological  Unit, P.O. Box 1567, Colombo or sent by E-mail to [REDACTED_EMAIL].  Prior  approval  should  be  obtained  from  the  Epidemiology  Unit  before  publishing data in this publication
+
+## ON STATE SERVICE
+
+Dr. Sudath Samaraweera CHIEF EPIDEMIOLOGIST EPIDEMIOLOGY UNIT 231, DE SARAM PLACE COLOMBO 10

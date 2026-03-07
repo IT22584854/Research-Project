@@ -1,0 +1,17 @@
+# Web Scraping & Processing
+crawl4ai>=0.4.0
+docling>=1.2.0
+pandas
+tqdm
+python-dotenv
+
+# LLM Training (Targeting Qwen-3)
+unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git
+transformers>=4.48.0
+bitsandbytes
+trl
+peft
+accelerate
+
+# Linguistic & Security
+regex

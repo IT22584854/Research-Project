@@ -1,0 +1,183 @@
+Source URL: https://www.health.gov.lk/ta
+
+இலங்கை சுகாதார அமைச்சிற்கு
+வரவேற்கின்றோம்
+சுகாதார அமைச்சு என்பது முழு இலங்கையினதும் சுகாதார முறைமையை நிர்வகிக்கும் உரித்துடைய அரச நிறுவனம் ஆகும். பொது மக்களது சுகாதாரத்தை பாதுகாப்பதில் நாம் முக்கியமான பாகத்தை வகிப்பதுடன் பொது மக்களிற்கு உற்பத்திகளையும் சேவைகளையும் வழங்குகின்ற அமைப்புகளும் நிறுவனங்களும் பாதுகாப்பு ஒழுங்குவிதிகளிற்கு அமைவாக ஒழுகுகின்றன என்பதனையும் உறுதிபடுத்துகின்றோம். இலங்கையின் அனைத்து மக்களும் சமூகங்களும் அவர்களிற்கு தேவையான சுகாதார சேவைகளை எந்தவொரு நிதியியல் சிரமங்களும் இன்றி பெறுவதனை நாம் உறுதிபடுத்துகின்றோம்.
+எமது இலக்கு
+“பொருளாதாரம் சமூகம் உள மற்றும் ஆன்மீக அபிவிருத்திக்கு பாரிய பங்களிப்பை வழங்கும் ஓர் ஆரோக்கியமான தேசம்”
+எமது பணிக்கூற்று
+“இலங்கை மக்களுக்கு கிடைக்கக்கூடிய மற்றும் அணுகக்கூடிய உயர் தரத்திலான ஊக்குவிப்பு தடுப்பு குணப்படுத்துதல் மற்றும் மறுவாழ்வு சேவைகள் மூலம் மிக உயர்ந்த சுகாதார நிலையை அடைவதன் மூலம் இலங்கையின் சமூக மற்றும் பொருளாதார வளர்ச்சிக்கு பங்களித்தல்"
+[ மேலும் வாசிக்க ](https://www.health.gov.lk/ta/about-us/#vision)
+### Health Highlights
+##### [Colombo Declaration on ‘Healthy ageing through strengthened primary health care’ ](https://www.health.gov.lk/ta/healthallert-home/colombo-declaration-on-healthy-ageing-through-strengthened-primary-health-care/)
+##### [Leading with Compassion and Care… Recent Health Sector Success Stories from Sri Lanka ](https://www.health.gov.lk/ta/healthallert-home/leading-with-compassion-and-care-recent-health-sector-success-stories-from-sri-lanka/)
+##### [National Health Performance Dashboard ](https://www.health.gov.lk/ta/healthallert-home/national-health-performance-dashboard/)
+##### [மருந்து கிடைக்கும் - SWASTHA ](https://www.health.gov.lk/ta/healthallert-home/health-alert-title-2/)
+##### [Donate Now – Sri Lanka Needs You ](https://www.health.gov.lk/ta/healthallert-home/donate-now-sri-lanka-needs-you/)
+##### [COVID-19 Smart Vaccine Certificate ](https://www.health.gov.lk/ta/healthallert-home/health-alert-title/)
+[மேலும் செய்திகளை வாசிக்க ](https://www.health.gov.lk/ta/news/)
+### சிறப்பு செய்திகள்
+[மேலும் செய்திகளை வாசிக்க ](https://www.health.gov.lk/ta/news/)
+[ 26th ஜன 2026 42 health and wellness centers open to the public. ](https://www.health.gov.lk/ta/news/42-health-and-wellness-centers-open-to-the-public/)
+7th ஜன 2026
+##### A food department is being opened for the first time in a government hospital.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/a-food-department-is-being-opened-for-the-first-time-in-a-government-hospital/)
+16th டிசம்பர் 2025
+##### Mr. IWASE KIICHIRO, the head of the disaster management expert team that arrived in Sri Lanka from Japan, emphasizes that the program to provide emergency health services to the people affected by disasters in Sri Lanka was very successful.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/mr-iwase-kiichiro-the-head-of-the-disaster-management-expert-team-that-arrived-in-sri-lanka-from-japan-emphasizes-that-the-program-to-provide-emergency-health-services-to-the-people-affected-by-dis/)
+12th டிசம்பர் 2025
+##### The International Conference on Emergency Ultrasound (ResUSS 2025) will commence in Kalutara under the patronage of the Minister of Health and Mass Media, Dr. Nalinda Jayatissa…
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/the-international-conference-on-emergency-ultrasound-resuss-2025-will-commence-in-kalutara-under-the-patronage-of-the-minister-of-health-and-mass-media-dr-nalinda-jayatissa/)
+31st அக் 2025
+##### Appointment letters will be issued to recruit 700 nursing graduates for the Reintegration and Integration Training Course after 04 years.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/appointment-letters-will-be-issued-to-recruit-700-nursing-graduates-for-the-reintegration-and-integration-training-course-after-04-years/)
+14th அக் 2025
+##### Today is the second day of the 78th Regional Conference of the World Health Organization (WHO) for South and Southeast Asia.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/today-is-the-second-day-of-the-78th-regional-conference-of-the-world-health-organization-who-for-south-and-southeast-asia/)
+13th அக் 2025
+##### தெற்கு மற்றும் தென்கிழக்கு ஆசியாவிற்கான உலக சுகாதார அமைப்பின் 78வது பிராந்திய மாநாடு தற்போது ஆரம்பமானது.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/the-78th-regional-conference-of-the-world-health-organization-who-for-south-and-southeast-asian-countries-is-being-held/)
+13th அக் 2025
+##### How can we strengthen pediatric anesthesia and surgery care across South-East Asia?
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/how-can-we-strengthen-pediatric-anesthesia-and-surgery-care-across-south-east-asia/)
+12th அக் 2025
+##### தெற்கு மற்றும் தென்கிழக்கு ஆசிய நாடுகளுக்கான 78வது உலக சுகாதார அமைப்பின் பிராந்திய மாநாடு நாளை (13) கொழும்பில் ஆரம்பமாகிறது.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/whos-78th-south-east-asia-regional-committee-session-begins-tomorrow-in-colombo/)
+3rd அக் 2025
+##### நாட்டில் "சுகாதாரம் மற்றும் நல்வாழ்வு மையங்களை" நிறுவுவதற்கான திட்டத்தின் கீழ் நான்காவது மையம் கண்டி, பால்கொல்லவத்தையில் பொது மக்களின் பாவனைக்கு வழங்கப்பட்டு உள்ளது.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/the-fourth-center-of-the-pilot-project-to-establish-health-and-wellness-centers-in-the-country-has-been-opened-to-the-public-in-paulgollawatta-kandy/)
+25th செப் 2025
+##### கொழும்பில் 10வது உலக ஆயுர்வேத தினம் கொண்டாடப்பட்டது.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/the-10th-world-ayurveda-day-is-being-celebrated-with-pride-in-colombo/)
+11th செப் 2025
+##### இலங்கை தேசிய வைத்தியசாலையின் வளர்ச்சிக்கு ஜப்பானிய அரசாங்கத்தின் தொடர்ச்சியான ஆதரவு.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/the-japanese-governments-continued-support-for-the-development-of-the-sri-lanka-national-hospital/)
+10th செப் 2025
+##### அரசு ஊழியர்கள் மற்றும் அவர்களது குடும்பத்தினரின் ஆரோக்கியத்திற்காக "ஆரோக்கியம்" நடமாடும் சுகாதார மருத்துவ மைய திட்டத்தின் முதலாவது நிகழ்வு இலங்கை காவல்துறை அதிகாரிகளுக்காக நடத்தப்படுகிறது.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/the-first-program-of-the-arogya-mobile-health-clinic-program-which-is-being-conducted-for-the-well-being-of-government-institution-staff-and-their-family-members-is-being-conducted-in-ja-ela-fo/)
+10th செப் 2025
+##### India to fund emergency unit and equipment at Mannar District General Hospital
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/india-to-fund-emergency-unit-and-equipment-at-mannar-district-general-hospital/)
+9th செப் 2025
+##### The Minister of Health and Mass Media’s attention to the current health services in the Trincomalee district of the Eastern Province.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/he-minister-of-health-and-mass-medias-attention-to-the-current-health-services-in-the-trincomalee-district-of-the-eastern-province/)
+6th செப் 2025
+##### திருகோணமலை மாவட்ட மருத்துவமனையில் நிறுவப்பட்ட அதிநவீன தொற்று கழிவு எரியூட்டி இப்போது பொதுமக்களின் பாவனைக்காக வழங்கப்பபட்டுள்ளது. 15 அரசு மருத்துவமனைகளுக்கான அதிநவீன தொற்று கழிவு எரியூட்டிகள் வழங்கப்பட்டன.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/the-state-of-the-art-infectious-waste-incinerator-installed-at-the-trincomalee-district-general-hospital-will-be-opened-to-the-public-state-of-the-art-infectious-waste-incinerators-for-15-government/)
+3rd செப் 2025
+##### கொத்தலாவல பாதுகாப்பு பல்கலைக்கழக மருத்துவமனையை சுகாதார மற்றும் ஊடகத்துறை அமைச்சர் ஆய்வு செய்கிறார். மருத்துவமனையின் தற்போதைய நிலை மற்றும் அதன் எதிர்கால தொலைநோக்கு திட்டங்கள் குறித்த சிறப்பு கலந்துரையாடல்.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/minister-of-health-and-mass-media-inspects-kotelawala-defence-university-hospital-a-special-discussion-on-the-current-status-future-vision-and-objectives-of-the-hospital/)
+2nd செப் 2025
+##### சுகாதார மற்றும் வெகுஜன ஊடக அமைச்சருக்கும் இலங்கைக்கான இந்தோனேசிய தூதருக்கும் இடையிலான சந்திப்பு.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/a-meeting-between-the-minister-of-health-and-mass-media-and-the-indonesian-ambassador-to-sri-lanka/)
+2nd செப் 2025
+##### சுகாதாரம் மற்றும் ஊடக அமைச்சினால் ஏற்பாடு செய்யப்பட்ட நடமாடும் சுகாதார மருத்துசேவையானது நேற்று (30) பாலிந்தவில் உள்ள கெலின்கந்த கொஸ்குலான ஜூனியர் கல்லூரியில் நாள் முழுவதும் தனது முழுமையான சேவையை வழங்கியது.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/the-arogya-mobile-health-clinic-organized-by-the-ministry-of-health-and-mass-media-was-held-throughout-the-day-yesterday-30-at-the-kelinkanda-kosgulana-junior-college-in-palinda/)
+30th ஆக 2025
+##### காலி தேசிய மருத்துவமனையின் புற்றுநோய் சிகிச்சைப் பிரிவுக்கு அதிநவீன லீனியர் ஆக்சிலரேட்டர் (Linear accelerators) இயந்திரத்தை வழங்குவதற்கான திட்டங்கள் மேற்கொள்ளப்படடு வருகின்றன.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/plans-are-underway-to-provide-a-state-of-the-art-linear-accelerator-machine-to-the-cancer-treatment-unit-at-the-karapitiya-national-hospital-in-galle/)
+28th ஆக 2025
+##### The technical report on the 2025 National Immunization Conference is handed over to the Minister of Health and Mass Media.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/the-technical-report-on-the-2025-national-immunization-conference-is-handed-over-to-the-minister-of-health-and-mass-media/)
+13th ஆக 2025
+##### சுகாதாரம் மற்றும் வெகுஜன ஊடக அமைச்சருக்கும் பின்லாந்து நாட்டின் தூதருக்கும் இடையிலான சந்திப்பு.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/a-meeting-between-the-minister-of-health-and-mass-media-and-the-finnish-ambassador/)
+8th ஆக 2025
+##### The report analyzing “Sri Lanka’s Policy on Health Service Delivery for Universal Health Coverage” and “Guidelines for Mainstreaming Gender in Health Policies” is released.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/the-report-analyzing-sri-lankas-policy-on-health-service-delivery-for-universal-health-coverage-and-guidelines-for-mainstreaming-gender-in-health-policies/)
+4th ஆக 2025
+##### Intensive care medicine is a national priority…
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/intensive-care-medicine-is-a-national-priority/)
+21st ஜூலை 2025
+##### Polonnaruwa National Vortex Specialist Hospital to be inspected by the Minister of Health and Mass Media.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/polonnaruwa-national-vortex-specialist-hospital-to-be-inspected-by-the-minister-of-health-and-mass-media/)
+7th ஜூலை 2025
+##### Quality, delicious food for inpatients in government hospitals. A special plate reserved for the patient. The pilot project will be launched at Apeksha Hospital, Maharagama…
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/quality-delicious-food-for-inpatients-in-government-hospitals-a-special-plate-reserved-for-the-patient-the-pilot-project-will-be-launched-at-apeksha-hospital-maharagama/)
+4th ஜூலை 2025
+##### A five-storey children’s ward complex worth Rs. 600 million will be built for the Maharagama Apeksha Hospital.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/a-five-storey-childrens-ward-complex-worth-rs-600-million-will-be-built-for-the-maharagama-apeksha-hospital/)
+17th ஜூன் 2025
+##### Primary Health Care Units and Health Centers in the Southern Province are under the supervision of the Minister of Health and Mass Media.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/primary-health-care-units-and-health-centers-in-the-southern-province-are-under-the-supervision-of-the-minister-of-health-and-mass-media/)
+31st மே 2025
+##### A meeting between the Russian Ambassador to Sri Lanka and the Minister of Health and Mass Media.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/a-meeting-between-the-russian-ambassador-to-sri-lanka-and-the-minister-of-health-and-mass-media/)
+23rd மே 2025
+##### A meeting between the Minister of Health and Mass Media and the Director-General of the World Health Organization in Geneva, Switzerland
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/a-meeting-between-the-minister-of-health-and-mass-media-and-the-director-general-of-the-world-health-organization-in-geneva-switzerland/)
+9th மே 2025
+##### Minister Dr. Nalinda Jayatissa elected as the President of the Sri Lanka-India Parliamentary Friendship Association
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/minister-dr-nalinda-jayatissa-elected-as-the-president-of-the-sri-lanka-india-parliamentary-friendship-association/)
+7th ஏப் 2025
+##### சுகாதாரத்துறையை டிஜிட்டல் மயமாக்குவதற்கான விரிவான திட்டம்.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/a-comprehensive-plan-to-digitally-transform-healthcare/)
+2nd ஏப் 2025
+##### நாட்டில் புற்றுநோயைக் கட்டுப்படுத்த உலக சுகாதார அமைப்பால் நியமிக்கப்பட்ட நிபுணர் குழு, சுகாதார மற்றும் ஊடக அமைச்சருக்கு பல பரிந்துரைகளை வழங்கியுள்ளது.
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/news/the-ministry-of-health-is-fully-focused-on-urgent-measures-that-can-be-taken-to-control-cancer-in-the-country/)
+[மேலும் செய்திகளை வாசிக்க ](https://www.health.gov.lk/ta/news/)
+## எமது சேவைகள்
+## செயற்றிட்டங்கள்
+[மேலும் வாசிக்க செயற்றிட்டம் ](https://www.health.gov.lk/ta/projects/)
+Health & Medical Service Improvement Project – JICA
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/sub_projects/health-medical-service-improvement-project-jica-gosl/)
+[மேலும் வாசிக்க செயற்றிட்டம் ](https://www.health.gov.lk/ta/projects/)
+முக்கிய செய்திகள்
+දිට්වා සුළිකුණාටුව හේතුයෙන් �...
+[தரவிறக்கம் ](https://www.health.gov.lk/wp-content/uploads/2025/12/Batch4636.pdf)
+Date Extended - National Health Resource Symposium 2025...
+[தரவிறக்கம் ](https://www.health.gov.lk/wp-content/uploads/2025/07/COA-NHRS-Ext29SEP20251.jpg)
+World Antimicrobial Resistance Awareess Week (WAAW) - 25 18th-24th November 2025...
+[தரவிறக்கம் ](https://www.health.gov.lk/wp-content/uploads/2025/09/02-141-2025.pdf)
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/important-messages/)
+### வெற்றிடங்களும் ஆட்சேரப்பும்
+##### வெற்றிடங்கள்
+##### Right to Information (RTI)
+##### Fellowship/ International Training
+## விலைமனுக்களும் பெறுகை அறிவித்தல்களும்
+Publish : 11-02-2026 
+Closing : 
+Tender Calling for Hospital Canteen 2026/ 2027Wijaya Kumarathunga Memo
+[தரவிறக்கம் ](https://www.health.gov.lk/wp-content/uploads/2026/02/PDF406.pdf)
+Publish : 05-02-2026 
+Closing : 
+Provision and Maintenance of Local Area Network (LAN) and Structures 
+[தரவிறக்கம் ](https://www.health.gov.lk/wp-content/uploads/2026/02/PDF387.pdf)
+[READ MORE TENDERS ](https://www.health.gov.lk/ta/tenders-procuments/)
+## சுற்றறிக்கை
+சுகாதார சுற்றுநிருபங்கள்
+[மேலும் வாசிக்க சுற்றுநிருபங்கள் ](http://www.previousmoh.health.gov.lk/CMS/cmsmoh1/)
+ஏனைய சுற்றுநிருபங்கள்
+[மேலும் வாசிக்க சுற்றுநிருபங்கள் ](https://www.health.gov.lk/ta/other-circulars/)
+## பத்திரிகை வெளியீடு
+03 செப்டம்பர், 2025 
+රජයේ රෝහල් 15ක් සදහා අති නවී 
+[தரவிறக்கம் ](https://www.health.gov.lk/wp-content/uploads/2025/09/2025.09.03-%E0%B6%B1%E0%B7%80%E0%B7%93%E0%B6%B1-%E0%B6%86%E0%B7%83%E0%B7%8F%E0%B6%B0%E0%B7%92%E0%B6%AD-%E0%B6%85%E0%B6%B4%E0%B6%AF%E0%B7%8A_%E0%B6%BB%E0%B7%80%E0%B7%8A_%E0%B6%BA-%E0%B6%AF%E0%B7%8F%E0%B7%84%E0%B6%9A-%E0%B6%BA%E0%B6%B1%E0%B7%8A%E0%B6%AD%E0%B7%8A_%E0%B6%BB.pdf)
+19 ஜூன், 2025 
+කළුතර නාගොඩ ශික්ෂණ රෝහලේ ස 
+[தரவிறக்கம் ](https://www.health.gov.lk/wp-content/uploads/2025/06/2025.06.19-%E0%B6%9A%E0%B7%85%E0%B7%94%E0%B6%AD%E0%B6%BB-%E0%B6%B1%E0%B7%8F%E0%B6%9C%E0%B7%9C%E0%B6%A9-%E0%B7%81%E0%B7%92%E0%B6%9A%E0%B7%8A%E0%B7%82%E0%B6%AB-%E0%B6%BB%E0%B7%9D%E0%B7%84%E0%B6%BD.pdf)
+[மேலும் வாசிக்க](https://www.health.gov.lk/ta/gazetts-notice/)
+வெளியீடுகள்
+09/01/2024
+பொதுமக்களது கருத்துக்களுக்கான கொள்கைகள்
+ஆய்வு
+09/08/2022
+ஆய்வு – நிதிகள்
+## மேலும் எம்மைப் பற்றி
+இலங்கையின்
+சுகாதார நிறுவனங்கள்
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/health-institutions-in-sri-lanka/)
+SRI LANKA’S
+Hospitals
+முக்கிய இணைப்புக்கள்
+[சுதந்திர மருத்துவ சேவை வழங்குனர்கள் சங்கம்](http://www.impa-sl.com/)
+[மேலும் வாசிக்க ](https://www.health.gov.lk/ta/important-links/)
+## அவசர தொடர்பு இலக்கங்கள்
+1907
+SUWASAWANA
+117
+ஜனாதிபதி செயலணி
+1999
+மும்மொழி சுகாதார இணைப்பு
+1990
+சுவசெரிய அம்புலன்ஸ்

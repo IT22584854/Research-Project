@@ -1,0 +1,78 @@
+{
+  "dataset_cleaning": {
+    "original_total_records": null,
+    "final_total_records": 195,
+    "removed_records": null,
+    "retention_rate": null,
+    "compression_ratio": null,
+    "noise_reduction_rate": null,
+    "crawl_error_records_still_present": 0
+  },
+  "refusal_metrics": {
+    "total_refusal_containing_records": 9,
+    "answerable_records_heuristic": 134,
+    "over_refusal_records": 0,
+    "over_refusal_rate": 0.0
+  },
+  "distribution_metrics": {
+    "task_entropy_normalized": 0.9796787159673087,
+    "linguistic_diversity_index": 0.8784974770115437,
+    "source_entropy_bits": null,
+    "avg_assistant_response_length_words": 41.98717948717949,
+    "std_assistant_response_length_words": 93.97398625175326
+  },
+  "task_distribution": {
+    "extractive_qa": 42,
+    "classify_doc_type": 16,
+    "bullet_points": 33,
+    "mixed_language_qa": 24,
+    "rewrite_patient_friendly": 23,
+    "summarize": 32,
+    "short_answer_qa": 25
+  },
+  "language_distribution": {
+    "ta": 37,
+    "si": 44,
+    "en": 114
+  },
+  "ttr": {
+    "total_tokens": 21152,
+    "vocab_size": 2619,
+    "type_token_ratio": 0.12381807866868381
+  },
+  "duplicates": {
+    "n_texts": 390,
+    "duplicate_groups": 37,
+    "duplicated_items": 97,
+    "duplicate_rate": 0.24871794871794872
+  },
+  "self_bleu": {
+    "self_bleu_mean": 0.12259470486470644,
+    "self_bleu_std": 0.19660190093137928,
+    "n_samples_used": 300,
+    "reference_pool_per_sample": 30
+  },
+  "vendi": {
+    "vendi_score_effective_rank": 51.837581634521484,
+    "normalized_vendi_score": 0.13291687598595253,
+    "n_samples_used": 390,
+    "embedding_backend": "sentence-transformers:all-MiniLM-L6-v2"
+  },
+  "context_answer_similarity": {
+    "mean_similarity": 0.5126092346337361,
+    "std_similarity": 0.26323983448003924,
+    "n_pairs_used": 195,
+    "backend": "sentence-transformers:all-MiniLM-L6-v2"
+  },
+  "extractive_grounding": {
+    "n_extractive_records_evaluated": 42,
+    "exact_substring_match_count": 2,
+    "extractive_grounding_accuracy": 0.047619047619047616
+  },
+  "mutual_information": {
+    "mutual_information_task_language": 0.03533149272494073,
+    "mutual_information_task_response_length_bin": 0.4022274046941984,
+    "mutual_information_language_response_length_bin": 0.04477866104357903,
+    "response_length_bins": 5
+  }
+}

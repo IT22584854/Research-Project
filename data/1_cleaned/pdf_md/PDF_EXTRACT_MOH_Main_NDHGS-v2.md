@@ -1,0 +1,296 @@
+Source PDF: MOH_Main_NDHGS-v2.pdf
+
+<!-- image -->
+
+<!-- image -->
+
+## Executive Summary
+
+The National eHealth Guidelines &amp; Standards were first published in 2016 with the aim of streamlining the implementation of eHealth solutions in the health sector of Sri Lanka. These Guidelines and Standards were intended to be adopted when implementing eHealth solutions in the state and private healthcare institutions in the country.
+
+The new developments in the digital health ecosystem in the country and innovations in the ICT sector demanded reviewing the existing National eHealth Guidelines &amp; Standards (NeGS). Recognizing this need the  National  eHealth  Steering  Committee  appointed  a  Technical  Working  Group  (Technical  Working Group: Digital Health Standards &amp; Interoperability (TWG -DHSI)) to review the NeGS and recommend necessary changes. Meanwhile recognizing the importance of digital health in strengthening primary health care services, the Primary Healthcare Services Strengthening Project (PSSP); included updating the e-health  guidelines  and  standards  as  one  of  the  Disbursement  Linked  Results  (DLR  5.1  Standards  to support the robust development of HMIS platforms and use of electronic HMIS at public health service providers, including with unique individual patient records).
+
+Based on the recommendation of the above TWG, current developments in the field were incorporated in the NeGS and changed its name as 'National Digital Health Guidelines and Standards (NDHGS)' while maintaining the major themes and the structure as of the first version. Following are the main changes that were made in this version of the NDHGS document:
+
+1. A new chapter included;
+- a. Chapter 3 - Digital health software services
+2. New sections and subsections added to the existing chapters
+- a. Sec. 3.2. Electronic Medical Record Systems
+- b. Sec. 3.3. National Electronic Health Record
+- c. Sec. 3.4. Personal Health Record
+- d. Sec. 7.2. Master Patient Index
+- e. Sec. 7.7. Minimal dataset for National Electronic Health Records (NEHR)
+3. Changes were also made to the content of other chapters to improve the relevance and accuracy of the guidelines and the standards, and to address the current needs.
+
+The document lays down standards and guidelines in the following seven areas which are important in adopting ICT in the healthcare sector:
+
+1. Digital Health Architecture -This gives a holistic view of digital health architecture in accordance with the National ICT Architecture and Infrastructure.
+2. Hardware for Digital Health -This chapter prescribes guidelines on the management of hardware for digital health services.
+3. Digital Health Software Services -The chapter is on the management of digital health software, Electronic  Medical  Record  Systems,  National  Electronic  Health  Record,  and  Personal  Health Records.
+4. Network and Connectivity -This emphasizes the importance of having a proper network plan for individual healthcare institutions and maintaining them.
+5. Communication Interface -The importance of having proper website standards, domain name structure, and official email nomenclature is mentioned in this section. This also emphasizes the proper use of emails as this could be used as an official mode of communication.
+6. Privacy, Confidentiality, Security and Medical Ethics -Unlike in many other sectors, the practice of  proper  ethical  standards  and  patient  privacy  bears  the  highest  importance  in  the  field  of healthcare. The importance of ensuring privacy, confidentiality, and information security during the adoption of ICT in the health sector is mentioned in this section.
+7. Digital  Health  Systems  Interoperability -This  chapter  prescribes  guidelines  and  standards  to achieve seamless communication between digital health solutions.
+
+## Table of Contents
+
+| Executive Summary  ........................................................................................................................................ i  List of Abbreviations...................................................................................................................................... v  Introduction ..................................................................................................................................................  1  1.  Architectural Model of the National Digital Health System .................................................................  4  1.1.  The Architectural Model ...............................................................................................................  4  2.  Hardware for Digital Health Services ....................................................................................................  5  2.1.  Management of Hardware for Digital Health Services ................................................................. 5  3.  Digital Health Software Services ...........................................................................................................  7  3.1.  Management of Digital Health Software ......................................................................................  7  3.2.  Electronic Medical Record (EMR) Systems ...................................................................................  9  3.3.  National Electronic Health Record (NEHR) .................................................................................  12  3.4.  Personal Health Record (PHR) ....................................................................................................  13  4.  Network and Connectivity ..................................................................................................................  14  4.1.  Network Architecture .................................................................................................................  14  4.2.  Network Management  ................................................................................................................  14  5.  Communication Interface ...................................................................................................................  15  5.1.  Websites of the State Healthcare Sector  ....................................................................................  15  5.2.  Domains Names for State Healthcare Sector Institutions ..........................................................  15  5.3.  Email  ............................................................................................................................................  16  6.  Privacy, Confidentiality, Security and Medical Ethics .........................................................................  17  6.1.  Medical Ethics .............................................................................................................................  18  6.2.  Privacy and Confidentiality .........................................................................................................  18  6.3.  Security .......................................................................................................................................  19  7.  Digital Health Systems Interoperability ..............................................................................................  21  7.1.  Personal Health Number  .............................................................................................................  21  7.2.  Master Patient Index (MPI)  .........................................................................................................  22  7.3.  Healthcare Facility Registry  .........................................................................................................  23  7.4.  Healthcare Provider Registry ......................................................................................................  24  7.5.  Data Interchange Standards .......................................................................................................  24  7.6.  Standardized Clinical Vocabulary  ................................................................................................  25  7.7.  Minimal Dataset for the National Electronic Health Record (NEHR)  ..........................................  26  Glossary  .......................................................................................................................................................  34  Annexure-I: Standardized Definitions of the Minimal Data set ..................................................................  36  Annexure-II: List of Related Official Documents .........................................................................................  66   |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+## List of Figures
+
+| Figure 1: Architectural Model of the National Digital Health Information System ...................................... 4  List of Tables  Table 1: Essential components of EMR systems and their minimal functionalities ................................... 10  Table 2: Components of the Personal Health Number ...............................................................................  21  Table 3: 'Healthcare recipient demographic data'  - complete dataset ......................................................  26  Table 4: 'Healthcare recipient demographic data'  - minimal dataset ........................................................  27  Table 5: 'Healthcare encounter output' dataset  .........................................................................................  28  Table 6: Complimentary dataset for healthcare  encounter output...........................................................  28  Table 7: 'Laboratory test result' dataset  .....................................................................................................  29  Table 8: 'Imaging examination results' dataset  ..........................................................................................  30  Table 9: ' Medication administration' dataset  ............................................................................................  30  Table 10: 'Procedure' dataset .....................................................................................................................  31  Table 11: 'Medication dispensing' dataset..................................................................................................  31  Table 12: 'Discharge summary' dataset ......................................................................................................  31  Table 13:'Death declaration' dataset ..........................................................................................................  33   |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+## List of Abbreviations
+
+- ADX -
+
+Aggregated Data Exchange
+
+- API -
+
+Application Programming Interfaces
+
+- ATC -
+
+Anatomical Therapeutic Chemical Code
+
+- DICOM -
+
+Digital Imaging and Communications in Medicine
+
+- EHR -
+
+Electronic Health Record
+
+- EIA -
+
+Electronic Industries Association
+
+- eIMMR -
+
+Electronic Indoor Morbidity &amp; Mortality Return
+
+- EMR -
+
+Electronic Medical Record
+
+- FERCSL -
+
+Forum of Ethical Review Committees of Sri Lanka
+
+- GOSL -
+
+Government of Sri Lanka
+
+- GP -
+
+General Practitioner
+
+- HIN -
+
+Health Institution Number
+
+- HIS -
+
+Health Information System
+
+- HIU -
+
+Health Information Unit
+
+- HL7 -
+
+Health Level 7
+
+- HL7-FHIR -
+
+Health Level 7 - Fast Healthcare Interoperability Resources
+
+- ICD -
+
+International Classification of Disease
+
+- ICPC-2 -
+
+International Classification of Primary Care - Release 2
+
+- ICT -
+
+Information Communication Technology
+
+- ICTA -
+
+Information Communication Technology Agency of Sri Lanka
+
+- ID -
+
+Identity
+
+- IEEE -
+
+Institute of Electrical and Electronics Engineers
+
+| - IPR -  Intellectual Property Rights  - ISO -  International Organization for Standardization  - LOINC -  Logical Observation Identifiers Names and Codes  - MPI -  Master Patient Index  - NEHR -  National Electronic Health Record  - NPG -  National Procurement Guidelines  - OPD -  Outpatient Department  - PHR -  Personal Health Record  - P-LAN -  Private Local Area Network  - PHN -  Personal Health Number  - POI -  Point of Issue  - SLCERT -  Sri Lanka Computer Emergency Readiness Team  - SLIN -  Sri Lanka Identification Number  - SLMC -  Sri Lanka Medical Council  - SNOMED -  Systematized Nomenclature of Medicine  - SNOMED-CT -  Systematized Nomenclature of Medicine--Clinical Terms  - TEC -  Technical Evaluation Committee  - TIA -  Telecommunications Industries Association  - TWG - DHSI -  Technical Working Group: Digital Health Standards &amp; Interoperability  - VPN -  Virtual Private Network  - WHO -  World Health Organization   |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+## Introduction
+
+Sri Lanka with a health system that covers all Sri Lankans, has achieved remarkable progress in most of the  health  indicators.  However,  with  the  country  becoming  more  prosperous  and  health  services reaching more citizens, people live longer lives with changes in their lifestyles. This has accelerated the demographic as well as the epidemiological transition leading to an increase in prevalence and the burden of Non-communicable diseases as the major cause of morbidity and mortality in the country. Meanwhile, the country continues to face the burden of some communicable diseases such as Dengue, Tuberculosis, and influenza.
+
+Fifty percent of outpatient treatment, 95% of hospitalizations, and 99% of the preventive care needs of  the  country  are  provided  by  the  state  health  sector.  Therefore,  improving  the  efficiency, effectiveness, and quality of the state healthcare system would benefit most Sri Lankans. Digital Health can play a significant role in improving the efficiency, effectiveness, and quality of state as well as private sector health systems. Identifying the important role of digital health, the Ministry of Health has  published  the National  eHealth  Guidelines  and  Standards  for  Sri  Lanka  in  2016, to  achieve uniformity in the eHealth solutions implemented in Sri Lanka while ensuring quality care and rights of the healthcare recipients.
+
+Further, recent developments and innovations in ICT technologies highlighted the need for revising the currently published National eHealth Guidelines and Standards. Identifying all these requirements, the National  eHealth  Steering  Committee  has  appointed  the  Technical  Working  Group:  Digital  Health Standards  &amp;  Interoperability  (TWG -DHSI).  The  Primary  Healthcare  Services  Strengthening  Project (PPSSP) of the World Bank has also recognized the importance of the National eHealth Guidelines &amp; Standards in the Disbursement Linked Result 5.1 as follows:
+
+'DLR  5.1  will  support  the  MoH  to  update  the  e -health  standards  to  support  the  robust development of HMIS platforms and use of electronic HMIS at public health service providers, including  with  unique  individual  patient  records.  The  standards  may  confirm  the  process  for unique identification of patients, minimum functionality, minimum data fields for personal health records,  standardized data definitions  for  minimum data fields, technology standards for the HMIS, and inter-operability standards to report to and read from other systems. It should include the standard for defining the confidentiality of personal health records.'
+
+Moreover, the COVID19 pandemic that occurred in early 2020, has clearly shown the value of digital health solutions play in  such situations. Digital  Health  Solutions  are  expected  to  transform  the  postCOVID-19 era health systems.
+
+The Technical Working Group on Digital Health Standards &amp; Interoperability (TWG -DHSI) conducted several discussions, and consultative meetings to review the existing National eHealth Guidelines and Standards.  Following  several  rounds  of  discussions,  the  initial  draft  of  the  National  Digital  Health Guidelines and Standards was formulated. This draft was forwarded to the World Bank experts for their review.  Parallelly,  the  draft  was  also  presented  to  a  stakeholder  group  comprising  of  academics, government ICT authorities, and the health authorities. Suggestion and comments of the World Bank experts and the stakeholders were accommodated, and a consensus was reached on the guidelines and standards.  Following are the main changes that were made in this version of the NDHGS document:
+
+1. A new chapter included;
+- a. Chapter 3 - Digital health software services
+2. New sections and subsections added to the existing chapters
+- a. Sec. 3.2. Electronic Medical Record Systems
+- b. Sec. 3.3. National Electronic Health Record
+- c. Sec. 3.4. Personal Health Record
+- d. Sec. 7.2. Master Patient Index
+- e. Sec. 7.7 Minimal dataset for National Electronic Health Records (NEHR)
+3. Changes were also made to the content of other chapters to improve the relevance and accuracy of the guidelines and the standards, and to address the current needs.
+
+Currently, the health information unit of the Ministry of Health is revising the National Digital Health Architecture, and the new architecture will be included in the NDHGS once it is formulated and approved.
+
+The National Digital Health Guidelines and Standards are expected to be adhered to by the state and private sector health institutions and Sri Lankan ICT industry on an opt-in basis. However, adherence to these  guidelines  and  standards  is  a  mandatory  requirement  in  the  software  enlisting  process  of  the Ministry of Health.
+
+The  National  Digital  Health  Guidelines  and  Standards  is  a  living  document  that  will  be  periodically reviewed and updated to be in-line with the current developments in the digital health ecosystem.
+
+In this document, the word 'shall' denote a mandatory requirement while words 'should' , 'may' and the phrase 'it is recommended' denote a non-mandatory requirement. These requirements were made nonmandatory, considering the feasibility issues that may be faced by the implementors of digital health solutions. However, in the future versions of the National Digital Health Guidelines and Standards, these non-mandatory requirements would be made mandatory.
+
+## 1. Architectural Model of the National Digital Health System
+
+## 1.1. The Architectural Model
+
+Figure 1: Architectural Model of the National Digital Health Information System
+
+<!-- image -->
+
+## 2. Hardware for Digital Health Services
+
+## 2.1. Management of Hardware for Digital Health Services
+
+- 2.1.1. The  current  applicable  National  Procurement  Guidelines  (NPG)  shall  be  followed  when purchasing computer hardware.
+- 2.1.2. Any  such  procurement  shall  be  accompanied  by  appropriate  maintenance  and  service agreements.
+- 2.1.3. A representative of the Information and Communication Technology Agency (ICTA) and/or  an  expert  on  Health  Informatics  shall  be  included  in  Technical  Evaluation Committees (TEC) in addition to the minimum requirements on the composition of a TEC specified in NPGs.
+- 2.1.4. When procuring electronic medical equipment, where applicable, it is recommended that the necessary workstations, firmware and/ or software compatible with the equipment are also procured.
+- 2.1.5. When procuring  Information  and  Communication  Technology  (ICT)  hardware,  it  is recommended that the cost of consumables and maintenance is considered.
+- 2.1.6. A hardware inventory containing detailed specifications of all hardware according to the treasury  guidelines  must  be  maintained  at  the  institutional  level  [Treasury  Circular IAI/2002/02].
+- 2.1.7. Service  agreement/s  shall  be  reached  for  maintenance  of  all  equipment,  firmware,  and software that is not covered under warranty conditions.
+- 2.1.8. Service agreement/s for maintenance of equipment shall be reached as per the currently applicable national procurement guidelines.
+
+- 2.1.9. Except in extraordinary situations, that is agreed by the Ministry of Health, a hosting facility/  platform maintained by the competent authority of the Government of Sri Lanka or the Ministry of Health shall be used for the purpose of hosting any central database, application, or middleware.
+
+## 3. Digital Health Software Services
+
+## 3.1. Management of Digital Health Software
+
+- 3.1.1. State Healthcare Sector Digital Health Software list: All digital health systems that are developed, tested, piloted, or implemented in all State Sector Healthcare Institutions shall  be  listed  in  the  Digital  Health  Software List  (previously  eHealth  Software  List) maintained at the Health Information Unit (HIU) of the Ministry of Health. ( Internal Circular No: 02-136/2015 Annexure-II) .
+- 3.1.2. State Healthcare Sector Software shall be aligned with Sri Lanka government National Digital Architecture &amp; Interoperability Standards unless specified in this document.
+- 3.1.3. Government healthcare organizations shall only use appropriately licensed software. Such licensing is applicable for proprietary as well as free and open-source software. All software developed for, implemented in, or used by the Ministry of Health shall clearly define the license.
+- 3.1.4. If donated, vendor lock-in shall be prevented. Life-cycle cost and the benefit shall be evaluated by an independent group appointed by the Ministry of Health.
+- 3.1.5. Acquisition  of  software  including  software  donated  free  of  charge  shall  always  be accompanied by contractual agreements with relevant parties for development, customization, and maintenance.
+- 3.1.6. When the Ministry of Health, Provincial Ministries of Health, or Healthcare Institutions award  a  contract  to  build  software  from  scratch,  the  ownership  of  Intellectual Property Rights (IPR) including the source code of such software lies with the awarding party.
+
+When building software in house Intellectual Property Right (IPR) shall be owned by the Government of Sri Lanka (GOSL).
+
+When accepting software as donations, IPR shall be licensed to GOSL with the necessary rights to modify the source code, except in special circumstances where the donating agency is granted special approval by the National eHealth steering committee.
+
+- 3.1.7. When acquiring software containing third party components, it is necessary to ensure that appropriate licenses are provided for such components.
+- 3.1.8. Piloting  of  Software  Systems:  The  decision  to  implement  a  software  system  or component(s)  of  the  software  shall  be  made  after  piloting  and  shall  be  done  at selected institutions/units followed by proper evaluation of the pilot project. If the pilot involves a third party, the evaluation shall be done independently of the third party.
+- 3.1.9. It is recommended that the competent authority of the Government of Sri Lanka for conducting information system security audits, is engaged throughout the software life cycle.
+- 3.1.10. Security audits shall be performed by the competent authority prior to the piloting or implementation of a digital health software solution.
+- 3.1.11. Agreements/contracts should cover important issues including the following:
+- a. Software Requirement Specifications.
+- b. Source code availability.
+- c. If the software is a unique solution meant for the healthcare institution
+- i. Milestones of the development process and percentage of payments (partial payments) to be made at reaching each milestone.
+- ii. Provisions for flexibility in the specifications during the development process.
+- d. Software documentation including installation and user manuals.
+- e. Provision for modifications and updates to the software.
+- f. Declaration  of  the  developer/s  stating  that  the  software  complies  with existing legislation (of the country).
+
+- g. Handling of critical and non-critical failures.
+- h. Clauses handling dispute situations. This should include preventing remotely disabling features.
+- i. Third-party licenses.
+4. 3.1.12. Clauses that are detrimental to the acquiring entity similar to but not limited to the following should not be included in agreements/contracts:
+- a. Clauses preventing the smooth transition of the healthcare institution to different software from another vendor in the future (i.e. Vender Lock).
+- b. Broad exculpatory clauses that limit or exclude vendor's liability.
+- c. Clauses that prevent or limit the inheritance of the software in an event of a  change  of  ownership  of  the  healthcare  institution  (e.g.  taking  over  a hospital from a Provincial Department of Health by the Ministry of Health).
+
+## 3.2. Electronic Medical Record (EMR) Systems
+
+EMR systems are computer-based information systems that collect, store and display patient encounter information.  EMRs  are  similar  to  digital  versions  of  paper-based  medical  records  and  they  contain personal and clinical information about a patient's clinical encounter/s at a single practice or healthcare institution.
+
+- 3.2.1. All Electronic Medical Record (EMR) Systems shall have the following basic components (at minimum) :
+- Patient registration module
+- Admission discharge and transfer module (ADT module)
+- Clinical module for outpatient department/ clinics/ wards
+- Laboratory module
+- Radiology information system module
+- Pharmacy module
+- Financial module (for relevant instances)
+
+Table 1: Essential components of EMR systems and their minimal functionalities
+
+| Essential  components  Minimum functionality  ADT  Admission/Registration  1.  Patient registration  2.  Issuing of new PHN  3.  Search for patient PHN  4.  Edit/Update patient demographic details  ODP/Clinic registration  1.  Enroll patient to a clinic or OPD consultation  Clinical  1.  Enter patient clinical details  2.  View past visit information  3.  Refer to a different clinic  4.  Request Laboratory tests  5.  View Laboratory test results  6.  Prescribe medicine  Laboratory  1.  View tests requests  2.  Accept samples for testing  3.  Enter test results  4.  Validate and authorized for release  Pharmacy  1.  View list of medicines requested  2.  Accept or reject dispatch of medicine   |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+It is recommended the above modules are ' loosely coupled ' using a 'Microservices Architecture' and communicate through Application Programming Interfaces (API).
+
+- 3.2.2. All  state  health  sector  EMR  systems  shall  use  the PHN  (prescribed in this  document) to uniquely identify patients/ Clients in the system. It  is  recommended  that  EMRs implemented  in  the  private  sector  and  other  sectors  (e.g.  Military  Forces)  use  PHN  to uniquely identify patients within the system.
+
+- 3.2.3. All EMR systems shall use the Health Institution Number (HIN) published by the Ministry of Health to uniquely identify sector healthcare institutions in the system.
+- 3.2.4. All state health sector EMR systems shall be able to seamlessly communicate (through API) with the eIMMR system. It is recommended that all other EMR systems also incorporate the functionality to seamlessly communicate with the eIMMR system.
+- 3.2.5. All EMR systems shall communicate with the National Electronic Health Record (NEHR) and submit the prescribed minimal dataset (see section 7.7)
+- 3.2.6. EMR  systems  should  communicate  with  the  relevant  support  systems  such  as  Human Resources (HR), stock management, etc.
+- 3.2.7. EMR systems should provide  clinical  decision  support,  based  on  the  currently  accepted clinical guidelines issued by competent authorities
+- 3.2.8. EMR systems should provide decision-support dashboards for the hospital administrators to aid their administrative and operational decisions
+- 3.2.9. All EMR systems shall comply with the national information security standards
+- 3.2.10. All EMR systems shall comply with all relevant regulations published by the government of Sri Lanka
+- 3.2.11. All EMR systems should communicate with the National/ Cluster MPIs
+- 3.2.12. It is recommended that EMR systems should comply with the national HL7 FHIR profiling release 4
+
+1. Citizen  Identification  Number/  National  Identity  Card  Number  (NIC)/  Sri Lanka Identification Number
+2. Personal Health Number (PHN)
+3. Legal name
+4. Telecommunication details
+5. Prefixes (e.g.; Mr., Ms., Dr., Prof., Rev., Ven.)
+6. Suffix (e.g.; Thero)
+7. Date of Birth
+8. Gender
+9. Address
+10. The person is active or not
+11. Person's photo
+12. Marital status
+
+## 7.3. Healthcare Facility Registry
+
+- 7.3.1. A registry of Healthcare Institutions is maintained at the HIU and should be referred when necessary.
+- 7.3.2. The registry holds a unique identification number (Health Institution Number (HIN)) for the Institution and other relevant information.
+
+HIN is a 10 character alphanumeric string published by the Health Information Unit of the Ministry of Health.
+
+- 7.3.3. Following are the recommended data elements of the facility registry:
+1. Institution Code
+2. Official Name
+3. Other names (optional)
+4. The abbreviated display name for electronic systems
+5. Name of Institution
+6. RDHS
+7. District
+8. Province
+
+<!-- image -->
+
+| The core data Category/  element  Concept Description  Use of the core information  Recommended  Data type /  Terminology*  Reference to  HL 7 FHIR  Laboratory test result  The result, including findings  and the laboratory's  interpretation, of an  investigation, performed on  specimens collected from an  individual or related to that  individual that may influence  clinical decision-making and  care provision  Use to record the result, including  findings and the laboratory's  interpretation, of an investigation  performed on specimens collected  from an individual or related to  that individual that may influence  clinical decision-making and care  provision  Resource DiagnosticReport  https://www.hl7.org/fhir/di  agnosticreport.html  Date and Time  The date and/or time that  'Overall test status' was issued  Use to record the date and/or  time that 'Overall test status' was  issued  DateTime  DDMMYYYY  DiagnosticReport.effective[  x]  HIN - Health Institution  Number (of the institution  which performs the  laboratory test)  See above  Investigation request  identifier  A local identifier assigned to  the order by the order's  health care institution.  Use to identify encounter and  encounter occurred health care  institution  string  ServiceRequest. identifier  Personal Health Number  (PHN)  See above   |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

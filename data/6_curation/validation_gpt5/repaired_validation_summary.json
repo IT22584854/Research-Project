@@ -1,0 +1,16 @@
+{
+  "input_records": 398,
+  "validator_records_loaded": 398,
+  "merged_records": 398,
+  "missing_records": 0,
+  "malformed_validator_outputs": 0,
+  "verdict_counts": {
+    "VALID": 283,
+    "INVALID": 115
+  },
+  "paths": {
+    "validated_all": "data\\6_curation\\validation_gpt5\\curation_pool_1000_repaired_validated.jsonl",
+    "invalid_only": "data\\6_curation\\validation_gpt5\\curation_pool_1000_repaired_invalid.jsonl",
+    "summary": "data\\6_curation\\validation_gpt5\\repaired_validation_summary.json"
+  }
+}

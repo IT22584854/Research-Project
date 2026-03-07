@@ -1,0 +1,4 @@
+Source URL: https://www.nhsl.health.gov.lk/
+
+Copyright © 2015 National Hospital of Sri Lanka. All Rights Reserved.
+Developed In Association With Information and Communication Technology Agency

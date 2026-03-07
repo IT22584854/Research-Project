@@ -1,0 +1,61 @@
+Doc ID: 1f9fef60ff8bedd9257ef92cda51e166ea71e7f20993eb23dc3fcb087234bc96
+Site: MOH_Main
+Source URL: https://www.health.gov.lk/about-us
+Title: Pre-Historic Medicine in Ceylon
+
+[Home](https://www.health.gov.lk) / About Us 
+Welcome to
+Ministry of Health Sri Lanka
+We pledge to keep people healthy, to offer high-quality care when it is required, and to safeguard the healthcare system for future generations. We guarantee overall responsibility for ensuring that all Sri Lankans have access to excellent, appropriate, cost-effective, and timely health services.
+## Pre-Historic Medicine in Ceylon
+#### Medicine under Sri Lankan kings
+Sri Lanka was known by various people by various names. It has been called Lanka by the ancient Sinhalese, Taprobane by the Greeks, Serendib by the Arabs, Ceilao by the Portuguese, Ceylan by the Dutch and Ceylon by the British. With the promulgation of the new constitution in 1972, the name was officially changed to Sri Lanka. The history of medicine in Sri Lanka has been fashioned over the centuries by a synthesis of several intrinsic and extrinsic factors, some of which were unique to the country. Being an island, Sri Lanka insulated to a large extent from external forces influencing medicine. Disease being as old as mankind, prehistoric man in Sri Lanka would have evolved his own approach to sickness which need not necessarily have invoked the use of herbs and other drugs.
+The history of medicine in Sri Lanka can be divided in to major historical periods in its rule. There are: Ancient Medical Practices, Medicine under Sri Lankan kings, the Portuguese period, the Dutch period. There is hardly any information on the state of medicine in Pre-historic time. It is traditionally believed that Ravana, the prehistoric King of Lanka of Ramayana fame was well-versed in medical lore. Sri Lanka was ruled by its own kings from the inception of its written history until 1815, when the British conquered the Kandyan kingdom. Considerable information on the structure of the medical system that prevailed during this period is available from literary and archaeological sources. The ancient chronicle, the Mahavamsa, is undoubtedly the richest single source of such information. In that time there were several Hospitals. The Portuguese first arrived in Colombo in 1505. Medicine practiced by the Portuguese at the time was not entirely Western, for it had an oriental flavor as well. Some of their medicinal knowledge was derived from the Moors of Spain. That was the Portuguese period in Sri Lanka. This was follwed by the Dutch period. The Dutch completed the capture of the maritime provinces by defeating the long drawn out siege of Colombo in 1656.
+The impact that the Dutch had on the local medicine was only a fraction more than in the case of the Portuguese. They built more hospitals than the Portuguese, and that again was for the purpose of serving their forces, shipping personnel and other Dutch nationals in the country. Hospitals were established in strategic garrison towns, several of which possessed harbours as well. The British captured the maritime provinces from the Dutch in 1796, and annexed the Kandyan kingdom in 1815. They ruled the country till 1948 when Sri Lanka achieved independence. The early phase of British medicine belonged to the military who controlled both the military and civil health institutions. With the creation of a separate Civil Medical Department in 1858, a new phase was born by which medical facilities were provided to the civilian by a department free of military control. The British were very much concerned about the health of the local population. Several Governors, in their addresses to the Legislative Council, indicated their solicitude for the health of the people
+A History of Medical in Sri Lanka
+BY C.G. URAGODA
+Our Vision
+“A healthier nation that contributes to its economic, social, mental and spiritual development.”
+Our Mission
+“To contribute to social and economic development of Sri Lanka by achieving the highest attainable health status through promotive, preventive, curative and rehabilitative services of high quality made available and accessible to people of Sri Lanka.”
+To empower community for maintaining, promoting their health
+To improve comprehensive health services delivery actions
+To strengthen stewardship management functions
+To improve the management of human resources
+Strategic Objectives
+The main objective of the Health Development Master Plan of improving health status and reducing inequalities will be achieved by implementing strategic objectives, These are;
+  1. To provide technical advice in policy formulation, planning and programming on promotion of health through Advocacy, Behavior Change Communication, Social Marketing and Community Mobilization.
+  2. To support various health programmes conducted by the Department of health services and other health related sectors through advocacy, behavior change communication and social mobilization for health actions.
+  3. To promote, support and undertake planning, implementing, monitoring and evaluation of health promotion programmes in different settings.
+  4. To promote health care consciousness among the masses through mass media.
+  5. To assist and develop IEC / BCC materials required for health promotion and behavior change communication
+  6. To develop the capacities of manpower, both within and outside the department of health services in order to act as health promoters and change agents through advocacy, behavior change communication and social mobilization.
+  7. To educate and empower the public on health issues, to enable them to increase control over and promote individual and community health.
+  8. To coordinate with health related governmental, non governmental and international agencies and organization in promoting health of people.
+  9. To develop managerial capacities of health and health related sectors to manage health promotive programmes
+  10. To monitor and evaluate health promotive programmes and facilitate monitoring and evaluation of them at different levels.
+  11. To support and undertake research related to Behavior change of the community and social mobilization.
+
+
+#### **Overview of Sri Lankan Health Sector**
+We work in collaboration with the government, non governmental organizations , private healthcare providers ,international agencies and other relevant bodies, to prevent and treat illness and enhance the health status of the Sri Lankan population. We enable facilities to give scientific facts and professional advice to help design policies and practices that will lead to a healthier nation. Our public health system consists of a network of institutions all around the country, including both curative and preventive institutions.
+We are in charge of assisting and advising to design and implement policies that achieve the government’s goals. We take responsibility for acting as guardians of the health and care framework: we ensure that the legislative, financial, administrative, and policy frameworks are functional and work together.
+The Sri Lankan health system comprises western allopathic and other traditional systems, where western allopathic system serves the majority of the population.
+Government health services commenced with the initiation of a civil medical department in 1858. Currently curative services are provided by a network of tertiary- and secondary-care institutions, divisional hospitals (outpatient and inward care) and primary medical care units offering outpatient care.
+Curative care encompasses different levels, ranging from outpatient-only facilities and primary care institutions to tertiary-care institutions and specialized hospitals organized into a hierarchical network. They provide a comprehensive range of health care services.
+In 1926, the preventive services were reorganized with the creation of the health unit system. The medical officer of health (MOH) and his team provide preventive services through health units that cover the whole island.
+Preventive healthcare is provided through 354 geographically defined areas (MOH) covering the whole island. Each area is served by a medical officer of health(MOH) and a team of community-based professionals who provide a well defined package of preventive services. All state provided services are free of charge at the point of delivery, including medicines and laboratory facilities.
+In addition, separate service facilities are available for the armed forces, police and prisons.
+Sri Lanka had achieved a relatively high standard of health. An effective maternal and child health (MCH)- care system has produced a significant gains in terms of infant mortality rate (IMR), neonatal mortality rate (NMR), under-5 mortality rate (U5MR) and maternal mortality ratio (MMR), but the rate of decline has slowed during the past decade. The country has eradicated polio, neonatal tetanus, and eliminated malaria, filariasis and measles, and has achieved near elimination of other diseases covered by the Expanded Programme on Immunization (EPI).
+Majority of hospitalized health is provided by the state sector ( 95%) and half of the outpatient care is provided by the private sector.
+Our priorities include, improving healthcare outcomes by providing high-quality, sustainable care at the right time and place, and improving infrastructure and transforming technology.
+Health Policy
+[Read More >>](http://www.health.gov.lk/moh-pages/health-policy/)
+Health Master Plan
+[Read More >>](http://www.health.gov.lk/moh-pages/health-master-plan/)
+Health Strategic Plan
+[Read More >>](http://www.health.gov.lk/moh-pages/health-strategic-plan/)
+Annual Health Bulletin
+[Read More >>](http://www.health.gov.lk/annual-health-bulletin/)
+Performance & Progress Report
+[Read More >>](http://www.health.gov.lk/moh-pages/performance-progress-report/)

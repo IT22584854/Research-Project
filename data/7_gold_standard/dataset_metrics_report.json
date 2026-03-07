@@ -1,0 +1,288 @@
+{
+  "train_original_final": {
+    "file": "D:\\SL_Medical_Corpus\\data\\4_instruction\\regen_work\\train_FINAL_no_crawl_regenfixed.jsonl",
+    "records": 4881,
+    "assistant_turns": 9762,
+    "doc_ids": 842,
+    "refusal_turns": 2323,
+    "true_refusal_turns": 833,
+    "suspicious_refusal_turns": 1490,
+    "records_with_any_refusal": 1690,
+    "records_with_suspicious_refusal": 1191,
+    "garbage_assistant_turns": 1,
+    "refusal_rate_turns_pct": 23.8,
+    "true_refusal_rate_of_refusals_pct": 35.86,
+    "suspicious_refusal_rate_of_refusals_pct": 64.14,
+    "affected_records_rate_pct": 34.62,
+    "avg_context_words": 155.58,
+    "lang_counter": {
+      "ta": 1288,
+      "en": 2309,
+      "si": 1284
+    },
+    "style_counter": {
+      "tamilish": 1203,
+      "singlish": 1230,
+      "mixed": 1185,
+      "plain": 1263
+    },
+    "task_counter": {
+      "mixed_language_qa": 643,
+      "bullet_points": 700,
+      "extractive_qa": 715,
+      "short_answer_qa": 727,
+      "rewrite_patient_friendly": 713,
+      "summarize": 721,
+      "classify_doc_type": 662
+    },
+    "lang_style_counter": {
+      "ta|tamilish": 299,
+      "en|singlish": 559,
+      "en|mixed": 548,
+      "en|tamilish": 599,
+      "si|singlish": 330,
+      "ta|mixed": 331,
+      "si|mixed": 306,
+      "en|plain": 603,
+      "ta|plain": 317,
+      "ta|singlish": 341,
+      "si|plain": 343,
+      "si|tamilish": 305
+    }
+  },
+  "train_clean": {
+    "file": "D:\\SL_Medical_Corpus\\data\\4_instruction\\regen_work\\train_FINAL_CLEAN_KEEP_TRUE_REFUSALS.jsonl",
+    "records": 3690,
+    "assistant_turns": 7380,
+    "doc_ids": 841,
+    "refusal_turns": 833,
+    "true_refusal_turns": 833,
+    "suspicious_refusal_turns": 0,
+    "records_with_any_refusal": 499,
+    "records_with_suspicious_refusal": 0,
+    "garbage_assistant_turns": 1,
+    "refusal_rate_turns_pct": 11.29,
+    "true_refusal_rate_of_refusals_pct": 100.0,
+    "suspicious_refusal_rate_of_refusals_pct": 0.0,
+    "affected_records_rate_pct": 13.52,
+    "avg_context_words": 138.03,
+    "lang_counter": {
+      "ta": 1018,
+      "en": 1724,
+      "si": 948
+    },
+    "style_counter": {
+      "tamilish": 870,
+      "singlish": 937,
+      "mixed": 901,
+      "plain": 982
+    },
+    "task_counter": {
+      "mixed_language_qa": 477,
+      "bullet_points": 530,
+      "extractive_qa": 648,
+      "short_answer_qa": 564,
+      "rewrite_patient_friendly": 662,
+      "summarize": 606,
+      "classify_doc_type": 203
+    },
+    "lang_style_counter": {
+      "ta|tamilish": 228,
+      "en|singlish": 422,
+      "en|mixed": 418,
+      "en|tamilish": 422,
+      "si|singlish": 234,
+      "ta|mixed": 253,
+      "si|mixed": 230,
+      "en|plain": 462,
+      "ta|plain": 256,
+      "ta|singlish": 281,
+      "si|plain": 264,
+      "si|tamilish": 220
+    }
+  },
+  "eval_clean": {
+    "file": "D:\\SL_Medical_Corpus\\data\\4_instruction\\eval_CLEAN_KEEP_TRUE_REFUSALS.jsonl",
+    "records": 195,
+    "assistant_turns": 390,
+    "doc_ids": 50,
+    "refusal_turns": 16,
+    "true_refusal_turns": 16,
+    "suspicious_refusal_turns": 0,
+    "records_with_any_refusal": 9,
+    "records_with_suspicious_refusal": 0,
+    "garbage_assistant_turns": 0,
+    "refusal_rate_turns_pct": 4.1,
+    "true_refusal_rate_of_refusals_pct": 100.0,
+    "suspicious_refusal_rate_of_refusals_pct": 0.0,
+    "affected_records_rate_pct": 4.62,
+    "avg_context_words": 135.62,
+    "lang_counter": {
+      "ta": 37,
+      "si": 44,
+      "en": 114
+    },
+    "style_counter": {
+      "plain": 52,
+      "singlish": 52,
+      "tamilish": 48,
+      "mixed": 43
+    },
+    "task_counter": {
+      "extractive_qa": 42,
+      "classify_doc_type": 16,
+      "bullet_points": 33,
+      "mixed_language_qa": 24,
+      "rewrite_patient_friendly": 23,
+      "summarize": 32,
+      "short_answer_qa": 25
+    },
+    "lang_style_counter": {
+      "ta|plain": 7,
+      "si|plain": 12,
+      "ta|singlish": 9,
+      "ta|tamilish": 12,
+      "en|mixed": 23,
+      "en|tamilish": 28,
+      "ta|mixed": 9,
+      "si|tamilish": 8,
+      "en|singlish": 30,
+      "en|plain": 33,
+      "si|mixed": 11,
+      "si|singlish": 13
+    }
+  },
+  "gold_train": {
+    "file": "D:\\SL_Medical_Corpus\\data\\7_gold_standard\\gold_train_DOC_DISJOINT.jsonl",
+    "records": 204,
+    "assistant_turns": 408,
+    "doc_ids": 7,
+    "refusal_turns": 0,
+    "true_refusal_turns": 0,
+    "suspicious_refusal_turns": 0,
+    "records_with_any_refusal": 0,
+    "records_with_suspicious_refusal": 0,
+    "garbage_assistant_turns": 0,
+    "refusal_rate_turns_pct": 0.0,
+    "true_refusal_rate_of_refusals_pct": 0.0,
+    "suspicious_refusal_rate_of_refusals_pct": 0.0,
+    "affected_records_rate_pct": 0.0,
+    "avg_context_words": 157.71,
+    "lang_counter": {
+      "en": 68,
+      "si": 68,
+      "ta": 68
+    },
+    "style_counter": {
+      "plain": 102,
+      "singlish": 34,
+      "tamilish": 34,
+      "mixed": 34
+    },
+    "task_counter": {
+      "classify_doc_type": 18,
+      "short_answer_qa": 162,
+      "bullet_points": 18,
+      "summarize": 6
+    },
+    "lang_style_counter": {
+      "en|plain": 34,
+      "si|plain": 34,
+      "ta|plain": 34,
+      "si|singlish": 34,
+      "ta|tamilish": 34,
+      "en|mixed": 34
+    }
+  },
+  "gold_eval": {
+    "file": "D:\\SL_Medical_Corpus\\data\\7_gold_standard\\gold_eval_DOC_DISJOINT.jsonl",
+    "records": 96,
+    "assistant_turns": 192,
+    "doc_ids": 10,
+    "refusal_turns": 9,
+    "true_refusal_turns": 9,
+    "suspicious_refusal_turns": 0,
+    "records_with_any_refusal": 9,
+    "records_with_suspicious_refusal": 0,
+    "garbage_assistant_turns": 0,
+    "refusal_rate_turns_pct": 4.69,
+    "true_refusal_rate_of_refusals_pct": 100.0,
+    "suspicious_refusal_rate_of_refusals_pct": 0.0,
+    "affected_records_rate_pct": 9.38,
+    "avg_context_words": 50.5,
+    "lang_counter": {
+      "en": 32,
+      "si": 32,
+      "ta": 32
+    },
+    "style_counter": {
+      "plain": 48,
+      "singlish": 16,
+      "tamilish": 16,
+      "mixed": 16
+    },
+    "task_counter": {
+      "short_answer_qa": 90,
+      "bullet_points": 6
+    },
+    "lang_style_counter": {
+      "en|plain": 16,
+      "si|plain": 16,
+      "ta|plain": 16,
+      "si|singlish": 16,
+      "ta|tamilish": 16,
+      "en|mixed": 16
+    }
+  },
+  "train_plus_gold": {
+    "file": "D:\\SL_Medical_Corpus\\data\\4_instruction\\regen_work\\TRAIN_CLEAN_PLUS_GOLD.jsonl",
+    "records": 3894,
+    "assistant_turns": 7788,
+    "doc_ids": 842,
+    "refusal_turns": 833,
+    "true_refusal_turns": 833,
+    "suspicious_refusal_turns": 0,
+    "records_with_any_refusal": 499,
+    "records_with_suspicious_refusal": 0,
+    "garbage_assistant_turns": 1,
+    "refusal_rate_turns_pct": 10.7,
+    "true_refusal_rate_of_refusals_pct": 100.0,
+    "suspicious_refusal_rate_of_refusals_pct": 0.0,
+    "affected_records_rate_pct": 12.81,
+    "avg_context_words": 139.06,
+    "lang_counter": {
+      "ta": 1086,
+      "en": 1792,
+      "si": 1016
+    },
+    "style_counter": {
+      "tamilish": 904,
+      "singlish": 971,
+      "mixed": 935,
+      "plain": 1084
+    },
+    "task_counter": {
+      "mixed_language_qa": 477,
+      "bullet_points": 548,
+      "extractive_qa": 648,
+      "short_answer_qa": 726,
+      "rewrite_patient_friendly": 662,
+      "summarize": 612,
+      "classify_doc_type": 221
+    },
+    "lang_style_counter": {
+      "ta|tamilish": 262,
+      "en|singlish": 422,
+      "en|mixed": 452,
+      "en|tamilish": 422,
+      "si|singlish": 268,
+      "ta|mixed": 253,
+      "si|mixed": 230,
+      "en|plain": 496,
+      "ta|plain": 290,
+      "ta|singlish": 281,
+      "si|plain": 298,
+      "si|tamilish": 220
+    }
+  }
+}

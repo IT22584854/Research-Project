@@ -1,0 +1,98 @@
+Source PDF: EPID_Reports_en_66433b57bd1c3_Vol_51_no_16-english.pdf
+
+<!-- image -->
+
+ER
+
+<!-- image -->
+
+## WEEKLY EPIDEMIOLOGICAL REPORT
+
+## A publication of the Epidemiology Unit Ministry of Health
+
+231, de Saram Place, Colombo 01000, Sri Lanka Tele: + 94 11 2695112, Fax: +94 11 2696583, E mail: [REDACTED_EMAIL] Epidemiologist: +94 11 2681548, E mail: [REDACTED_EMAIL] Web: http://www.epid.gov.lk
+
+th  - 19 th  Apr 2024
+
+Vol. 51 No. 16                                                                              13
+
+Understanding the factors that may contribute to deaths from leptospirosis in Sri Lanka: Analysis of the 2023 mortality data
+
+This  is  the  first  article  of  two  in  a  series  on 'Understanding  the  factors  that  may  contribute to deaths from leptospirosis in Sri Lanka: Analysis of the 2023 mortality data'
+
+Leptospirosis, a spirochetal zoonosis, occurs in diverse epidemiological settings and affects vulnerable  populations.  Leptospirosis  is  a  lifethreatening  disease  for  risk  individuals  and  an important cause of pulmonary haemorrhage syndrome,  it  was  estimated  to  cause  1.03  million cases and 58,900 deaths each year[1]. These estimates place leptospirosis as a leading zoonotic cause of morbidity and mortality. Additionally,  morbidity  and  mortality  are  greatest in  the  poorest  regions  of  the  world  and  Sri Lanka is considered a hot spot for leptospirosis, with an annual incidence of 2 per 100,000 population and 203 deaths in 2023.
+
+Successfully controlling leptospirosis hinges on key  steps:  clinicians  must  promptly  consider  it in the diagnoses and alert public health authorities; accurate reporting aids in understanding the disease  burden  and  guiding  prevention  efforts. High-risk  groups  should  be  educated  regarding prevention. Laboratory confirmation, ideally via MAT or PCR, and collaborative outbreak investigations  are  essential.  Institutions  must  report suspected deaths for a thorough investigation by the  preventive  health  staff.  Awareness  should extend  beyond  traditional  exposures  to  include recreational activities, particularly post-disaster. Community education  is  vital,  empowering  individuals to recognize symptoms early, mitigate risks, and reduce illness severity. Understanding the  pattern  of  mortality  due  to  leptospirosis  is crucial  for  developing  effective  prevention  and intervention strategies. By gaining insights into how  and  why  people  succumb  to  the  disease, healthcare professionals can implement targeted measures to reduce deaths[2].
+
+## Trend of Leptospirosis Deaths in Sri Lanka
+
+<!-- image -->
+
+The  spike  in  number  of  leptospirosis  deaths recorded  in  2023,  the  most  significant  since 2008,  can  be  linked  to  several  factors.  These include the surge in agricultural activities due to the economic crises in Sri Lanka, as well as the shifting climate with increased rainfall. Moreover,  advancements  in  laboratory  facilities  and improved surveillance  likely  play  a  role  in  detecting  and  reporting  cases  more  effectively, revealing  previously  overlooked  instances.  Additionally,  a  lack  of  public  awareness,  along with the emergence of antibiotic-resistant strains, may further exacerbate the issue.
+
+| ## Contents  Page  1.  Understanding the factors that may contribute to deaths from leptospirosis in Sri Lanka:  Analysis of the 2023 mortality data  2.  Summary of selected notifiable diseases reported (06 th  - 12 th   April 2024)  3.  Surveillance of vaccine preventable diseases &amp; AFP (06 th  - 12 th   April 2024)  1  3  4   |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+While the Ministry of Health offers free Doxycycline prophylaxis  to  paddy  farmers,  there  are  concerns  regarding  compliance. It is essential to enhance the distribution of Doxycycline to farmers, ensuring consistent supply and reaching out effectively to high-risk groups.
+
+Addressing these challenges demands collaborative efforts to enhance sanitation, healthcare accessibility, public education, and improved surveillance systems,  with particular emphasis on expanding laboratory facilities and bolstering surveillance activities  to  effectively  mitigate  the  impact  of  Leptospirosis and reduce mortality rates.
+
+However, the data from 2008 to 2023 shows fluctuating case fatality  rates  (CFR)  for  leptospirosis  in  Sri  Lanka,  with  rates ranging from a high of 2.9% in 2009 to a low of 1.2% in 2020 and  2021.  However,  the  noticeable  increase  to  2%  in  2023, with  leptospirosis-related  deaths  totalling  203,  is  concerning and may require further investigation. Possible reasons for the rise in CFR include increased death surveillance and reporting post-COVID-19, as well as challenges in patient management due  to  the  complications  of  the  infection,  insufficient  ICU facilities, and health administration challenges when transferring patients for further management e.g., plasma paresis, dialysis. Analyzing data from institutional death reviews can help identify delays in treatment-seeking by the patients, resource shortages, and systemic issues, enabling targeted interventions to address these challenges and reduce CFRs.
+
+## Compiled by:
+
+Dr.W.D.J K.Amarasena Senior  Registrar  in  Community  Medicine,  Epidemiology
+
+Unit
+
+Dr.Thushani Dabrera Consultant Community Physician, Epidemiology Unit
+
+## References:
+
+- [1] F. Costa et al. , ' Global Morbidity and Mortality of Leptospirosis: A Systematic Review, ' PLoS Negl. Trop. Dis. , vol. 9, no. 9, pp. 0 -1, 2015, doi: 10.1371/ journal.pntd.0003898.
+- [2] N. &amp; I. M. Epidemiology Unit Ministry of Health, ' WEEKLY EPIDEMIOLOGICAL REPORT Vol. 50 No. 19,' no. May, pp. 1 -4, 2013, [Online]. Available: http://www.epid.gov.lk
+
+| Table 1 : Water Quality Surveillance Number of microbiological water samples  March 2024  District  MOH areas  No: Expected *  No: Received  Colombo  15  90  9  Gampaha  15  90  45  Kalutara  12  72  68  Kalutara  NIHS  2  12  31  Kandy  23  138  16  Matale  13  78  0  Nuwara Eliya  13  78  50  Galle  20  120  223  Matara  17  102  81  Hambantota  12  72  34  Jaffna  12  72  NR  Kilinochchi  4  24  21  Mannar  5  30  0  Vavuniya  4  24  56  Mullatvu  5  30  18  Batticaloa  14  84  0  Ampara  7  42  NR  Trincomalee  11  66  NR  Kurunegala  29  174  62  Puttalam  13  78  NR  Anuradhapura  19  114  0  Polonnaruwa  7  42  1  Badulla  16  96  0  Moneragala  11  66  0  Rathnapura  18  108  NR  Kegalle  11  66  2  Kalmunai  13  78  0  * No of samples expected  (6 / MOH area / Month)  NR  = Return not received   |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+Table 1:  Selected notifiable diseases reported by Medical Officers of Health  06 th -  12 th   Apr 2024  (15 th   Week)
+
+| RDHS  Dengue Fever  Dysentery  Encephalitis  En. Fever  F. Poisoning  Leptospirosis  Typhus F.  Viral  Hep.  H. Rabiies  Chickenpox  Meningitis  Leishmania-  WRCD  Tuberculosis  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  T*  C**  Colombo  68  4215  0  5  0  3  5  23  0  4  1  142  1  6  1  4  0  0  6  148  0  12  0  0  26  623  58  100  Gampaha  46  1812  0  7  0  4  0  3  0  1  1  201  0  2  0  1  0  0  3  99  1  35  2  8  23  360  27  100  Kalutara  35  1208  0  11  0  1  1  16  0  5  10  236  1  5  0  5  0  0  18  221  2  25  0  0  3  199  33  100  Kandy  44  1608  1  6  0  0  1  4  0  3  3  91  0  9  0  4  0  0  4  189  1  5  0  16  37  212  87  100  Matale  6  313  0  1  0  0  0  1  0  8  0  41  0  1  0  4  0  0  0  31  0  5  0  82  3  40  38  100  Nuwara Eliya  1  173  1  28  0  3  0  3  11  127  1  73  0  16  0  3  0  0  2  69  0  3  0  0  7  90  100  100  Galle  18  1011  0  17  0  7  2  5  2  21  6  275  2  45  1  5  0  1  14  223  3  28  0  3  8  141  20  100  Hambantota  10  428  0  8  0  1  2  3  1  33  1  238  2  16  0  2  0  0  2  104  0  12  4  166  0  38  17  100  Matara  11  371  0  2  0  3  0  2  0  4  7  117  1  8  0  2  0  0  9  114  0  38  1  31  1  34  12  100  Jaffna  42  4852  1  25  0  1  0  3  0  15  0  12  2  345  0  3  0  1  5  100  0  6  0  0  6  72  64  93  Kilinochchi  3  264  0  2  0  0  0  2  0  1  0  12  0  7  0  0  0  0  2  4  1  3  0  0  0  7  100  100  Mannar  2  172  0  0  0  0  0  1  0  0  0  16  0  6  0  0  0  0  0  4  1  3  0  1  0  22  20  100  Vavuniya  0  125  0  0  0  0  0  0  0  5  2  54  0  2  0  4  0  0  2  14  0  6  0  5  0  7  50  100  Mullaitivu  2  174  1  4  0  0  0  0  0  2  0  47  1  10  0  0  0  0  0  2  0  0  0  4  0  11  50  100  Batticaloa  20  1018  3  51  0  5  0  4  0  12  1  24  0  1  0  6  0  0  5  38  0  19  0  1  2  38  57  100  Ampara  2  138  0  14  0  1  0  0  1  8  2  105  0  1  0  3  0  0  1  51  0  19  0  6  0  68  29  100  Trincomalee  9  405  0  8  0  0  0  1  0  1  2  89  0  9  0  0  0  0  1  22  0  3  0  8  0  18  25  100  Kurunegala  6  1191  1  11  0  11  0  0  0  339  5  238  0  15  0  2  0  2  4  151  1  77  12  168  11  163  8  96  Puttalam  8  601  0  1  0  1  0  3  0  0  0  121  0  5  0  0  0  0  0  50  1  17  0  8  3  61  15  100  Anuradhapura  5  470  0  4  0  2  0  0  0  3  6  191  0  22  0  6  0  0  2  71  0  18  13  265  4  81  43  100  Polonnaruwa  4  182  1  9  0  0  0  1  0  2  2  117  0  1  0  2  0  0  4  61  0  12  2  155  0  27  33  100  Badulla  3  484  0  9  0  3  0  0  0  16  3  210  0  9  0  7  0  0  5  98  0  10  1  10  2  66  50  100  Monaragala  12  362  0  5  0  1  0  1  34  68  9  402  1  14  0  7  0  0  2  37  2  41  3  77  2  31  36  100  Ratnapura  39  896  0  30  1  3  0  2  1  4  17  559  0  10  0  11  0  2  6  105  4  47  0  63  1  64  25  100  Kegalle  25  933  0  3  1  4  2  5  0  3  7  218  0  8  0  5  0  0  11  255  2  23  0  12  6  100  36  100  Kalmunai  6  498  0  9  0  0  0  0  0  2  0  34  0  1  0  1  0  0  1  69  0  6  0  0  1  43  0  100  SRILANKA  427  23904  9  270  2  54  13  83  15  687  86  3863  11  574  2  87  0  6  109  2330  19  473  38  1089  146  2616  40  99   |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+Table 2: Vaccine-Preventable Diseases  &amp;  AFP                                     06 th -  12 th   Apr 2024 (15 th   Week)
+
+| Disease  No. of Cases  by Province  Number of  cases  during  current  week in  2024  Number of  cases  during  same  week in  2023  Total  number of  cases to  date in  2024  Total num-  ber of cases  to date in  2023  Difference  between the  number of  cases to date  in 2024 &amp; 2023  W  C  S  N  E  NW  NC  U  Sab  AFP*  00  01  00  00  00  00  00  01  00  02  00  28  24  16.6 %  Diphtheria  00  00  00  00  00  00  00  00  00  00  00  00  00  0 %  Mumps  01  00  00  00  00  00  00  00  01  02  05  80  68  17.6 %  Measles  02  00  00  01  00  01  00  00  00  04  00  186  00  0 %  Rubella  00  00  00  00  00  00  00  00  00  00  00  01  01  0 %  CRS**  00  00  00  00  00  00  00  00  00  00  00  00  00  0 %  Tetanus  01  00  00  00  00  00  00  00  00  01  00  02  01  100 %  Neonatal Tetanus  00  00  00  00  00  00  00  00  00  00  00  00  00  0 %  Japanese Enceph-  alitis  00  00  00  00  00  00  00  00  00  00  00  01  02  -50 %  Whooping Cough  01  00  00  00  00  00  00  00  00  00  00  02  03  -33.3 %   |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+## Key to Table 1 &amp; 2
+
+Provinces:               W
+
+: Western, C : Central, S : Southern, N : North, E :  East, NC : North Central, NW : North Western, U : Uva, Sab : Sabaragamuwa.
+
+RDHS Divisions:    CB
+
+: Colombo, GM : Gampaha, KL : Kalutara, KD : Kandy, ML : Matale, NE : Nuwara Eliya, GL : Galle, HB : Hambantota, MT : Matara, JF : Jaffna,
+
+KN : Killinochchi, MN : Mannar, VA : Vavuniya, MU : Mullaitivu, BT : Batticaloa, AM : Ampara, TR : Trincomalee, KM : Kalmunai, KR : Kurunegala, PU : Puttalam,
+
+AP : Anuradhapura, PO : Polonnaruwa, BD : Badulla, MO : Moneragala, RP : Ratnapura, KG : Kegalle.
+
+## Data Sources:
+
+Weekly Return of Communicable Diseases: Diphtheria, Measles, Tetanus, Neonatal Tetanus, Whooping Cough, Chickenpox, Meningitis, Mumps., Rubella, CRS, Special Surveillance:  AFP* ( Acute Flaccid Paralysis ), Japanese Encephalitis
+
+CRS** = Congenital Rubella Syndrome
+
+NA = Not Available
+
+Take prophylaxis medications for leptospirosis during the paddy cultivation and harvesting seasons.
+
+It is provided free by the MOH office / Public Health Inspectors.
+
+Comments and contributions for publication in the WER Sri Lanka are welcome. However, the editor reserves the right to accept or reject items for publication. All correspondence should be mailed to The Editor, WER Sri Lanka, Epidemiological  Unit, P.O. Box 1567, Colombo or sent by E-mail to [REDACTED_EMAIL].  Prior  approval  should  be  obtained  from  the  Epidemiology  Unit  before  publishing data in this publication
+
+## ON STATE SERVICE
+
+Dr. Samitha Ginige Actg. CHIEF EPIDEMIOLOGIST EPIDEMIOLOGY UNIT 231, DE SARAM PLACE COLOMBO 10

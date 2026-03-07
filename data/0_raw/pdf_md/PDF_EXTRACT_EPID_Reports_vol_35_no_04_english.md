@@ -1,0 +1,110 @@
+Source PDF: EPID_Reports_vol_35_no_04_english.pdf
+
+<!-- image -->
+
+## WEEKLY EPIDEMIOLOGICAL REPORT
+
+A publication of the Epidemiological Unit,
+
+## Ministry of Healthcare &amp;  Nutrition
+
+231, de Saram Place,Colombo 01000, Sri Lanka. Tele:(+94-011)2695112/681548/4740490/4740492,E-Mail:epidunit@sltnet.lk
+
+Epidemiologist:(+94-011) 4740491,E-mail:chepid@sltnet.lk, Web: www.epid.gov.lk
+
+Vol. 35 No. 4                                               19
+
+th -25 th   January 2008
+
+## Surveillance of  Rotavirus diarrhoea in Sri Lanka
+
+South Asia remains a high risk area in terms of morbidity and mortality due to rota virus diarrhoea,      and  is  a      prime  target  for  intervention  .This  is  associated  with  the  dense  population, low socio economic status of the majority of people and prevailing unsanitary conditions. More than 50 percent of deaths due to rota virus occur in the Asian continent. Six out of 10 countries  with  the  highest  number  of  deaths  due  to rota virus are located within Asia. Therefore, in terms  of  reduction  of  the  burden  of  rota  virus disease and deaths, Asia is a key centre of action. Keeping  this  in  mind,  Asian  Rotavirus  Surveillance Network (ARSN) was initiated to establish foundation of epidemiological   data and facilitate exchange  of  expertise  with  a  view  to  helping decision  making  regarding  prevention  of  rota virus diarrhoea.  Primary prevention of the disease  through  vaccination  has  been  promoted  as the key tool in this regard.
+
+Secular trend analysis of diarrhoeal diseases morbidity  and  mortality  in  Sri  Lanka  indicates that there has been a dramatic reduction in diarrhoea specific mortality and case fatality ratio in Sri  Lanka  over  the  years.  This  is  attributed  to the  improvement  of  case  management,  use  of Oral  Rehydration  Solution  (ORS)  to  prevent dehydration and improved health seeking behaviour  of  the  population.  Despite  the  above  mentioned  achievements  in  terms  of  reduction  of diarrhoea associated deaths, proportionately diarrhoea  specific  morbidity  rate  has  not  declined.  Diarrhoea  specific  morbidity  rate has remained high and static over the last two decades.  The admission rates to government hospitals  for  diarrhoea  were  in  the  range  of  676.1-
+
+961.3 per 100000 admissions during this period. Moreover,  according  to Mortality  Data,  diarrhoeal  disease  is  the  sixth leading  cause  of  hospitalisation  in  Sri  Lanka. Thus, it is quite obvious that diarrhoeal diseases continue  to  be  a  public  health  problem  in  the country.  With  looming  unplanned  urbanisation resulting in deteriorating sanitary conditions, it is assumed that this trend will continue    to be a challenge  for  public  health  practitioners  in  Sri Lanka.
+
+It is quite certain that policy makers, and public health  practitioners  will  have  to  address  this issue in the future in a setting where many communicable  diseases  including      traditional,  vaccine  preventable  diseases  have  been  contained. Immunisation against Rota virus will be one of the measures in a multiple intervention package to  address  control  of  diarrhoeal  diseases.  This will be a reality rather than a dream as there is a global  movement  to  advocate  for  introducing benefits of   vaccines offered to children in developed  countries  to  children  in  developing  countries. International agencies  such as the World Health  organisation  ,  Global  Alliance  for  Vaccines  and  Immunisations  (GAVI)  and  the  Children's  Vaccine  programme  of  the  Program  for Appropriate Technology in Health (PATH) have identified the accelerated development and introduction  of  rotavirus  vaccines  as  a  priority. Several new safe and  effective ,live oral  vaccine candidates  are already available while others are being field tested. Sri Lanka is in a unique position  to  consider  these  vaccine  options,  if  necessary,    in    the  future    as  our  mature    EPI  has achieved  universal  coverage  for  basic  antigens and experts have already looked into the
+
+| ## Contents  Page  - 1.Leading Article - Surveillance of Rotavirus diarrhoea in Sri Lanka  2. Surveillance of vaccine preventable diseases &amp; AFP (12 th -18 th Jan 2008)  3. Summary of newly introduced notifiable diseases ( 12 th  -18 th  Jan 2008 )  4. Laboratory surveillance of dengue fever ( 12 th  -18 th  Jan 2008  )  5. Summary of selected notifiable diseases reported ( 12 th  -18 th  Jan 2008 )  1  3  3  3  4   |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+possibility  of  introducing  new  vaccines  and  the  financial sustainability of their introduction in the country. Sri Lanka needs evidence of the burden of  the rotavirus diarrhoea , cost of the disease burden and cost effectiveness data on the  rotavirus vaccine  before making a policy decision on introduction of  rota  vaccine.    However,  there  is  a  paucity  of  data  on  the disease in the country.  Though it is obvious that diarrhoeal diseases continue to be a public health problem, the proportion of rotavirus diarrhoea among them is not known, nor  is the  local  epidemiology  of  rotavirus  diarrhoea.  With  the  exception of a handful of cases, diagnosis of  rota virus is rarely made. On the other hand ,as diarrhoea is managed with ORS regardless of the cause , diagnosis may not be required . As a result,  no  specific  preventive  and  control    measures  against rotavirus  are  carried  out.  Thus,  if  we  are  to  consider  new vaccine  options  such  as  Rota  vaccine,  initiation  of  surveillance  to determine the local epidemiology of the disease and disease burden  is paramount. Understanding the  importance of bridging the existing gap in data pertaining to rota virus diarrhoea,  Epidemiology Unit of  the  Ministry  of  Health    in collaboration  with  the  International  Vaccine  Institute  (IVI) has  initiated  Rota  Virus  surveillance  activities  at  the  Lady Ridgeway Hospital in 2005.
+
+The objectives of surveillance were to describe the local  epidemiology of Rota viral diarrhoea among children under five years of age admitting  to the LRH with diarrhoea. This includes  determination  of    the  proportion  of  rota  virus  diarrhoea  among  diarrhoeal  cases    and  determination  of  serotypes. Rotavirus strain surveillance  is important, in a setting like  ours  where  vaccine  has  not  been  introduced,  to    determine prevalent serotypes and  to see if rare sero- types are present.  After  the  introduction  of  vaccine,  surveillance  will indicate  the  impact  of  the  vaccine  on  changes  in  serotypes, emergence  of  new  sero  types,  circulation  of  vaccine  strains among children, breakthrough strains that appear and re assorted  vaccine and wild virus strains .
+
+At the LRH,  stool samples were collected as a part of ongoing survey from all inpatient, under five children   hospitalised for diarrhoeal episodes during a period of 24 months in April 2005 to March  2007. These specimens were sent to the Medical Research Institute where faecal specimens were frozen to -20C. Rotavirus aetiology was then confirmed by Rotavirus antigen detection enzyme immunoassay.  The subsequent stage was determination of strains at the laboratory of the Royal Children Hospital in Melbourne, Australia.
+
+At the end of the conclusion of the first phase of the Rotavirus  surveillance  at  the  LRH,  proportion  of  rota  viral  diarrhoea among diarrhoeal children admitted to the LRH  was 23.9%. The commonest G serotypes  detected were G3 and G9 while P8 was the predominant P serotype.  In contrast to surveillance data from the Asian Rotavirus Surveillance Network (ARSN) in which Sri Lanka is a member, a unique feature  was  the  unusual  high  number  of  Non  Typeable  (  NT) strains. In relation to phenotype, every third detected rotavi- rus strain in Sri Lanka was a non typeable strain  while  for the  genotype ,every  sixth  detected  strain  was  non  typeable. Epidemiologically,  the  rota  viral  diarrhoea  was  mostly  present  among  children  aged  6-11  months  followed  by  those who were in the age group of 1- 2 years. There was a seasonal pattern in hospitalisation of rota viral diarrhoea cases. Unlike  in  temperate  countries,  surveillance  data  demonstrated that children with rota viral diarrhoea were hospitalised throughout the year. However , there was a prominent
+
+increase  in  rota  viral  diarrhoea  episodes  during  the  period from January to March. This increase was consistent with the increase in the number of hospitalised diarrhoea patients.
+
+Nearly  a  half  of  the  patients  tested  positive  for  Rota  virus (41%) had a temperature recording below 37.5 C. The majority  (65%)  of  rota  virus  diarrhoea  cases  were  admitted  with vomiting. However, the duration of vomiting was less than 3 days in a great majority of them (80%).  The same applied for the duration of diarrhoea. In fifty six percent of children with rotavirus diarrhoea, the duration of diarrhoea was less than 3 days  while  11%  had  diarrhoeal  episodes  lasting  over  five days. Two thirds of  the children tested positive for rotavirus had no dehydration while those who manifested severe dehydration  were  negligible  (0.7%).  Ninety  percent  of  these  patients  had  been  treated  with  Oral  Rehydration  Solution (ORS). Intravenous fluid administration was present in 16% of  the patients while 5% had been treated with antibiotics.
+
+As a result of the collaborative work, Sri Lanka now has preliminary  data  pertaining  to  rota  virus  diarrhoea.    Ensuing question that arises is  ' What will be the future directions of Rotavirus  surveillance  in  Sri  Lanka?  '.    This  direction  was discussed in the National Immunization Summit held on 5 th January 2007. In this summit, stakeholders decided that Sri Lanka   needs to continue surveillance at the LRH with possible  extension to other sites depending on the availability of financial resources. For the purposes stated above in this article, even continuation of surveillance in the post vaccine implementation stage is essential. Conducting a morbidity cost studies and a cost effectiveness studies  are also vital before making a decision and the Epidemiology Unit  is , currently, engaged in this sphere.
+
+## Reference:
+
+Bresee J S, Hummelman E, Nelson E A S and Glass R I. Rotavirus in Asia: The value of surveillance for Informing Decisions about the Introduction of New Vaccines. The Journel of Infectious Diseases 2005;192 [Supplement 1] : S1-S5.
+
+This  article  was  prepared  by  Dr  Ranjan  Wijesinghe,  consultant  Epidemiologist  and  coordinator  Rotavirus  surveillance  project  in  Sri Lanka.
+
+Table 1: Vaccine-preventable Diseases  &amp; AFP
+
+12 th - 18 th    Jan 2008 (3 rd Week)
+
+| Disease  No. of Cases  by Province  Number  of cases  during  current  week in  2008  Number  of cases  during  same  week in  2007  Total  number  of cases  to date in  2008  Total  number  of cases  to date in  2007  Difference  between the  number of  cases to date  between  2008 &amp; 2007  W  C  S  E  NW  NC  U  Sab  Acute  Flaccid  Paralysis  00  00  01  GL=1  00  00  00  00  00  01  02  06  06  00.0%  Diphtheria  00  00  00  00  00  00  00  00  00  00  00  00  00.0%  Measles  00  00  00  00  01  00  00  00  01  00  04  00  +400.0%  Tetanus  00  00  00  00  00  00  00  01  RP=1  01  00  02  02  00.0%  Whooping  Cough  01  00  00  00  00  00  00  00  01  00  01  00  +100.0%  Tuberculo-  sis  52  07  80  03  00  08  03  00  219  92  774  526  +47.1`%  N  00  00  00  00  00  66   |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+12 th - 18 th    Jan 2008 (3 rd Week)
+
+Table 2: Newly Introduced Notifiable Diseases
+
+| Disease  No. of Cases  by Province  Number  of cases  during  current  week in  2008  Number  of cases  during  same  week in  2007  Total  number  of cases  to date in  2008  Total  number  of cases  to date in  2007  Difference  between the  number of  cases to date  between  2008 &amp; 2007  W  C  S  E  NW  NC  U  Sab  Chicken-  pox  16  02  12  01  08  03  05  05  53  23  226  86  +162.6%  Meningitis  06  GM=1  KL=2  CO=3  00  12  GL=8  MT=2  HB=2  00  01  PU=1  00  01  BD=1  12  RP=3  KG=9  32  12  107  34  +214.7%  Mumps  04  01  06  01  05  01  02  03  23  18  124  29  +327.6%  N  01  00  00   |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+Key to Table 1 &amp; 2
+
+Provinces: W=Western, C=Central, S=Southern, N=North, E= East, NC=North Central, NW=North Western, U=Uva, Sab=Sabaragamuwa. CB=Colombo, GM=Gampaha, KL=Kalutara, KD=Kandy, ML=Matale, NE=Nuwara Eliya, GL=Galle, HB=Hambantota, MT=Matara, JF=Jaffna, KN=Killinochchi, MN=Mannar, VA=Vavuniya, MU=Mullaitivu, BT=Batticaloa, AM=Ampara, TR=Trincomalee, KM=Kalmunai, KR=Kurunegala, PU=Puttalam,  AP=Anuradhapura, PO=Polonnaruwa, BD=Badulla,  MO=Moneragala, RP=Ratnapura, KG=Kegalle.
+
+DPDHS Divisions:
+
+Table 3: Laboratory Surveillance of Dengue Fever            12 th   - 18 th    Jan 2008 (3 rd Week)
+
+| Samples  Number  tested  Number  positive *  Serotypes  D2  D3  D4  Negative  Number for current week  06  00  00  00  00  00  Total number to date in 2008  12  00  00  00  00  00  D1  00  00   |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+Source: Genetech Molecular Diagnostics &amp; School of Gene Technology, Colombo.         * Not all positives are subjected to serotyping.
+
+NA
+
+= Not Available.
+
+Data Sources:
+
+Weekly Return of Communicable Diseases: Diphtheria, Measles, Tetanus, Whooping Cough, Human Rabies, Dengue Haemorrhagic Fever, Japanese Encephali - tis, Chickenpox, Meningitis, Mumps.
+
+Special Surveillance: Acute Flaccid Paralysis.
+
+National Control Program for Tuberculosis and Chest Diseases: Tuberculosis.
+
+## Table 4:  Selected notifiable diseases reported by Medical Officers of Health
+
+12 th - 18 th    Jan 2008 (3 rd Week)
+
+| DPDHS  Division  Dengue  Fever /  DHF*  Dysentery  Encephal-  itis  Enteric  Fever  Food  Poisoning  Leptos-  pirosis  Viral                  Human-  Hepatitis           Rabies  Returns  Re-  ceived  Timely**  A  B  A  B  A  B  A  B  A  B  A  B  A  B  A  B  %  Colombo  23  116  05  13  01  02  02  10  41  44  04  09  00  00  06  10  100  Gampaha  24  105  03  05  02  02  00  03  00  00  03  14  00  00  07  14  86  Kalutara  12  30  10  16  00  00  02  04  00  00  05  12  01  01  01  04  100  Kandy  02  13  06  16  00  00  00  02  01  03  02  15  01  02  01  11  67  Matale  02  07  05  16  00  00  00  04  00  00  21  53  01  01  00  01  83  Nuwara Eliya  00  00  00  01  00  00  01  03  00  00  00  01  00  01  02  06  44  Galle  03  15  01  11  00  00  00  03  00  00  04  31  00  01  00  01  81  Hambantota  03  06  04  12  01  01  00  01  00  00  08  10  01  05  00  00  91  Matara  07  23  02  11  00  00  00  10  00  00  04  12  07  16  01  01  88  Jaffna  02  16  03  06  00  00  06  17  00  02  00  00  08  38  01  07  75  Kilinochchi  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  01  00  Mannar  00  00  00  00  00  00  04  16  00  00  00  00  00  00  00  01  50  Vavuniya  02  05  00  04  00  00  00  00  00  00  00  00  00  00  01  01  75  Mullaitivu  00  00  01  01  00  00  00  01  00  00  00  00  00  00  00  01  60  Batticaloa  00  01  01  05  00  00  00  01  00  00  00  00  00  00  01  07  100  Ampara  00  00  04  17  00  00  00  00  00  00  00  01  00  00  00  00  43  Trincomalee  01  06  00  04  00  00  00  00  00  01  00  00  00  00  01  02  44  Kurunegala  12  54  04  42  00  02  01  05  00  00  01  02  00  02  01  03  94  Puttalam  10  37  02  12  00  00  02  09  00  01  00  02  02  02  00  02  89  Anuradhapur  08  30  03  10  01  02  00  01  00  02  01  04  01  03  00  00  68  Polonnaruwa  02  10  00  08  00  00  01  01  00  00  00  00  00  00  00  02  71  Badulla  02  07  04  27  00  00  01  06  00  01  00  03  01  06  08  13  87  Monaragala  00  01  02  16  00  00  02  02  00  03  02  09  01  06  00  01  80  Ratnapura  03  16  00  11  00  01  02  05  00  41  01  03  01  03  00  02  50  Kegalle  07  27  14  36  01  05  00  01  00  00  01  09  01  01  07  13  82  Kalmunai  00  00  02  05  00  00  00  00  00  00  00  00  00  00  02  03  62  SRI LANKA  125  525  76  305  06  15  24  105  42  98  57  190  26  88  40  107  76  Typhus  Fever  A  B  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  01  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  00  01   |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+Source:  Weekly  Returns of Communicable   Diseases  (WRCD).
+
+*Dengue Fever / DHF refers to Dengue Fever / Dengue Haemorrhagic Fever.
+
+**Timely refers to returns received on or before 26 January. 2008 Total number of reporting units =290. Number of reporting units data provided for the current week: 238
+
+## PRINTING OF THIS PUBLICATION  IS FUNDED BY THE UNITED NATIONS CHILDREN'S FUND (UNICEF).
+
+Comments and contributions for publication in the WER Sri Lanka are welcome. However, the editor reserves the right to accept or reject items for publication. All correspondence should be mailed to The Editor, WER Sri Lanka, Epidemiological  Unit, P.O. Box 1567, Colombo or sent by Email to chepid@sltnet.lk.
+
+## ON STATE SERVICE
+
+Dr. M. R. N. ABEYSINGHE EPIDEMIOLOGIST EPIDEMIOLOGICAL UNIT 231, DE SARAM PLACE COLOMBO 10
