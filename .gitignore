@@ -1,19 +1,79 @@
+# =========================
+# Virtual environments
+# =========================
 .venv/
 .venv311/
+venv/
+env/
+
+# =========================
+# Python cache / artifacts
+# =========================
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.so
+*.egg-info/
+build/
+dist/
+
+# =========================
+# Environment / secrets
+# =========================
 .env
 .env.*
-*.log
-ai_caches/
+*.env
 
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Local caches
+# =========================
+ai_caches/
 .ipynb_checkpoints/
 .pytest_cache/
 .mypy_cache/
+.ruff_cache/
 
+# =========================
+# Editors / OS files
+# =========================
 .DS_Store
 Thumbs.db
+desktop.ini
 .vscode/
 .idea/
+
+# =========================
+# Jupyter
+# =========================
+*.ipynb_checkpoints
+
+# =========================
+# Temporary / generated outputs
+# =========================
+tmp/
+temp/
+*.tmp
+*.bak
+
+# =========================
+# Project-specific generated work
+# =========================
+data/4_instruction/regen_work/
+data/6_curation/idk_regen/
+data/6_curation/idk_regen_eval/
+
+# Batch API outputs
+batch_output.jsonl
+batch_error.jsonl
+*_missing_outputs.jsonl
+*_WITH_OUTPUT.jsonl
+
+# Optional: generated metrics / figures
+# eval_reports/research_metrics/
+# task_distribution.png
