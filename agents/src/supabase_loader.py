@@ -19,12 +19,13 @@ from agents.src.config import (
     SUPABASE_KEY,
     SUPABASE_TABLE,
     SUPABASE_PAGE_SIZE,
+    SUPABASE_NON_NULL_COLUMN,
 )
 from agents.src.utils import setup_logger
 
 logger = setup_logger("supabase_loader")
 
-_FETCH_COLUMNS = "doc_id,markdown,source_url,source_pdf,title,site"
+_FETCH_COLUMNS = "site_root_url,source_pdf,clean_text"
 
 
 def _get(url: str) -> list:
@@ -45,13 +46,10 @@ def load_documents_from_supabase() -> List[Document]:
     Fetch all rows from the Supabase medical corpus table and return them
     as LangChain Document objects.
 
-    Each Document has:
-      - page_content: the 'markdown' field of the row
-      - metadata:
-          source_reference: source_url → source_pdf → doc_id  (used for citations)
-          title:            document title if available
-          site:             originating site name
-          doc_id:           primary key of the row
+        Each Document has:
+            - page_content: the 'clean_text' field of the row
+            - metadata:
+                    source_reference: site_root_url → source_pdf (used for citations)
     """
     if not SUPABASE_URL or not SUPABASE_KEY:
         raise ValueError(
@@ -64,39 +62,46 @@ def load_documents_from_supabase() -> List[Document]:
     offset = 0
     skipped = 0
 
-    logger.info(f"Fetching documents from Supabase table '{SUPABASE_TABLE}' ...")
+    filter_note = (
+        f" (filtering {SUPABASE_NON_NULL_COLUMN} != NULL)"
+        if SUPABASE_NON_NULL_COLUMN
+        else ""
+    )
+    logger.info(
+        f"Fetching documents from Supabase table '{SUPABASE_TABLE}'{filter_note} ..."
+    )
 
     while True:
-        params = urllib.parse.urlencode({
+        query_params = {
             "select": _FETCH_COLUMNS,
             "offset": offset,
             "limit": SUPABASE_PAGE_SIZE,
-        })
+        }
+        if SUPABASE_NON_NULL_COLUMN:
+            # PostgREST filter: column=not.is.null
+            query_params[SUPABASE_NON_NULL_COLUMN] = "not.is.null"
+
+        params = urllib.parse.urlencode(query_params)
         rows = _get(f"{base_url}?{params}")
 
         if not rows:
             break
 
         for row in rows:
-            markdown = (row.get("markdown") or "").strip()
-            if not markdown:
+            clean_text = (row.get("clean_text") or "").strip()
+            if not clean_text:
                 skipped += 1
                 continue
 
-            source_url = (row.get("source_url") or "").strip()
+            site_root_url = (row.get("site_root_url") or "").strip()
             source_pdf = (row.get("source_pdf") or "").strip()
-            doc_id = (row.get("doc_id") or "").strip()
-
-            source_reference = source_url or source_pdf or doc_id
+            source_reference = site_root_url or source_pdf
 
             documents.append(
                 Document(
-                    page_content=markdown,
+                    page_content=clean_text,
                     metadata={
                         "source_reference": source_reference,
-                        "title": (row.get("title") or "").strip(),
-                        "site": (row.get("site") or "").strip(),
-                        "doc_id": doc_id,
                     },
                 )
             )
@@ -113,6 +118,6 @@ def load_documents_from_supabase() -> List[Document]:
 
     logger.info(
         f"Supabase load complete — {len(documents)} documents loaded, "
-        f"{skipped} rows skipped (empty markdown)"
+        f"{skipped} rows skipped (empty clean_text)"
     )
     return documents

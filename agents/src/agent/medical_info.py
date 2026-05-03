@@ -70,9 +70,9 @@ logger = setup_logger("medical_info_agent")
 def _build_chunked_documents(all_documents: List[Document]) -> tuple[List[Document], List[Document]]:
     """Split source documents into dense/sparse chunk lists while preserving metadata."""
     character_splitter = RecursiveCharacterTextSplitter(
-        separators=["\n\n", "\n", ". ", " ", ""],
-        chunk_size=200,
-        chunk_overlap=50,
+        separators=["\n## ", "\n### ", "\n#### ", "\n- ", "\n* ", "\n\n", "\n", ". ", " ", ""],
+        chunk_size=900,
+        chunk_overlap=150,
     )
 
     dense_documents: List[Document] = []
@@ -408,12 +408,14 @@ def score_document(state: AgentState) -> Command[Literal["generate_answer", "imp
     
     try:
         import json
+        import re
         class Scoring(BaseModel):
             binary_score: str = Field(description="relevance score 'yes' or 'no'")
         
         structured_output_model = response_model.with_structured_output(Scoring)
 
         raw_content = state["messages"][-1].content
+        docs_count = 0
         
         # Parse JSON to extract content from both RAG and web search formats
         try:
@@ -421,11 +423,13 @@ def score_document(state: AgentState) -> Command[Literal["generate_answer", "imp
             
             # Handle RAG documents
             if "documents" in data:
+                docs_count = len(data.get("documents", []))
                 latest_context = "\n\n".join([doc["content"] for doc in data["documents"]])
                 logger.info("Scoring RAG documents")
             
             # Handle web search results
             elif "web_results" in data:
+                docs_count = len(data.get("web_results", []))
                 latest_context = "\n\n".join([res["content"] for res in data["web_results"]])
                 logger.info("Scoring web search results")
             
@@ -435,6 +439,32 @@ def score_document(state: AgentState) -> Command[Literal["generate_answer", "imp
             latest_context = raw_content
             
         original_question = state.get("rag_query") or _latest_user_text(state["messages"])
+
+        # Fast path: no retrieved content, skip rewrite loop
+        if not latest_context or not latest_context.strip() or docs_count == 0:
+            logger.warning("No retrieved context to score; proceeding to generate")
+            return Command(goto="generate_answer")
+
+        # Lightweight lexical overlap to avoid over-rejecting relevant docs
+        def _tokenize(text: str) -> set[str]:
+            tokens = re.findall(r"[a-zA-Z]{3,}", text.lower())
+            stop = {
+                "the", "and", "with", "from", "that", "this", "have", "has", "are", "was",
+                "were", "your", "about", "into", "than", "then", "them", "they", "you",
+                "for", "not", "but", "can", "may", "will", "should", "could", "would",
+                "info", "information", "medical", "health", "disease", "symptoms",
+            }
+            return {t for t in tokens if t not in stop}
+
+        question_terms = _tokenize(original_question)
+        context_terms = _tokenize(latest_context[:4000])
+        overlap = question_terms.intersection(context_terms)
+
+        if len(overlap) >= 2:
+            logger.info("Lexical overlap suggests relevance; skipping LLM scoring")
+            if state.get("rewrite_attempts"):
+                return Command(goto="generate_answer", update={"rewrite_attempts": 0})
+            return Command(goto="generate_answer")
         
         @retry_on_error(logger=logger)
         def invoke_model():
@@ -446,7 +476,9 @@ def score_document(state: AgentState) -> Command[Literal["generate_answer", "imp
             ])
         
         response = invoke_model()
-        score = response.binary_score
+        score = (response.binary_score or "").strip().lower()
+        if score not in {"yes", "no"}:
+            score = "no"
         logger.info(f"Document relevance score: {score}")
 
         if score == 'yes':
