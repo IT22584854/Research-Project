@@ -1,3 +1,33 @@
+import { useState, useEffect } from 'react';
+import { Settings, Shield } from 'lucide-react';
+import Sidebar from './components/Sidebar';
+import ChatWindow from './components/ChatWindow';
+import ChatInput from './components/ChatInput';
+import { SettingsPanel } from './components/layout/SettingsPanel';
+import { useChat } from './contexts/ChatContext';
+import AdminLogin from './components/admin/AdminLogin';
+import AdminPanelLayout from './components/admin/AdminPanelLayout';
+
+export default function App() {
+  const [showSettings, setShowSettings] = useState(false);
+
+  // Developer Note: We are using conditional state rendering instead of react-router-dom 
+  // here to keep the application lightweight for this faux implementation.
+  // When scaling the app for a real production backend with distinct protected routes, 
+  // replacing this with a dedicated routing library (like react-router-dom) is recommended.
+  const [currentView, setCurrentView] = useState('chat'); // 'chat' | 'adminLogin' | 'adminPanel'
+  const {
+    conversations,
+    activeId,
+    messages,
+    isLoading,
+    error,
+    sendMessage,
+    startNewChat,
+    openConversation,
+    deleteConversation,
+  } = useChat();
+  // Global keyboard shortcuts
 import { useEffect, useMemo, useRef, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -87,6 +117,14 @@ function useHealth() {
 
 function SourceList({ sources }) {
   if (!sources?.length) return null;
+
+  if (currentView === 'adminLogin') {
+    return <AdminLogin onLogin={() => setCurrentView('adminPanel')} onCancel={() => setCurrentView('chat')} />;
+  }
+
+  if (currentView === 'adminPanel') {
+    return <AdminPanelLayout onLogout={() => setCurrentView('chat')} />;
+  }
 
   return (
     <section className="sources" aria-label="Sources">
@@ -416,4 +454,5 @@ export default function App() {
       </main>
     </div>
   );
+}
 }
