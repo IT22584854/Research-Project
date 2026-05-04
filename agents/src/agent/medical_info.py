@@ -4,6 +4,7 @@ import uuid
 import chromadb
 import sys
 import json
+import gzip
 from functools import lru_cache
 from typing import Any, Dict, List
 from typing_extensions import Literal
@@ -67,12 +68,272 @@ from agents.src.supabase_loader import load_documents_from_supabase
 
 logger = setup_logger("medical_info_agent")
 
+MAX_CONTEXT_ITEMS = 5
+CHUNK_CACHE_VERSION = 1
+CHUNK_SIZE = 200
+CHUNK_OVERLAP = 50
+RETRIEVAL_CHUNK_CACHE_PATH = Path(
+    os.getenv("RETRIEVAL_CHUNK_CACHE_PATH", str(AGENTS_ROOT / "data" / "retrieval_chunks_cache.jsonl.gz"))
+)
+CURRENT_QUERY_INDICATORS = (
+    "recent",
+    "latest",
+    "current",
+    "today",
+    "now",
+    "outbreak",
+    "epidemic",
+    "advisory",
+    "this week",
+    "this month",
+)
+
+
+def _normalize_for_dedupe(text: str) -> str:
+    """Create a compact comparable key for duplicate context detection."""
+    return " ".join((text or "").lower().split())
+
+
+def _is_current_or_outbreak_query(query: str) -> bool:
+    """Fast deterministic route for time-sensitive health queries."""
+    query_lower = (query or "").lower()
+    return any(indicator in query_lower for indicator in CURRENT_QUERY_INDICATORS)
+
+
+def _extract_context_items(raw_content: str) -> tuple[str, List[Dict[str, Any]], str | None]:
+    """
+    Parse tool output into normalized context items.
+
+    Returns:
+        (kind, items, error), where kind is documents, web_results, malformed, or unknown.
+    """
+    try:
+        data = json.loads(raw_content)
+    except (TypeError, json.JSONDecodeError):
+        return "malformed", [], "Tool output was not valid JSON."
+
+    if not isinstance(data, dict):
+        return "malformed", [], "Tool output JSON was not an object."
+
+    if "documents" in data:
+        raw_items = data.get("documents") or []
+        if not isinstance(raw_items, list):
+            return "malformed", [], "RAG documents payload was not a list."
+        kind = "documents"
+    elif "web_results" in data:
+        raw_items = data.get("web_results") or []
+        if not isinstance(raw_items, list):
+            return "malformed", [], "Web results payload was not a list."
+        kind = "web_results"
+    else:
+        return "malformed", [], data.get("error") or "Tool output did not contain documents or web_results."
+
+    filtered: List[Dict[str, Any]] = []
+    seen: set[str] = set()
+
+    for item in raw_items:
+        if not isinstance(item, dict):
+            continue
+
+        content = (item.get("content") or "").strip()
+        if not content:
+            continue
+
+        source_reference = (
+            item.get("source_reference")
+            or item.get("source")
+            or item.get("url")
+            or "Unknown Source"
+        )
+        chunk_index = item.get("chunk_index")
+        dedupe_key = "::".join([
+            str(source_reference),
+            str(chunk_index),
+            _normalize_for_dedupe(content),
+        ])
+        if dedupe_key in seen:
+            continue
+        seen.add(dedupe_key)
+
+        normalized = {
+            "content": content,
+            "source_reference": source_reference,
+            "chunk_index": chunk_index,
+            "title": item.get("title", ""),
+            "url": item.get("url", ""),
+            "score": item.get("score"),
+        }
+        filtered.append(normalized)
+
+        if len(filtered) >= MAX_CONTEXT_ITEMS:
+            break
+
+    return kind, filtered, data.get("error")
+
+
+def _format_grounding_context(items: List[Dict[str, Any]]) -> str:
+    blocks = []
+    for idx, item in enumerate(items, start=1):
+        source = item.get("source_reference") or item.get("url") or "Unknown Source"
+        title = item.get("title")
+        source_line = f"[{idx}] Source: {source}"
+        if title:
+            source_line += f" | Title: {title}"
+        blocks.append(f"{source_line}\nContent: {item.get('content', '').strip()}")
+    return "\n\n".join(blocks)
+
+
+def _build_source_payload(items: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    sources = []
+    for idx, item in enumerate(items, start=1):
+        source_reference = item.get("source_reference") or item.get("url") or "Unknown Source"
+        entry = {
+            "id": idx,
+            "source": source_reference,
+            "source_reference": source_reference,
+            "chunk_index": item.get("chunk_index"),
+            "title": item.get("title", ""),
+            "excerpt": (item.get("content", "") or "")[:200].strip(),
+            "score": item.get("score"),
+        }
+        if item.get("url"):
+            entry["url"] = item["url"]
+        sources.append(entry)
+    return sources
+
+
+def _no_context_message(language: str) -> str:
+    messages = {
+        "si": (
+            "මෙම ප්‍රශ්නයට විශ්වාසදායක මූලාශ්‍ර තොරතුරු ප්‍රමාණවත් ලෙස සොයාගත නොහැකි විය. "
+            "කරුණාකර සුදුසුකම් ලත් සෞඛ්‍ය වෘත්තිකයෙකුගෙන් හෝ නිල සෞඛ්‍ය සේවාවකින් උපදෙස් ලබාගන්න."
+        ),
+        "ta": (
+            "இந்த கேள்விக்கு போதுமான நம்பகமான ஆதாரத் தகவலை கண்டறிய முடியவில்லை. "
+            "தயவுசெய்து தகுதியான சுகாதார நிபுணர் அல்லது அதிகாரப்பூர்வ சுகாதார சேவையிடம் ஆலோசனை பெறவும்."
+        ),
+        "en": (
+            "I could not find enough reliable source material to answer that safely. "
+            "Please consult a qualified healthcare professional or an official health service for guidance."
+        ),
+    }
+    return messages.get(language, messages["en"])
+
+
+def _make_tool_call(tool_name: str, query: str, source: str) -> AIMessage:
+    return AIMessage(
+        content="",
+        tool_calls=[{
+            "name": tool_name,
+            "args": {"query": query},
+            "id": f"call_{uuid.uuid4().hex}",
+        }],
+        additional_kwargs={"source": source},
+    )
+
+
+def _chunk_cache_metadata() -> Dict[str, Any]:
+    return {
+        "cache_version": CHUNK_CACHE_VERSION,
+        "chunk_size": CHUNK_SIZE,
+        "chunk_overlap": CHUNK_OVERLAP,
+    }
+
+
+def _documents_from_cached_chunks(chunks: List[Dict[str, Any]]) -> tuple[List[Document], List[Document]]:
+    dense_documents: List[Document] = []
+    sparse_documents: List[Document] = []
+
+    for chunk in chunks:
+        content = (chunk.get("content") or "").strip()
+        if not content:
+            continue
+
+        metadata = {
+            "id": str(chunk.get("chunk_index")),
+            "chunk_index": chunk.get("chunk_index"),
+            "source_reference": chunk.get("source_reference", "Unknown"),
+        }
+        dense_documents.append(
+            Document(page_content=content, metadata={**metadata, "source": "dense"})
+        )
+        sparse_documents.append(
+            Document(page_content=content, metadata={**metadata, "source": "sparse"})
+        )
+
+    return dense_documents, sparse_documents
+
+
+def _load_chunk_cache(cache_path: Path | None = None) -> tuple[List[Document], List[Document]] | None:
+    """Load persisted retrieval chunks for BM25 and possible Chroma rebuild."""
+    path = Path(cache_path or RETRIEVAL_CHUNK_CACHE_PATH)
+    if not path.exists():
+        logger.info("Retrieval chunk cache not found at %s", path)
+        return None
+
+    try:
+        chunks: List[Dict[str, Any]] = []
+        with gzip.open(path, "rt", encoding="utf-8") as cache_file:
+            header_line = cache_file.readline()
+            header = json.loads(header_line)
+            if header != _chunk_cache_metadata():
+                logger.warning("Retrieval chunk cache metadata mismatch; rebuilding cache")
+                return None
+
+            for line in cache_file:
+                if line.strip():
+                    chunks.append(json.loads(line))
+
+        dense_documents, sparse_documents = _documents_from_cached_chunks(chunks)
+        if not dense_documents or not sparse_documents:
+            logger.warning("Retrieval chunk cache was empty; rebuilding cache")
+            return None
+
+        logger.info(
+            "Loaded %s retrieval chunks from cache at %s",
+            len(dense_documents),
+            path,
+        )
+        return dense_documents, sparse_documents
+    except Exception as exc:
+        logger.warning("Failed to load retrieval chunk cache at %s: %s", path, exc)
+        return None
+
+
+def _save_chunk_cache(dense_documents: List[Document], cache_path: Path | None = None) -> None:
+    """Persist chunk text/metadata so BM25 can be rebuilt without Supabase."""
+    path = Path(cache_path or RETRIEVAL_CHUNK_CACHE_PATH)
+    temp_path = path.with_suffix(path.suffix + ".tmp")
+
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with gzip.open(temp_path, "wt", encoding="utf-8") as cache_file:
+            cache_file.write(json.dumps(_chunk_cache_metadata(), ensure_ascii=False) + "\n")
+            for doc in dense_documents:
+                payload = {
+                    "content": doc.page_content,
+                    "chunk_index": doc.metadata.get("chunk_index"),
+                    "source_reference": doc.metadata.get("source_reference", "Unknown"),
+                }
+                cache_file.write(json.dumps(payload, ensure_ascii=False) + "\n")
+
+        temp_path.replace(path)
+        logger.info("Saved %s retrieval chunks to cache at %s", len(dense_documents), path)
+    except Exception as exc:
+        logger.warning("Failed to save retrieval chunk cache at %s: %s", path, exc)
+        try:
+            if temp_path.exists():
+                temp_path.unlink()
+        except OSError:
+            pass
+
+
 def _build_chunked_documents(all_documents: List[Document]) -> tuple[List[Document], List[Document]]:
     """Split source documents into dense/sparse chunk lists while preserving metadata."""
     character_splitter = RecursiveCharacterTextSplitter(
         separators=["\n\n", "\n", ". ", " ", ""],
-        chunk_size=200,
-        chunk_overlap=50,
+        chunk_size=CHUNK_SIZE,
+        chunk_overlap=CHUNK_OVERLAP,
     )
 
     dense_documents: List[Document] = []
@@ -104,18 +365,23 @@ def _build_chunked_documents(all_documents: List[Document]) -> tuple[List[Docume
 @lru_cache(maxsize=1)
 def get_ensemble_retriever() -> EnsembleRetriever | None:
     """Initialize the retrieval stack lazily; return None if corpus setup is unavailable."""
-    try:
-        all_documents = load_documents_from_supabase()
-        logger.info(f"Total documents loaded from Supabase: {len(all_documents)}")
-    except Exception as exc:
-        logger.exception(f"Supabase load failed: {exc}")
-        return None
+    cached_documents = _load_chunk_cache()
+    if cached_documents is not None:
+        dense_documents, sparse_documents = cached_documents
+    else:
+        try:
+            all_documents = load_documents_from_supabase()
+            logger.info(f"Total documents loaded from Supabase: {len(all_documents)}")
+        except Exception as exc:
+            logger.exception(f"Supabase load failed and no retrieval chunk cache is available: {exc}")
+            return None
 
-    if not all_documents:
-        logger.warning("No corpus documents available from Supabase; retrieval will be disabled")
-        return None
+        if not all_documents:
+            logger.warning("No corpus documents available from Supabase; retrieval will be disabled")
+            return None
 
-    dense_documents, sparse_documents = _build_chunked_documents(all_documents)
+        dense_documents, sparse_documents = _build_chunked_documents(all_documents)
+        _save_chunk_cache(dense_documents)
 
     try:
         embedding_function = OpenAIEmbeddings()
@@ -321,13 +587,7 @@ def _classify_query_intent(query: str) -> str:
         'current' if query asks about recent/current info (prefer web_search)
         'general' for standard medical information (prefer RAG retrieval)
     """
-    current_indicators = [
-        "recent", "latest", "current", "today", "now", 
-        "outbreak", "epidemic", "this week", "this month"
-    ]
-    query_lower = query.lower()
-    
-    if any(indicator in query_lower for indicator in current_indicators):
+    if _is_current_or_outbreak_query(query):
         logger.debug(f"Query classified as 'current' - prefer web search")
         return "current"
     
@@ -343,24 +603,32 @@ def tool_selector(state: AgentState) -> Command[Literal["retrieve", "web_search"
     try:
         system_prompt = SystemMessage(content=tool_selection_prompt)
         rag_query = state.get("rag_query")
+        query_text = rag_query or _latest_user_text(state["messages"])
         
+        if _is_current_or_outbreak_query(query_text):
+            logger.info("Deterministic routing selected web_search for current/outbreak query")
+            response = _make_tool_call(
+                web_search_tool.name,
+                query_text,
+                "deterministic_current_query",
+            )
+            return Command(
+                goto="web_search",
+                update={"messages": [response]},
+            )
+
         if rag_query:
-            logger.info("Using cached RAG query for retrieval after intent classification or rewrite")
-            response = AIMessage(
-                content="",
-                tool_calls=[{
-                    "name": retriever_tool.name, 
-                    "args": {"query": rag_query},
-                    "id": f"call_{uuid.uuid4().hex}",
-                }],
-                additional_kwargs={"source": "intent_classifier_query"},
+            logger.info("Using cached RAG query for deterministic retrieval after intent classification or rewrite")
+            response = _make_tool_call(
+                retriever_tool.name,
+                rag_query,
+                "intent_classifier_query",
             )
             return Command(
                 goto="retrieve",
                 update={"messages": [response]},
             )
 
-        query_text = _latest_user_text(state["messages"])
         user_message = HumanMessage(content=query_text)
         conversation = [system_prompt, user_message]
 
@@ -403,7 +671,7 @@ def tool_selector(state: AgentState) -> Command[Literal["retrieve", "web_search"
 
 
 @traceable(name="score_document")
-def score_document(state: AgentState) -> Command[Literal["generate_answer", "improve"]]:
+def score_document(state: AgentState) -> Command[Literal["generate_answer", "improve", "no_context_response"]]:
     """Score document relevance (handles both RAG and web search results) and decide whether to improve the query."""
     
     try:
@@ -414,25 +682,30 @@ def score_document(state: AgentState) -> Command[Literal["generate_answer", "imp
         structured_output_model = response_model.with_structured_output(Scoring)
 
         raw_content = state["messages"][-1].content
-        
-        # Parse JSON to extract content from both RAG and web search formats
-        try:
-            data = json.loads(raw_content)
-            
-            # Handle RAG documents
-            if "documents" in data:
-                latest_context = "\n\n".join([doc["content"] for doc in data["documents"]])
-                logger.info("Scoring RAG documents")
-            
-            # Handle web search results
-            elif "web_results" in data:
-                latest_context = "\n\n".join([res["content"] for res in data["web_results"]])
-                logger.info("Scoring web search results")
-            
-            else:
-                latest_context = raw_content
-        except (json.JSONDecodeError, KeyError):
-            latest_context = raw_content
+        context_kind, context_items, parse_error = _extract_context_items(raw_content)
+
+        if context_kind == "malformed" or not context_items:
+            logger.warning(
+                "No usable context after tool output parsing | kind=%s | error=%s",
+                context_kind,
+                parse_error,
+            )
+            return Command(
+                goto="no_context_response",
+                update={
+                    "grounding_context": None,
+                    "grounding_sources": None,
+                    "rewrite_attempts": 0,
+                },
+            )
+
+        latest_context = _format_grounding_context(context_items)
+        source_payload = _build_source_payload(context_items)
+        logger.info(
+            "Scoring %s context items after filtering | kind=%s",
+            len(context_items),
+            context_kind,
+        )
             
         original_question = state.get("rag_query") or _latest_user_text(state["messages"])
         
@@ -450,21 +723,46 @@ def score_document(state: AgentState) -> Command[Literal["generate_answer", "imp
         logger.info(f"Document relevance score: {score}")
 
         if score == 'yes':
-            # Reset rewrite attempts so future turns can start fresh
-            if state.get("rewrite_attempts"):
-                return Command(goto="generate_answer", update={"rewrite_attempts": 0})
-            return Command(goto="generate_answer")
+            return Command(
+                goto="generate_answer",
+                update={
+                    "grounding_context": latest_context,
+                    "grounding_sources": source_payload,
+                    "rewrite_attempts": 0,
+                },
+            )
         else:
             # Check rewrite limit
             rewrite_attempts = state.get("rewrite_attempts", 0)
             if rewrite_attempts >= MAX_REWRITE_ATTEMPTS:
-                logger.warning(f"Max rewrite attempts ({MAX_REWRITE_ATTEMPTS}) reached, proceeding to generate")
-                return Command(goto="generate_answer")
-            return Command(goto="improve", update={"rewrite_attempts": rewrite_attempts + 1})
+                logger.warning(f"Max rewrite attempts ({MAX_REWRITE_ATTEMPTS}) reached, returning no-context response")
+                return Command(
+                    goto="no_context_response",
+                    update={
+                        "grounding_context": None,
+                        "grounding_sources": None,
+                        "rewrite_attempts": 0,
+                    },
+                )
+            return Command(
+                goto="improve",
+                update={
+                    "rewrite_attempts": rewrite_attempts + 1,
+                    "grounding_context": None,
+                    "grounding_sources": None,
+                },
+            )
             
     except Exception as e:      
         logger.error(f"Error in score_document: {e}")
-        return Command(goto="generate_answer")
+        return Command(
+            goto="no_context_response",
+            update={
+                "grounding_context": None,
+                "grounding_sources": None,
+                "rewrite_attempts": 0,
+            },
+        )
 
 
 @traceable(name="improve")
@@ -490,11 +788,24 @@ def improve(state: AgentState):
         logger.error(f"Error in improve: {e}")
         return {"messages": [AIMessage(content=state.get("rag_query", ""))]}
 
+
+@traceable(name="no_context_response")
+def no_context_response(state: AgentState):
+    """Return a safe localized fallback when grounding context is unavailable."""
+    latest_user_text = _latest_user_text(state.get("messages", []))
+    response_language = detect_user_language(latest_user_text)
+    logger.info("Returning no-context response without LLM generation")
+    return {
+        "messages": [AIMessage(content=_no_context_message(response_language))],
+        "grounding_context": None,
+        "grounding_sources": None,
+        "critique_feedback": None,
+    }
+
+
 @traceable(name="generate_answer")
 def generate_answer(state: AgentState):
     """Generate an answer based on retrieved context."""
-    import json
-    
     try:
         latest_user_text = _latest_user_text(state["messages"])
         response_language = detect_user_language(latest_user_text)
@@ -502,42 +813,15 @@ def generate_answer(state: AgentState):
         
         # Use critique feedback if available
         critique_feedback = state.get("critique_feedback")
-        raw_content = state["messages"][-1].content
-        
-        # Parse JSON to extract context and citation metadata (handles both RAG and web search)
-        citations_payload = []
-        try:
-            data = json.loads(raw_content)
-            
-            # Handle RAG documents
-            if "documents" in data:
-                context = "\n\n".join([doc["content"] for doc in data["documents"]])
-                for doc in data["documents"]:
-                    citations_payload.append(
-                        {
-                            "source_reference": doc.get("source_reference", "Unknown Source"),
-                            "chunk_index": doc.get("chunk_index"),
-                            "excerpt": (doc.get("content", "") or "")[:200].strip(),
-                        }
-                    )
-            
-            # Handle web search results
-            elif "web_results" in data:
-                context = "\n\n".join([res["content"] for res in data["web_results"]])
-                for idx, res in enumerate(data["web_results"], 1):
-                    citations_payload.append(
-                        {
-                            "source_reference": res.get("url", "Unknown Source"),
-                            "title": res.get("title", ""),
-                            "excerpt": (res.get("content", "") or "")[:200].strip(),
-                            "score": res.get("score", 0)
-                        }
-                    )
-            
-            else:
-                context = raw_content
-        except (json.JSONDecodeError, KeyError):
-            context = raw_content
+        context = state.get("grounding_context")
+        citations_payload = state.get("grounding_sources") or []
+
+        if not context or not citations_payload:
+            logger.warning("Answer generation requested without grounding context; returning no-context fallback")
+            return {
+                "messages": [AIMessage(content=_no_context_message(response_language))],
+                "critique_feedback": None,
+            }
         
         if critique_feedback:
             prompt = f"{generate_prompt.format(question=question, context=context, response_language_instruction=get_language_instruction(response_language))}\n\nPREVIOUS FEEDBACK TO ADDRESS:\n{critique_feedback}"
@@ -559,21 +843,9 @@ def generate_answer(state: AgentState):
         # Add medical disclaimer to response
         response.content = (response.content or "") + get_medical_disclaimer(response_language, MEDICAL_DISCLAIMER)
         
-        if citations_payload:
-            existing_kwargs = response.additional_kwargs or {}
-            existing_kwargs["sources"] = [
-                {
-                    "id": idx,
-                    "source": citation.get("source_reference", "Unknown Source"),
-                    "source_reference": citation.get("source_reference", "Unknown Source"),
-                    "chunk_index": citation.get("chunk_index"),
-                    "title": citation.get("title", ""),
-                    "excerpt": citation.get("excerpt", ""),
-                    "score": citation.get("score")
-                }
-                for idx, citation in enumerate(citations_payload, start=1)
-            ]
-            response.additional_kwargs = existing_kwargs
+        existing_kwargs = response.additional_kwargs or {}
+        existing_kwargs["sources"] = citations_payload
+        response.additional_kwargs = existing_kwargs
         return {"messages": [response], "critique_feedback": None}
         
     except Exception as e:
@@ -637,6 +909,7 @@ workflow.add_node("retrieve", ToolNode([retriever_tool]))
 workflow.add_node("web_search", ToolNode([web_search_tool]))
 workflow.add_node("score_document", score_document)
 workflow.add_node("improve", improve)
+workflow.add_node("no_context_response", no_context_response)
 workflow.add_node("generate_answer", generate_answer)
 workflow.add_node("critique_answer", critique_answer)
 
@@ -645,6 +918,7 @@ workflow.add_edge(START, "tool_selector")
 workflow.add_edge("retrieve", "score_document")
 workflow.add_edge("web_search", "score_document")  # Web search also goes through scoring
 workflow.add_edge("improve", "tool_selector")  # Retry with improved query
+workflow.add_edge("no_context_response", END)
 workflow.add_edge("generate_answer", "critique_answer")
        
 medical_info_graph = workflow.compile()
