@@ -50,15 +50,6 @@ class AgentState(MessagesState):
     last_rag_query: Annotated[Optional[str], overwrite_text] = None
     turn_type: Annotated[Optional[str], overwrite_text] = None
     intent_classifier_turns: int = 0
-    query_classifier_turns: int = 0
-    route_language: Annotated[Optional[str], overwrite_text] = None
-    route_intent: Annotated[Optional[str], overwrite_text] = None
-    route_keywords: Annotated[Optional[List[str]], overwrite_any] = None
-    route_summary: Annotated[Optional[str], overwrite_text] = None
-    router_model: Annotated[Optional[str], overwrite_text] = None
-    router_base_url: Annotated[Optional[str], overwrite_text] = None
-    router_payload: Annotated[Optional[Dict[str, Any]], overwrite_any] = None
-    router_latency_ms: int = 0
     rewrite_attempts: int = 0  # max 3
     critique_attempts: int = 0  # max 2
     critique_feedback: Annotated[Optional[str], overwrite_text] = None  # Feedback from critique

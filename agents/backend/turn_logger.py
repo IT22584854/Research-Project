@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 
 _AGENTS_ROOT = Path(__file__).resolve().parents[1]
 # Load envs here because TurnLogger is initialized before other modules that load .env.
-load_dotenv(_AGENTS_ROOT / ".env", override=True)
+load_dotenv(_AGENTS_ROOT / ".env")
 
 
 def _env_flag(name: str, default: bool = False) -> bool:
