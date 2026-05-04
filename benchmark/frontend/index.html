@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Evaluation Dashboard</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pVUq+8DIxV0SVXmG7j4MlXjKxLxkFS2lBk4tPSzWMoT0i4t3TJhT4N4sUFb1e9BqX7ns5K1z2BrQ0Xz0b1yfnA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+:root {
+    --primary: #1f3c88;
+    --primary-soft: #2f5da8;
+    --accent: #53a7ff;
+    --surface: #ffffff;
+    --surface-strong: #f8fbff;
+    --text: #1b2533;
+    --muted: #546279;
+    --border: #dbe6f1;
+    --success: #1f7a45;
+    --warning: #c96a16;
+    --danger: #b22f2f;
+    --radius: 22px;
+    --shadow: 0 24px 60px rgba(17, 38, 79, 0.12);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(145deg, #1b3271 0%, #1d418e 42%, #3b7ad7 100%);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 28px 20px;
+}
+.container {
+    max-width: 1550px;
+    margin: 0 auto;
+}
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.title-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+h1 {
+    font-size: clamp(2.4rem, 2.3vw, 3.4rem);
+    font-weight: 700;
+    color: white;
+    letter-spacing: -0.04em;
+}
+.subtitle {
+    color: rgba(255,255,255,0.92);
+    font-size: 1.05rem;
+    line-height: 1.8;
+    max-width: 960px;
+    margin: 16px auto 0;
+}
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 32px;
+}
+.stat-card {
+    background: rgba(255,255,255,0.94);
+    border-radius: var(--radius);
+    padding: 26px 26px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(255,255,255,0.4);
+    display: grid;
+    gap: 10px;
+}
+.stat-card strong {
+    display: block;
+    color: var(--muted);
+    font-size: 0.94rem;
+    letter-spacing: 0.02em;
+}
+.stat-card span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+}
+.panel-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 26px;
+    margin: 32px 0 14px;
+}
+.panel {
+    background: var(--surface);
+    border-radius: var(--radius);
+    padding: 28px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(251,251,255,0.7);
+}
+.panel h2 {
+    margin-bottom: 12px;
+    font-size: 1.38rem;
+}
+.panel p {
+    color: var(--muted);
+    line-height: 1.72;
+    margin-bottom: 22px;
+}
+.controls {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.input-group {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+}
+.input-group label {
+    color: var(--muted);
+    font-size: 0.92rem;
+    font-weight: 600;
+}
+.input-group input,
+.input-group textarea,
+.input-group select {
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    background: #f8fbff;
+    color: var(--text);
+    padding: 16px 18px;
+    font-size: 0.98rem;
+    transition: border-color 0.2s ease;
+}
+.input-group textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus {
+    border-color: rgba(79, 126, 255, 0.7);
+    outline: none;
+}
+.button-row {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.button {
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    padding: 16px 24px;
+    font-weight: 700;
+    font-size: 0.96rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.button.primary {
+    background: linear-gradient(135deg, var(--primary), var(--primary-soft));
+    color: white;
+    box-shadow: 0 18px 40px rgba(30, 86, 170, 0.2);
+}
+.button.primary:hover {
+    transform: translateY(-2px);
+}
+.button.secondary {
+    background: #f8fbff;
+    color: var(--text);
+    border: 1px solid rgba(79, 126, 255, 0.2);
+}
+.table-wrapper {
+    overflow-x: auto;
+    border-radius: 22px;
+    border: 1px solid rgba(219,230,241,0.95);
+    box-shadow: var(--shadow);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 940px;
+}
+thead th {
+    background: linear-gradient(135deg, #1e4b8c, #2b6cb0);
+    color: white;
+    font-size: 0.86rem;
+    font-weight: 700;
+    padding: 18px 16px;
+    text-align: left;
+    position: sticky;
+    top: 0;
+}
+tbody td {
+    padding: 16px 16px;
+    border-bottom: 1px solid rgba(219,230,241,0.9);
+    color: var(--text);
+    font-size: 0.95rem;
+    vertical-align: top;
+    max-width: 360px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+tbody tr:hover td {
+    background: rgba(79, 126, 255, 0.07);
+}
+.result-panel {
+    background: #f3f7ff;
+    border-radius: 20px;
+    border: 1px solid rgba(145, 162, 202, 0.25);
+    padding: 24px;
+    margin-top: 12px;
+}
+.result-panel h3 {
+    margin-bottom: 16px;
+}
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+    margin-bottom: 18px;
+}
+.summary-card {
+    border-radius: 18px;
+    background: white;
+    border: 1px solid rgba(219,230,241,0.95);
+    padding: 18px;
+}
+.summary-card strong {
+    display: block;
+    color: var(--muted);
+    font-size: 0.88rem;
+    margin-bottom: 10px;
+}
+.summary-card span {
+    font-size: 1.26rem;
+    font-weight: 700;
+}
+.code-block {
+    background: white;
+    border-radius: 18px;
+    border: 1px solid rgba(219,230,241,0.95);
+    padding: 18px;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    font-size: 0.92rem;
+    color: #102a43;
+    overflow-x: auto;
+    max-height: 320px;
+}
+.message-box {
+    background: rgba(255,250,233,0.95);
+    border-left: 4px solid #f7c948;
+    border-radius: 18px;
+    padding: 18px 20px;
+    color: #6b4b07;
+    margin-top: 18px;
+}
+@media (max-width: 1120px) {
+    .panel-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+    body { padding: 16px; }
+    .stats-container { grid-template-columns: 1fr; }
+    table { min-width: 760px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div class="title-row">
+            <i class="fas fa-vial" style="font-size:1.6rem; color:white"></i>
+            <h1>Research Evaluation Dashboard</h1>
+            <i class="fas fa-angle-right" style="font-size:1.6rem; color:white"></i>
+        </div>
+        <div class="subtitle">A formal interface for inspecting Supabase corpus content and evaluating model responses in both ground-truth and medical-risk modes.</div>
+    </div>
+    <div class="stats-container">
+        <div class="stat-card"><strong>Corpus row count</strong><span id="recordCount">—</span></div>
+        <div class="stat-card"><strong>Displayed fields</strong><span id="fieldCount">—</span></div>
+        <div class="stat-card"><strong>Evaluation modes</strong><span>2 available</span></div>
+        <div class="stat-card"><strong>Data source</strong><span>Supabase</span></div>
+    </div>
+    <div class="panel-grid">
+        <section class="panel">
+            <h2>Supabase Corpus Preview</h2>
+            <p>This view loads the current rows from the Supabase table configured in the backend. You can search row content and verify that the dataset is ready for downstream evaluation.</p>
+            <div class="controls">
+                <button class="button secondary" id="refreshData"><i class="fas fa-sync-alt"></i> Refresh corpus preview</button>
+                <div class="input-group" style="min-width:240px; flex:1;"><label for="searchInput">Search corpus</label><input id="searchInput" type="text" placeholder="Search keywords, content, or identifiers" /></div>
+            </div>
+            <div class="table-wrapper">
+                <table>
+                    <thead><tr id="corpusHeader"></tr></thead>
+                    <tbody id="corpusBody"></tbody>
+                </table>
+            </div>
+            <div class="message-box" id="emptyState" style="display:none;">No data available. Confirm that Supabase credentials are configured and the backend has access to the target table.</div>
+        </section>
+        <section class="panel">
+            <h2>Evaluation Console</h2>
+            <p>Submit an agent response for evaluation. The backend supports two research-oriented modes: <strong>With Ground Truth</strong> and <strong>High Risk Medical</strong>.</p>
+            <div class="form-grid">
+                <div class="input-group"><label for="questionInput">Question</label><textarea id="questionInput" placeholder="Enter the prompt or question used to generate the answer."></textarea></div>
+                <div class="input-group"><label for="answerInput">Answer</label><textarea id="answerInput" placeholder="Enter the model response to evaluate."></textarea></div>
+                <div class="input-group"><label for="modeSelect">Evaluation mode</label><select id="modeSelect"><option value="with_ground_truth">With Ground Truth</option><option value="high_risk_medical">High Risk Medical</option></select></div>
+                <div class="button-row"><button class="button primary" id="evaluateButton"><i class="fas fa-play"></i> Evaluate response</button></div>
+            </div>
+            <div class="result-panel" id="resultPanel" style="display:none;"><h3>Evaluation summary</h3><div class="summary-grid" id="summaryGrid"></div><div class="code-block" id="rawOutput"></div></div>
+        </section>
+    </div>
+</div>
+<script>
+const API_BASE = window.location.protocol === 'file:' ? 'http://localhost:8000' : window.location.origin;
+const refreshDataButton = document.getElementById('refreshData');
+const searchInput = document.getElementById('searchInput');
+const corpusHeader = document.getElementById('corpusHeader');
+const corpusBody = document.getElementById('corpusBody');
+const emptyState = document.getElementById('emptyState');
+const recordCount = document.getElementById('recordCount');
+const fieldCount = document.getElementById('fieldCount');
+const resultPanel = document.getElementById('resultPanel');
+const summaryGrid = document.getElementById('summaryGrid');
+const rawOutput = document.getElementById('rawOutput');
+let corpusRows = [];
+let displayedFields = [];
+const preferredFields = ['doc_id', 'id', 'category', 'keywords', 'text', 'content', 'question', 'answer', 'created_at', 'updated_at'];
+function getApiUrl(path) { return `${API_BASE}${path}`; }
+function normalize(value) { if (value === null || value === undefined) return ''; if (typeof value === 'object') return JSON.stringify(value); return String(value).replace(/\s+/g, ' ').trim(); }
+function truncate(value, maxLength = 100) { const text = normalize(value); return text.length > maxLength ? `${text.slice(0, maxLength)}…` : text; }
+function selectFields(rows) { if (!rows.length) return []; const keys = Object.keys(rows[0]); const ordered = [...new Set([...preferredFields.filter(field => keys.includes(field)), ...keys])]; return ordered.slice(0, 10); }
+function renderCorpus(rows) { corpusBody.innerHTML = ''; corpusHeader.innerHTML = ''; if (!rows.length) { emptyState.style.display = 'block'; recordCount.textContent = '0'; fieldCount.textContent = '0'; return; } emptyState.style.display = 'none'; displayedFields = selectFields(rows); recordCount.textContent = String(rows.length); fieldCount.textContent = String(displayedFields.length); displayedFields.forEach(field => { const th = document.createElement('th'); th.textContent = field.replace(/_/g, ' ').toUpperCase(); corpusHeader.appendChild(th); }); rows.forEach(row => { const tr = document.createElement('tr'); displayedFields.forEach(field => { const td = document.createElement('td'); td.textContent = truncate(row[field], 90); td.title = normalize(row[field]); tr.appendChild(td); }); corpusBody.appendChild(tr); }); }
+function filterCorpus() { const query = searchInput.value.trim().toLowerCase(); if (!query) { renderCorpus(corpusRows); return; } const filtered = corpusRows.filter(row => displayedFields.some(field => normalize(row[field]).toLowerCase().includes(query))); renderCorpus(filtered); }
+async function loadCorpus() { try { refreshDataButton.disabled = true; refreshDataButton.textContent = 'Loading…'; const response = await fetch(getApiUrl('/supabase/rows')); if (!response.ok) { throw new Error(`${response.status} ${response.statusText}`); } const payload = await response.json(); corpusRows = Array.isArray(payload.rows) ? payload.rows : []; renderCorpus(corpusRows); } catch (error) { corpusBody.innerHTML = ''; emptyState.style.display = 'block'; emptyState.textContent = `Unable to load Supabase data: ${error.message}`; recordCount.textContent = '0'; fieldCount.textContent = '0'; console.error(error); } finally { refreshDataButton.disabled = false; refreshDataButton.innerHTML = '<i class="fas fa-sync-alt"></i> Refresh corpus preview'; } }
+function createSummaryCard(title, value) { const card = document.createElement('div'); card.className = 'summary-card'; card.innerHTML = `<strong>${title}</strong><span>${value}</span>`; return card; }
+async function evaluateResponse() { const question = document.getElementById('questionInput').value.trim(); const answer = document.getElementById('answerInput').value.trim(); const mode = document.getElementById('modeSelect').value; if (!question || !answer) { alert('Please enter both the question and answer before evaluating.'); return; } const endpoint = mode === 'high_risk_medical' ? '/evaluate/high-risk' : '/evaluate/ground-truth'; const requestPayload = { question, answer, mode, start_timestamp: Date.now() / 1000, end_timestamp: Date.now() / 1000 }; try { resultPanel.style.display = 'none'; const response = await fetch(getApiUrl(endpoint), { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(requestPayload) }); if (!response.ok) { const text = await response.text(); throw new Error(text || response.statusText); } const result = await response.json(); summaryGrid.innerHTML = ''; summaryGrid.appendChild(createSummaryCard('Mode', result.mode || 'N/A')); summaryGrid.appendChild(createSummaryCard('Final score', result.final_score?.toFixed(3) ?? 'N/A')); summaryGrid.appendChild(createSummaryCard('Rating', result.rating || 'N/A')); summaryGrid.appendChild(createSummaryCard('Safety', result.metrics?.safety?.toFixed(3) ?? 'N/A')); summaryGrid.appendChild(createSummaryCard('Latency', result.metrics?.latency?.toFixed(3) ?? 'N/A')); if (result.metrics?.semantic_similarity !== undefined) { summaryGrid.appendChild(createSummaryCard('Semantic similarity', result.metrics.semantic_similarity.toFixed(3))); } if (result.metrics?.safe_web_verification !== undefined) { summaryGrid.appendChild(createSummaryCard('Safe verification', result.metrics.safe_web_verification.toFixed(3))); } rawOutput.textContent = JSON.stringify(result, null, 2); resultPanel.style.display = 'block'; window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' }); } catch (error) { alert(`Evaluation request failed: ${error.message}`); console.error(error); } }
+refreshDataButton.addEventListener('click', loadCorpus);
+searchInput.addEventListener('input', filterCorpus);
+document.getElementById('evaluateButton').addEventListener('click', evaluateResponse);
+loadCorpus();
+</script>
+</body>
+</html>
+''' , encoding='utf-8')"
