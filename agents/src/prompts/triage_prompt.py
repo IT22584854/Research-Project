@@ -1,5 +1,5 @@
 
-query_classifier_prompt = """
+intent_classifier_prompt = """
 You are the triage conversation lead. Speak directly with the user, gather what they need right now, and craft
 the optimized retrieval query that downstream agents will execute. The full conversation you are grounding on is:
 
@@ -51,5 +51,3 @@ Set "need_clarification" to true only when a specific missing detail is required
 leave "follow_up_question" null. The "intent_summary" must be immediately usable as the retrieval query OR start
 with "CONVERSATIONAL:" for social messages. 
 """
-
-intent_classifier_prompt = query_classifier_prompt

@@ -18,7 +18,6 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from agents.src.graph.state import AgentState, AgentInputState
 from agents.src.agent.intent_classifier import graph as intent_classifier_graph
-from agents.src.agent.query_classifier import graph as query_classifier_graph
 from agents.src.agent.medical_info import medical_info_graph
 from agents.src.utils import setup_logger
 
@@ -38,15 +37,6 @@ def _copy_messages(messages: List[BaseMessage]) -> List[BaseMessage]:
     return list(messages) if messages else []
 
 
-def _new_subgraph_messages(state: AgentState, result_state: AgentState) -> List[BaseMessage]:
-    """Return only messages appended by a subgraph invocation."""
-    start_idx = len(state.get("messages", []))
-    all_subgraph_msgs = result_state.get("messages", [])
-    if len(all_subgraph_msgs) <= start_idx:
-        return []
-    return list(all_subgraph_msgs[start_idx:])
-
-
 def _build_run_config(state: AgentState, run_name: str) -> Dict[str, Any]:
     """Create a LangSmith config block with consistent metadata."""
     session_id = state.get("session_id", "unknown-session")
@@ -61,33 +51,17 @@ def _build_run_config(state: AgentState, run_name: str) -> Dict[str, Any]:
     }
 
 
-ROUTER_STATE_KEYS = (
-    "route_language",
-    "route_intent",
-    "route_keywords",
-    "route_summary",
-    "router_model",
-    "router_base_url",
-    "router_payload",
-    "router_latency_ms",
-)
-
-
 @traceable(name="intent_classifier_agent")
 def intent_classifier_agent(state: AgentState):
-    """Run the intent classifier router and decide the next agent."""
-    logger.info("Invoking intent classifier router sub-graph")
+    """Run the intent classifier sub-graph to gather user intent and clarify needs."""
+    logger.info("Invoking intent classifier sub-graph")
     
     try:
         result_state = intent_classifier_graph.invoke(state, config=_build_run_config(state, "intent_classifier_graph"))
         updates = {}
         _sentinel = object()
         
-        new_messages = _new_subgraph_messages(state, result_state)
-        if new_messages:
-            updates["messages"] = new_messages
-
-        for key in ("rag_query", "active_agent", *ROUTER_STATE_KEYS):
+        for key in ("messages", "rag_query", "active_agent"):
             value = result_state.get(key, _sentinel)
             if value is not _sentinel:
                 updates[key] = value
@@ -95,88 +69,41 @@ def intent_classifier_agent(state: AgentState):
 
         active_agent = result_state.get("active_agent")
         rag_query = result_state.get("rag_query")
+        needs_follow_up = active_agent == "intent_classifier"
 
-        if active_agent == "query_classifier":
-            logger.info("Intent router needs query clarification")
-            updates["rag_query"] = None
-            return Command(goto="query_classifier_agent", update=updates)
-
-        if active_agent in {"emergency_response", "non_medical_response"}:
-            logger.info("Intent router produced direct final response: %s", active_agent)
+        if needs_follow_up:
+            logger.info("Intent classifier needs follow-up, returning to user")
             updates["new_message"] = True
             updates["rag_query"] = None
-            updates["last_active_agent"] = active_agent
+            updates["last_active_agent"] = "intent_classifier"
             updates["last_rag_query"] = None
-            updates["turn_type"] = "final"
+            updates["turn_type"] = "clarification"
             return Command(goto="finalize_response", update=updates)
 
         if rag_query:
-            logger.info(f"Intent router complete, routing to medical info with query: {rag_query[:50]}...")
+            logger.info(f"Intent classification complete, routing to medical info with query: {rag_query[:50]}...")
             updates["last_active_agent"] = "medical_info"
             updates["last_rag_query"] = rag_query
             updates["turn_type"] = "final"
             return Command(goto="medical_info_agent", update=updates)
 
         # Fallback: end the run without advancing if no RAG query was produced
-        logger.warning("Router produced no RAG query or direct response; routing to query classifier")
-        return Command(
-            goto="query_classifier_agent",
-            update={
-                **updates,
-                "active_agent": "query_classifier",
-                "rag_query": None,
-            },
-        )
+        logger.warning("No RAG query produced, finalizing response")
+        updates["new_message"] = True
+        updates["last_active_agent"] = "intent_classifier"
+        updates["last_rag_query"] = None
+        updates["turn_type"] = "final"
+        return Command(goto="finalize_response", update=updates)
         
     except Exception as e:
         logger.error(f"Error in intent_classifier_agent: {e}")
         return Command(
-            goto="query_classifier_agent",
-            update={
-                "new_message": True,
-                "active_agent": "query_classifier",
-                "last_active_agent": "intent_classifier",
-                "last_rag_query": None,
-                "turn_type": "clarification",
-            },
-        )
-
-
-@traceable(name="query_classifier_agent")
-def query_classifier_agent(state: AgentState):
-    """Run the query classifier sub-graph to ask a follow-up question."""
-    logger.info("Invoking query classifier sub-graph")
-
-    try:
-        result_state = query_classifier_graph.invoke(state, config=_build_run_config(state, "query_classifier_graph"))
-        updates = {}
-        _sentinel = object()
-
-        new_messages = _new_subgraph_messages(state, result_state)
-        if new_messages:
-            updates["messages"] = new_messages
-
-        for key in ("rag_query", "active_agent", *ROUTER_STATE_KEYS):
-            value = result_state.get(key, _sentinel)
-            if value is not _sentinel:
-                updates[key] = value
-        updates["query_classifier_turns"] = state.get("query_classifier_turns", 0) + 1
-        updates["new_message"] = True
-        updates["rag_query"] = None
-        updates["last_active_agent"] = "query_classifier"
-        updates["last_rag_query"] = None
-        updates["turn_type"] = "clarification"
-        return Command(goto="finalize_response", update=updates)
-        
-    except Exception as e:
-        logger.error(f"Error in query_classifier_agent: {e}")
-        return Command(
             goto="finalize_response",
             update={
                 "new_message": True,
-                "last_active_agent": "query_classifier",
+                "last_active_agent": "intent_classifier",
                 "last_rag_query": None,
-                "turn_type": "clarification",
+                "turn_type": "final",
             },
         )
 
@@ -265,15 +192,13 @@ def finalize_response(state: AgentState):
         "last_active_agent": state.get("last_active_agent"),
         "last_rag_query": state.get("last_rag_query"),
         "turn_type": state.get("turn_type"),
-        "new_message": True,
-        **{key: state.get(key) for key in ROUTER_STATE_KEYS},
+        "new_message": True
     }
 
 
 # ===== BUILD WORKFLOW =====
 workflow = StateGraph(AgentState, input_schema=AgentInputState)
 workflow.add_node("intent_classifier_agent", intent_classifier_agent)
-workflow.add_node("query_classifier_agent", query_classifier_agent)
 workflow.add_node("medical_info_agent", medical_info_agent)
 workflow.add_node("finalize_response", finalize_response)
 
