@@ -1,0 +1,22 @@
+TRANSLATION CLEAN + VERIFY SUMMARY
+==================================================
+Input translation rows: 1428
+Blank doc_id rows removed: 0
+Unique doc_ids after dedup: 1318
+Final complete rows: 1302
+Final incomplete rows: 16
+Dropped duplicate/older rows: 110
+Average confidence of final complete rows: 0.9968
+
+SOURCE COMPARISON
+--------------------------------------------------
+English docs in source CSV: 1345
+Unique doc_ids in cleaned output: 1318
+English doc_ids missing from cleaned output: 27
+
+FILES WRITTEN
+--------------------------------------------------
+Clean final complete CSV: D:\SL_Medical_Corpus\scripts\translated_clean_sections_en_si_ta_cleaned.csv
+Incomplete final CSV: D:\SL_Medical_Corpus\scripts\translated_clean_sections_incomplete_only.csv
+Dropped rows CSV: D:\SL_Medical_Corpus\scripts\translated_clean_sections_dropped_rows.csv
+Summary TXT: D:\SL_Medical_Corpus\scripts\translated_clean_sections_verification_summary.txt

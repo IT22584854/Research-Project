@@ -54,7 +54,7 @@ with IN_PATH.open("r", encoding="utf-8") as fin, OUT_PATH.open("w", encoding="ut
             "url": "/v1/responses",
             "body": {
                 "model": MODEL,
-                "reasoning": {"effort": "minimal"},        # ✅ critical
+                "reasoning": {"effort": "minimal"},        #  critical
                 "max_output_tokens": 800,               # optional but helpful
                 "text": {"format": {"type": "json_object"}},
                 "input": [

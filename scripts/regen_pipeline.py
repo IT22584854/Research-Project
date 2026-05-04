@@ -99,7 +99,7 @@ def record_all_text(rec: dict) -> str:
 
 
 def is_crawl_error_record(rec: dict) -> bool:
-    # ✅ case-insensitive keyword scan
+    #  case-insensitive keyword scan
     full = record_all_text(rec).lower()
     return any(k.lower() in full for k in CRAWL_ERROR_KEYWORDS)
 
@@ -228,7 +228,7 @@ def build_batch_request_item(rec: dict, assistant_msg_index: int, model: str) ->
                     break
 
         input_messages.append({"role": "assistant", "content": first_asst_text})
-        # ✅ include regen instruction for turn-2 too
+        #  include regen instruction for turn-2 too
         input_messages.append(
             {
                 "role": "user",

@@ -1,0 +1,19 @@
+Source URL: https://www.health.gov.lk/hospital-base-care/
+
+[Home](https://www.health.gov.lk) / Hospital Based Care 
+### Hospital Based Care
+## We Take Care of your Health
+As a vital component, the Ministry of Health is a fundamental aspect of the country’s health system. The Ministry of Health’s role in the health system has moved from that of a provider of curative health care to that of a regulator, observer, and assessor of health services. centered on delivering and organizing public health services, health promotion, and creating awareness through education programs aimed at reducing communicable and noncommunicable diseases, as well as providing mental health services and elderly treatment in hospitals.
+In charge of providing preventative health and environmental services, as well as pandemic and disease control. It also plays an important role in establishing health standards and benchmarks, as well as monitoring their implementation. Furthermore, it offers a variety of services, including occupational health and communicable and non-communicable illness control, pest control, and efforts to prevent the development of chronic diseases in society.
+It strives to improve the health of individuals and communities by encouraging the adoption of healthy lifestyles and creating environments that support healthy habits, all of which contribute to the country’s overall health.
+### Hospital Based Care Services
+National Hospital Sri Lanka [VISIT SITE](http://www.nhsl.health.gov.lk/)
+National Hospital Kandy [VISIT SITE](https://www.nhk.health.gov.lk/)
+Castle Street Hospital For Women [VISIT SITE](https://www.cshw.health.gov.lk/)
+National Dental Hospital Of Sri Lanka [VISIT SITE](http://www.health.gov.lk/moh_final/english/hospital_profile.php?id=199)
+Lady Ridgeway Hospital For Children [VISIT SITE](https://lrh.health.gov.lk/)
+Apeksha Hospital Maharagama [VISIT SITE](https://www.ncisl.health.gov.lk/)
+National Eye Hospital Of Sri Lanka [VISIT SITE](http://nationaleyehospital.health.gov.lk/)
+National Institute Of Mental Health [VISIT SITE](https://nimh.health.gov.lk/en/)
+National Institute Of Infectious Diseases [VISIT SITE](https://www.health.gov.lk/hospital-base-care/)
+[Health Institutions In Sri Lanka ](https://www.health.gov.lk/health-institutions-in-sri-lanka/)

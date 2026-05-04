@@ -448,7 +448,7 @@ def main():
     except RuntimeError as e:
         # Clean stop on quota issues
         if str(e) == "INSUFFICIENT_QUOTA":
-            print("⚠️ Stopping: insufficient_quota. Flushing buffers and exiting cleanly...")
+            print("️ Stopping: insufficient_quota. Flushing buffers and exiting cleanly...")
 
     finally:
         # Final flush ALWAYS

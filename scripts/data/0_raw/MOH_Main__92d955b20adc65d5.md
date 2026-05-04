@@ -1,0 +1,11 @@
+Source URL: https://www.previousmoh.health.gov.lk/CMS/cmsmoh1/viewcircular.php?cno=01-19%2F2026&med=tamil
+
+### 
+Circulars - PDF Version  
+| **Circular No**  | 01-19/2026  |  
+| --- | --- |  
+| **Issued Date**  | 2026-03-25  |  
+| **Topic**  | Economical Use of Fuel and Energy  |  
+| **Available Languages**  |  
+No pdf files added.
+##### Copyright © 2014 Ministry of Health Sri Lanka. All Rights Reserved.

@@ -54,8 +54,8 @@ def main():
                 moved += 1
                 w.writerow([gid, str(kept), str(dup), str(dest)])
 
-    print(f"✅ Done. Moved {moved} duplicate files into: {DUP_DEST}")
-    print(f"🧾 Map written to: {MAP_OUT}")
+    print(f"Done. Moved {moved} duplicate files into: {DUP_DEST}")
+    print(f"Map written to: {MAP_OUT}")
 
 if __name__ == "__main__":
     main()

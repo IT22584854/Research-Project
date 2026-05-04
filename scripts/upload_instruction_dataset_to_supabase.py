@@ -23,7 +23,7 @@ for local_path, remote_path in files:
                 file=f,
                 file_options={"content-type": "application/x-ndjson"},
             )
-            print(f"✅ Uploaded: {remote_path}")
+            print(f" Uploaded: {remote_path}")
         except Exception as e:
             msg = str(e).lower()
             if "already exists" in msg or "409" in msg:
@@ -33,8 +33,8 @@ for local_path, remote_path in files:
                     file=f,
                     file_options={"content-type": "application/x-ndjson"},
                 )
-                print(f"♻️ Updated: {remote_path}")
+                print(f"️ Updated: {remote_path}")
             else:
                 raise
 
-print("✅ Done uploading to Supabase Storage")
+print(" Done uploading to Supabase Storage")

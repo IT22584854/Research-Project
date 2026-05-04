@@ -6,7 +6,7 @@ from openai import OpenAI
 load_dotenv()
 client = OpenAI()
 
-# ✅ changed:
+#  changed:
 BATCH_FILE = Path("data/6_curation/validation_gpt5/repaired_validate_batch_input.jsonl")
 
 OUT_DIR = Path("data/6_curation/validation_gpt5")
@@ -30,7 +30,7 @@ print("error_file_id:", status.error_file_id)
 
 if status.output_file_id:
     output = client.files.content(status.output_file_id).read()
-    # ✅ changed:
+    #  changed:
     (OUT_DIR / "repaired_batch_output.jsonl").write_bytes(output)
     print("Wrote:", OUT_DIR / "repaired_batch_output.jsonl")
 

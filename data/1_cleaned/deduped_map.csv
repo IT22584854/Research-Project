@@ -1,11 +1,3 @@
-group_id,kept_path,moved_path,moved_to
-1,data\1_cleaned\EPID_Immunization_p0.md,data\1_cleaned\EPID_Immunization_p3.md,data\1_cleaned\_duplicates\EPID_Immunization_p3.md
-2,data\1_cleaned\EPID_Immunization_p1.md,data\1_cleaned\EPID_Reports_p1.md,data\1_cleaned\_duplicates\EPID_Reports_p1.md
-3,data\1_cleaned\EPID_Immunization_p2.md,data\1_cleaned\EPID_Reports_p3.md,data\1_cleaned\_duplicates\EPID_Reports_p3.md
-4,data\1_cleaned\EPID_Immunization_p4.md,data\1_cleaned\EPID_Reports_p2.md,data\1_cleaned\_duplicates\EPID_Reports_p2.md
-5,data\1_cleaned\EPID_Reports_p0.md,data\1_cleaned\EPID_Reports_p4.md,data\1_cleaned\_duplicates\EPID_Reports_p4.md
-6,data\1_cleaned\HPB_HealthTopics_p0.md,data\1_cleaned\MOH_HealthTopics_p0.md,data\1_cleaned\_duplicates\MOH_HealthTopics_p0.md
-7,data\1_cleaned\HPB_HealthTopics_p1.md,data\1_cleaned\MOH_HealthTopics_p1.md,data\1_cleaned\_duplicates\MOH_HealthTopics_p1.md
-8,data\1_cleaned\HPB_HealthTopics_p3.md,data\1_cleaned\MOH_HealthTopics_p2.md,data\1_cleaned\_duplicates\MOH_HealthTopics_p2.md
-9,data\1_cleaned\HPB_HealthTopics_p4.md,data\1_cleaned\MOH_HealthTopics_p3.md,data\1_cleaned\_duplicates\MOH_HealthTopics_p3.md
-10,data\1_cleaned\HPB_HealthTopics_p6.md,data\1_cleaned\MOH_HealthTopics_p4.md,data\1_cleaned\_duplicates\MOH_HealthTopics_p4.md
+version https://git-lfs.github.com/spec/v1
+oid sha256:1730435c500b5b43677d831a8f394465fe6d144879682a36c00ba9d2957f6d6a
+size 82147

@@ -121,12 +121,12 @@ def process_all_markdowns(redact_urls: bool = False):
         for k in totals:
             totals[k] += counts.get(k, 0)
 
-        print(f"✅ [CLEANED] {rel_path.as_posix()} "
-              f"(NIC:{counts['NIC']} SLMC:{counts['SLMC']} EMAIL:{counts['EMAIL']} "
-              f"PHONE:{counts['PHONE']} URL:{counts['URL']})")
+        print(f"[CLEANED] {rel_path.as_posix()} "
+      f"(NIC:{counts['NIC']} SLMC:{counts['SLMC']} EMAIL:{counts['EMAIL']} "
+      f"PHONE:{counts['PHONE']} URL:{counts['URL']})")
 
     print("\n=========================")
-    print("PII Scrubbing complete ✅")
+    print("PII Scrubbing complete")
     print("=========================")
     print(f"Files scanned : {scanned}")
     print(f"Files updated : {updated}")

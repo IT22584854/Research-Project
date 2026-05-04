@@ -77,3 +77,13 @@ batch_error.jsonl
 # Optional: generated metrics / figures
 # eval_reports/research_metrics/
 # task_distribution.png
+.env
+
+# Large datasets / corpus exports
+FINAL_TRILINGUAL_CORPUS_1387.csv
+*.csv
+*.jsonl
+# Datasets and generated outputs
+*.csv
+*.jsonl
+outputs/

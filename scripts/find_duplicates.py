@@ -32,7 +32,7 @@ def iter_md_files(root: Path):
 
 def main():
     files = list(iter_md_files(CLEAN_ROOT))
-    print(f"📄 Markdown files scanned: {len(files)}")
+    print(f"Markdown files scanned: {len(files)}")
 
     # Hash -> list[Path]
     groups = defaultdict(list)
@@ -42,15 +42,15 @@ def main():
             digest = sha256_file(p)
             groups[digest].append(p)
         except Exception as e:
-            print(f"❌ Failed to hash {p}: {e}")
+            print(f" Failed to hash {p}: {e}")
 
         if i % 200 == 0:
             print(f"…hashed {i}/{len(files)}")
 
     dup_groups = {h: ps for h, ps in groups.items() if len(ps) > 1}
     total_dup_files = sum(len(ps) for ps in dup_groups.values())
-    print(f"\n✅ Duplicate groups found: {len(dup_groups)}")
-    print(f"✅ Files that are in duplicate groups: {total_dup_files}")
+    print(f"\nDuplicate groups found: {len(dup_groups)}")
+    print(f"Files that are in duplicate groups: {total_dup_files}")
 
     # Assign stable group IDs (largest groups first)
     sorted_dups = sorted(dup_groups.items(), key=lambda kv: len(kv[1]), reverse=True)
@@ -78,8 +78,8 @@ def main():
     else:
         print("\nNo exact duplicates found.")
 
-    print(f"\n📁 Wrote: {OUT_SUMMARY}")
-    print(f"📁 Wrote: {OUT_GROUPS}")
+    print(f"\nWrote: {OUT_SUMMARY}")
+    print(f"Wrote: {OUT_GROUPS}")
 
 
 if __name__ == "__main__":
