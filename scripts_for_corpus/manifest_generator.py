@@ -337,6 +337,7 @@ def main():
                     "language_top": lang["language_top"],
                     "language_profile": lang["language_profile"],
                     "markdown": text,
+                    "clean_text": None,
                 }
 
                 out.write(json.dumps(record, ensure_ascii=False) + "\n")
