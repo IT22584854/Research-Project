@@ -1,4 +1,4 @@
-# 🧠 RAG Evaluation API
+# 🧠 Agent Response Evaluation and Benchmark
 
 This module is a **Retrieval-Augmented Generation (RAG) evaluation system** built with FastAPI.  
 It is designed to evaluate LLM-generated answers using **multiple evaluation modes, hybrid metrics, and Supabase-stored interaction logs**.
