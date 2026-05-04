@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 # Always load from agents/.env regardless of working directory
 _AGENTS_ROOT = Path(__file__).resolve().parent.parent
-load_dotenv(_AGENTS_ROOT / ".env", override=True)
+load_dotenv(_AGENTS_ROOT / ".env")
 
 # === Model Configuration ===
 LLM_MODEL = os.getenv("LLM_MODEL", "gpt-4o")
@@ -60,11 +60,3 @@ CUSTOM_LLM_BASE_URL = os.getenv("CUSTOM_LLM_BASE_URL", "")
 CUSTOM_LLM_MODEL = os.getenv("CUSTOM_LLM_MODEL", "Qwen/Qwen3-1.7B")
 CUSTOM_LLM_MAX_TOKENS = int(os.getenv("CUSTOM_LLM_MAX_TOKENS", "512"))
 CUSTOM_LLM_TEMPERATURE = float(os.getenv("CUSTOM_LLM_TEMPERATURE", "0.7"))
-
-# === Healthcare Router Model Configuration ===
-ROUTER_MODEL = os.getenv("ROUTER_MODEL", "research-mates/Qwen3-4B-SL-Health-Router-v1")
-ROUTER_BASE_URL = os.getenv("ROUTER_BASE_URL", "http://1.208.108.242:53138/v1").strip()
-ROUTER_API_KEY = os.getenv("ROUTER_API_KEY", "")
-ROUTER_TEMPERATURE = float(os.getenv("ROUTER_TEMPERATURE", "0.0"))
-ROUTER_MAX_TOKENS = int(os.getenv("ROUTER_MAX_TOKENS", "300"))
-SUPABASE_ROUTER_TABLE = os.getenv("SUPABASE_ROUTER_TABLE", "agent_router_logs")
