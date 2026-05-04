@@ -99,52 +99,65 @@ Each evaluation returns:
     ...
   }
 }
-Rating Scale:
-Rating	Score Range
-excellent	≥ excellent threshold
-good	≥ good threshold
-acceptable	≥ acceptable threshold
-poor	≥ poor threshold
-critical	unsafe or failed evaluation
-🗄️ Supabase Integration
+## 📊 Evaluation System
 
-Each evaluation is automatically stored in:
+### 🏷️ Rating Scale
 
-evaluations table
+| Rating     | Score Range                  |
+|------------|-----------------------------|
+| excellent  | ≥ excellent threshold       |
+| good       | ≥ good threshold            |
+| acceptable | ≥ acceptable threshold      |
+| poor       | ≥ poor threshold            |
+| critical   | unsafe or failed evaluation |
 
-Stored fields include:
+---
 
-Core fields:
-mode
-question
-answer
-final_score
-rating
-Ground truth metrics:
-semantic_similarity
-factual_accuracy
-groundedness
-claim_details
-High-risk metrics:
-safe_web_verification
-self_consistency
-uncertainty_expression
-web_source_credibility
-safe_details
-found_urls
-System metrics:
-safety
-latency
-external_penalty
-🔁 API Routes
-1. Get Evaluatable Turns
+## 🗄️ Supabase Integration
+
+Each evaluation is automatically stored in the **`evaluations`** table.
+
+### 📌 Stored Fields
+
+#### Core Fields
+- `mode`
+- `question`
+- `answer`
+- `final_score`
+- `rating`
+
+#### 🧠 Ground Truth Metrics
+- `semantic_similarity`
+- `factual_accuracy`
+- `groundedness`
+- `claim_details`
+
+#### ⚠️ High-Risk Metrics
+- `safe_web_verification`
+- `self_consistency`
+- `uncertainty_expression`
+- `web_source_credibility`
+- `safe_details`
+- `found_urls`
+
+#### ⚙️ System Metrics
+- `safety`
+- `latency`
+- `external_penalty`
+
+---
+
+## 🔁 API Routes
+
+### 1. Get Evaluatable Turns
+```http
 GET /agent-turns
 
-Returns all:
+Returns all records where:
 
 is_final_answer = true
 
-Used to populate frontend evaluation dashboard.
+Used to populate the frontend evaluation dashboard.
 
 2. Evaluate Single Turn
 POST /evaluate/turn/{turn_id}
@@ -168,12 +181,9 @@ POST /evaluate/ground-truth
 Used for testing or external input.
 
 🧑‍💻 Frontend Requirements
-
-The frontend should provide:
-
 1. Evaluation Dashboard
 
-Display list of:
+Display a list containing:
 
 question
 answer
@@ -183,20 +193,16 @@ latency
 is_final_answer
 2. Evaluate Button
 
-For each row:
+Each row should include actions:
 
-Actions:
 Evaluate (Ground Truth)
 Evaluate (High Risk Medical)
 3. Evaluation Result Viewer
-
-Must display:
-
-Metrics Panel:
+📊 Metrics Panel
 Final score
-Rating badge (excellent/good/critical)
-All metric breakdowns
-Expandable sections:
+Rating badge (excellent, good, critical)
+Full metric breakdown
+🔍 Expandable Sections
 claim_details
 safe_details
 retrieved_sources
