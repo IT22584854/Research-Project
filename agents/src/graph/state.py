@@ -8,7 +8,8 @@ from pydantic import BaseModel, Field
 
 class AgentInputState(MessagesState):
     """Input state for the full agent - only contains messages from user input."""
-    pass
+    session_id: NotRequired[str]
+    rag_query: NotRequired[str]
 
 class SymptomData(TypedDict, total=False):
     chief_complaint: str
@@ -34,6 +35,10 @@ def overwrite_text(_: Optional[str], new_value: Optional[str]) -> Optional[str]:
 def overwrite_flag(_: Optional[bool], new_value: Optional[bool]) -> Optional[bool]:
     return new_value
 
+
+def overwrite_any(_: Any, new_value: Any) -> Any:
+    return new_value
+
 class AgentState(MessagesState):
     messages: Annotated[List[BaseMessage], add_messages]
     session_id: str
@@ -48,6 +53,8 @@ class AgentState(MessagesState):
     rewrite_attempts: int = 0  # max 3
     critique_attempts: int = 0  # max 2
     critique_feedback: Annotated[Optional[str], overwrite_text] = None  # Feedback from critique
+    grounding_context: Annotated[Optional[str], overwrite_text] = None
+    grounding_sources: Annotated[Optional[List[Dict[str, Any]]], overwrite_any] = None
 
 # ===== STRUCTURED OUTPUT SCHEMAS =====
 
