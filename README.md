@@ -91,7 +91,7 @@ The system forces **critical rating (score = 0)** if:
 
 Each evaluation returns:
 
-```json
+
 {
   "final_score": 0.87,
   "rating": "good",
@@ -99,7 +99,9 @@ Each evaluation returns:
     ...
   }
 }
-## 📊 Evaluation System
+
+---
+# 📊 Evaluation System
 
 ### 🏷️ Rating Scale
 
