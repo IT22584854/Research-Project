@@ -45,6 +45,7 @@ SUPABASE_URL = os.getenv("SUPABASE_URL", "")
 SUPABASE_KEY = os.getenv("SUPABASE_KEY", "")
 SUPABASE_TABLE = os.getenv("SUPABASE_TABLE", "sl_med_corpus")
 SUPABASE_PAGE_SIZE = int(os.getenv("SUPABASE_PAGE_SIZE", "1000"))
+SUPABASE_NON_NULL_COLUMN = os.getenv("SUPABASE_NON_NULL_COLUMN", "").strip()
 
 # === Medical Disclaimer ===
 MEDICAL_DISCLAIMER = os.getenv(
