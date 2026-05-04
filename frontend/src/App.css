@@ -1,0 +1,50 @@
+/* ══════════════════════════════════════════════
+   App Layout & Container Styles
+══════════════════════════════════════════════ */
+
+/* Root should fill viewport */
+#root {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Ensure app layout takes full height */
+.app-layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .chat-topbar {
+    padding: 12px 16px;
+  }
+  
+  .chat-window {
+    padding: 24px 16px 12px;
+  }
+  
+  .chat-input-wrapper {
+    padding: 12px 16px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chat-window {
+    padding: 20px 12px 8px;
+  }
+  
+  .welcome-subtitle {
+    font-size: 13px;
+  }
+  
+  .suggestion-grid {
+    grid-template-columns: 1fr;
+  }
+}
