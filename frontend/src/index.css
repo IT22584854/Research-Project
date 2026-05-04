@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* Tailwind CSS Directives */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../tailwind.config.js";
+@source "../src";
 
 /* ══════════════════════════════════════════════
    Design Tokens - Dark Mode (Default)
@@ -52,6 +52,18 @@
   --shadow-sm:  0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-md:  0 2px 4px rgba(0, 0, 0, 0.4);
   --shadow-lg:  0 4px 8px rgba(0, 0, 0, 0.5);
+
+  /* Admin Panel Variables */
+  --admin-bg: #f8f9fa;
+  --admin-sidebar: #ffffff;
+  --admin-card: #ffffff;
+  --admin-border: #e2e8f0;
+  --admin-text: #1a202c;
+  --admin-text-secondary: #64748b;
+  --admin-accent: #10b981;
+  --admin-accent-hover: #059669;
+  --admin-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --admin-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.06);
 }
 
 /* ══════════════════════════════════════════════
@@ -121,6 +133,76 @@ html, body, #root {
 ::-webkit-scrollbar-thumb:hover { 
   background: var(--accent); 
   box-shadow: 0 0 6px var(--accent-glow);
+}
+
+/* ══════════════════════════════════════════════
+   Admin Panel UI Utilities
+══════════════════════════════════════════════ */
+.admin-card {
+  background: var(--admin-card);
+  border: 1px solid var(--admin-border);
+  border-radius: 12px;
+  box-shadow: var(--admin-shadow);
+  transition: box-shadow 0.2s ease;
+}
+
+.admin-card:hover {
+  box-shadow: var(--admin-shadow-md);
+}
+
+.admin-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--admin-border);
+  background: var(--admin-card);
+  color: var(--admin-text);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.admin-btn:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.admin-btn-primary {
+  background: var(--admin-accent);
+  color: #ffffff;
+  border-color: var(--admin-accent);
+}
+
+.admin-btn-primary:hover {
+  background: var(--admin-accent-hover);
+  border-color: var(--admin-accent-hover);
+}
+
+.admin-input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid var(--admin-border);
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: var(--admin-text);
+  background: #ffffff;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.admin-input:focus {
+  border-color: var(--admin-accent);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+.admin-input::placeholder {
+  color: #94a3b8;
 }
 
 /* ══════════════════════════════════════════════

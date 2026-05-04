@@ -1,13 +1,21 @@
 import { useState, useEffect } from 'react';
-import { Settings } from 'lucide-react';
+import { Settings, Shield } from 'lucide-react';
 import Sidebar from './components/Sidebar';
 import ChatWindow from './components/ChatWindow';
 import ChatInput from './components/ChatInput';
 import { SettingsPanel } from './components/layout/SettingsPanel';
 import { useChat } from './contexts/ChatContext';
+import AdminLogin from './components/admin/AdminLogin';
+import AdminPanelLayout from './components/admin/AdminPanelLayout';
 
 export default function App() {
   const [showSettings, setShowSettings] = useState(false);
+
+  // Developer Note: We are using conditional state rendering instead of react-router-dom 
+  // here to keep the application lightweight for this faux implementation.
+  // When scaling the app for a real production backend with distinct protected routes, 
+  // replacing this with a dedicated routing library (like react-router-dom) is recommended.
+  const [currentView, setCurrentView] = useState('chat'); // 'chat' | 'adminLogin' | 'adminPanel'
   const {
     conversations,
     activeId,
@@ -43,6 +51,14 @@ export default function App() {
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [showSettings, startNewChat]);
+
+  if (currentView === 'adminLogin') {
+    return <AdminLogin onLogin={() => setCurrentView('adminPanel')} onCancel={() => setCurrentView('chat')} />;
+  }
+
+  if (currentView === 'adminPanel') {
+    return <AdminPanelLayout onLogout={() => setCurrentView('chat')} />;
+  }
 
   return (
     <div className="app-layout relative">
@@ -83,6 +99,14 @@ export default function App() {
               <span className="topbar-pill-dot" aria-hidden="true" />
               Source-backed
             </div>
+            <button
+              onClick={() => setCurrentView('adminLogin')}
+              className="topbar-settings-btn"
+              title="Admin Panel"
+              aria-label="Open Admin Panel"
+            >
+              <Shield size={18} />
+            </button>
             <button
               onClick={() => setShowSettings(true)}
               className="topbar-settings-btn"
