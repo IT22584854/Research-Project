@@ -1,0 +1,72 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            pskavh80kwbad636lq18zwy0axqql2af:
+                args:
+                    - main:app
+                    - --reload
+                cpu_count: 8
+                cpu_count_logical: 12
+                disk:
+                    /:
+                        total: "254859538432"
+                        used: "62033428480"
+                email: it22280824@my.sliit.lk
+                executable: C:\Users\USER\miniforge3\python.exe
+                git:
+                    commit: 940f3f14a3c078998768269ce96b98c89666e76c
+                    remote: https://github.com/IT22584854/Research-Project.git
+                host: LAPTOP-6NRD5RCN
+                memory:
+                    total: "25414197248"
+                os: Windows-11-10.0.26200-SP0
+                program: <python with no main file>
+                python: CPython 3.12.11
+                root: E:\Projects\Research Final\Research-Project\benchmark
+                startedAt: "2026-05-04T05:55:34.911881Z"
+                writerId: pskavh80kwbad636lq18zwy0axqql2af
+        m: []
+        python_version: 3.12.11
+        t:
+            "1":
+                - 1
+                - 2
+                - 3
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+                - 71
+                - 75
+                - 91
+                - 97
+                - 98
+                - 105
+            "2":
+                - 1
+                - 2
+                - 3
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+                - 71
+                - 75
+                - 91
+                - 97
+                - 98
+                - 105
+            "3":
+                - 13
+            "4": 3.12.11
+            "5": 0.25.0
+            "6": 4.57.1
+            "8":
+                - 3
+            "12": 0.25.0
+            "13": windows-amd64

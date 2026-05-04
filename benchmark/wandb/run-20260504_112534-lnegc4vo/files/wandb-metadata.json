@@ -1,0 +1,30 @@
+{
+  "os":  "Windows-11-10.0.26200-SP0",
+  "python":  "CPython 3.12.11",
+  "startedAt":  "2026-05-04T05:55:34.911881Z",
+  "args":  [
+    "main:app",
+    "--reload"
+  ],
+  "program":  "<python with no main file>",
+  "git":  {
+    "remote":  "https://github.com/IT22584854/Research-Project.git",
+    "commit":  "940f3f14a3c078998768269ce96b98c89666e76c"
+  },
+  "email":  "it22280824@my.sliit.lk",
+  "root":  "E:\\Projects\\Research Final\\Research-Project\\benchmark",
+  "host":  "LAPTOP-6NRD5RCN",
+  "executable":  "C:\\Users\\USER\\miniforge3\\python.exe",
+  "cpu_count":  8,
+  "cpu_count_logical":  12,
+  "disk":  {
+    "/":  {
+      "total":  "254859538432",
+      "used":  "62033428480"
+    }
+  },
+  "memory":  {
+    "total":  "25414197248"
+  },
+  "writerId":  "pskavh80kwbad636lq18zwy0axqql2af"
+}

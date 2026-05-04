@@ -5,24 +5,42 @@ from src.judge import call_claude, MetricType
 
 logger = logging.getLogger(__name__)
 
+
+def clean_json_response(text: str) -> str:
+    """
+    Removes markdown fences and extra formatting from LLM JSON output.
+    """
+    if not text:
+        return ""
+
+    text = text.strip()
+
+    # Remove ```json and ``` wrappers
+    text = re.sub(r"^```json\s*", "", text)
+    text = re.sub(r"^```\s*", "", text)
+    text = re.sub(r"```$", "", text)
+
+    return text.strip()
+
+
+def safe_json_parse(text: str):
+    """
+    Safely parse JSON with fallback handling.
+    """
+    try:
+        return json.loads(text), None
+    except json.JSONDecodeError as e:
+        return None, str(e)
+
+
 def factual_accuracy(question, answer, retrieved_chunks):
     """
     Research-grade factual accuracy evaluation.
-    
-    Parameters
-    ----------
-    question : str
-        The original question
-    answer : str
-        Agent's answer to evaluate
-    retrieved_chunks : list[str]
-        Context chunks retrieved from vector DB
 
-    Returns
-    -------
-    tuple
-        (score: float 0-1, details: dict with confidence, reasoning, etc.)
+    Returns:
+        (score: float, details: dict)
     """
+
     if not retrieved_chunks:
         return 0.0, {
             "error": "no_context",
@@ -32,8 +50,8 @@ def factual_accuracy(question, answer, retrieved_chunks):
         }
 
     # Build context window
-    context = "\n\n".join(retrieved_chunks[:5])  # Use more context (was 3)
-    context = context[:4000]  # Increased from 3000
+    context = "\n\n".join(retrieved_chunks[:5])
+    context = context[:4000]
 
     prompt = f"""You are a SEMANTIC medical fact-checking AI specialized in health domain evaluation.
 
@@ -42,49 +60,46 @@ Your task: Evaluate whether the agent's answer conveys the SAME MEANING as the c
 EVALUATION RULES:
 - Judge semantic meaning, NOT exact wording
 - Paraphrased answers that convey the same information = SUPPORTED
-- Equivalent terms (e.g., "hospital" vs "medical center", "Monday" vs "Mon") = SUPPORTED
-- If the IDEA is present in context, even in different words = SUPPORTED
-- Only mark NOT_SUPPORTED if the core claim is genuinely missing or contradicts
-- Partial correctness → PARTIALLY_SUPPORTED
-- Answer language may differ from context; judge semantic meaning
+- Equivalent terms = SUPPORTED
+- If idea exists in context = SUPPORTED
+- Only mark NOT_SUPPORTED if missing or contradicting
+- Partial correctness allowed
 
-CONTEXT (authoritative source):
+CONTEXT:
 {context}
 
 QUESTION:
 {question}
 
-AGENT'S ANSWER:
+ANSWER:
 {answer}
 
----
-
-Provide your evaluation as JSON with the following structure:
+Return ONLY valid JSON (no markdown, no backticks):
 
 {{
-  "verdict": "SUPPORTED" | "PARTIALLY_SUPPORTED" | "NOT_SUPPORTED",
-  "score": <0.0 to 1.0>,
-  "confidence": <0.0 to 1.0>,
-  "key_claims": [<list of main claims in the answer>],
-  "verified_claims": [<claims semantically supported - even if worded differently>],
-  "unsupported_claims": [<claims that genuinely contradict or are missing from context>],
-  "reasoning": "<brief explanation - focus on whether the IDEA is present, not exact words>",
-  "critical_issues": [<any factual contradictions or serious problems>]
+  "verdict": "SUPPORTED | PARTIALLY_SUPPORTED | NOT_SUPPORTED",
+  "score": 0.0,
+  "confidence": 0.0,
+  "key_claims": [],
+  "verified_claims": [],
+  "unsupported_claims": [],
+  "reasoning": "",
+  "critical_issues": []
 }}
+"""
 
-Return ONLY the JSON object, no additional text."""
-
-    # Call Claude with optimized settings for factual accuracy
     response = call_claude(
         prompt=prompt,
         max_tokens=500,
         metric_type=MetricType.FACTUAL_ACCURACY,
         return_confidence=True,
-        chain_of_thought=False,  # Not needed for factual accuracy
-        require_json=True
+        chain_of_thought=False,
+        require_json=False  # IMPORTANT: we handle parsing ourselves now
     )
 
-    # Extract results
+    # -----------------------------
+    # HANDLE API ERROR
+    # -----------------------------
     if "error" in response:
         logger.warning(f"Factual accuracy evaluation error: {response.get('error')}")
         return 0.0, {
@@ -94,24 +109,50 @@ Return ONLY the JSON object, no additional text."""
             "metadata": response.get("metadata", {})
         }
 
-    parsed = response.get("result")
-    confidence = response.get("confidence", 0.5)
+    raw_output = response.get("raw_output", "")
+    cleaned = clean_json_response(raw_output)
 
+    parsed, parse_error = safe_json_parse(cleaned)
+
+    # -----------------------------
+    # HANDLE PARSE FAILURE (IMPORTANT FIX)
+    # -----------------------------
+    if parse_error:
+        logger.error(f"JSON parse failed: {parse_error}")
+        logger.debug(f"Raw output: {raw_output}")
+
+        return 0.0, {
+            "error": "json_parse_failed",
+            "confidence": response.get("confidence", 0.0),
+            "raw_output": raw_output,
+            "cleaned_output": cleaned,
+            "parse_error": parse_error,
+            "metadata": response.get("metadata", {})
+        }
+
+    # -----------------------------
+    # VALID RESPONSE
+    # -----------------------------
     if isinstance(parsed, dict):
         score = float(parsed.get("score", 0.0))
+
         details = {
             **parsed,
-            "confidence": confidence,
+            "confidence": response.get("confidence", 0.5),
             "cached": response.get("cached", False),
             "metadata": response.get("metadata", {})
         }
+
         return score, details
-    else:
-        # Fallback for malformed response
-        logger.warning(f"Unexpected result format: {type(parsed)}")
-        return 0.0, {
-            "error": "malformed_response",
-            "confidence": 0.1,
-            "raw_output": response.get("raw_output", ""),
-            "metadata": response.get("metadata", {})
-        }
+
+    # -----------------------------
+    # FALLBACK (NEVER LOSE SIGNAL)
+    # -----------------------------
+    logger.warning(f"Unexpected parsed format: {type(parsed)}")
+
+    return 0.0, {
+        "error": "malformed_response",
+        "confidence": 0.1,
+        "raw_output": raw_output,
+        "metadata": response.get("metadata", {})
+    }
