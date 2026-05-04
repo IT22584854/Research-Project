@@ -159,3 +159,7 @@ weave
 weave-python
 ragas
 datasets
+tqdm
+pinecone
+supabase
+dotenv

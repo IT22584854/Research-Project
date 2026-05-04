@@ -16,19 +16,6 @@ _client = Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 
 _CONTRADICTION_WEIGHT = 1.5
 
-# ─────────────────────────────────────────────────────────────────────────────
-# Token budget
-# ─────────────────────────────────────────────────────────────────────────────
-# Org limit: 30,000 input tokens / minute on claude-sonnet-4-6.
-#
-# Old approach: 1 API call per fact, each pulling a full web search page
-# (~3-5k tokens).  11 facts = ~45k tokens in one minute → guaranteed 429.
-#
-# New approach: batch FACTS_PER_CALL facts into one call with one shared
-# web search.  One call ≈ 2k tokens instead of 11 × 4k = 44k.
-# At FACTS_PER_CALL=4 and BATCH_DELAY=8s: 3 batches × 2k ≈ 6k tokens/min.
-# Well within the 30k limit even when self_consistency runs right after.
-
 FACTS_PER_CALL   = 4   # facts verified per single API call
 BATCH_DELAY_SECS = 8   # seconds between batch calls
 
