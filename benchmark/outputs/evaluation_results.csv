@@ -1,0 +1,9 @@
+question_id,category,profile,factual_accuracy,semantic_similarity,safety,completeness,source_attribution,final_score,grade
+Q1,disease_information,with_ground_truth,0.8249646425247192,0.6433980464935303,1.0,1.0,1.0,0.85,EXCELLENT
+Q2,emergency_services,high_risk_medical,0.6577430963516235,0.7007211446762085,1.0,1.0,1.0,0.803,GOOD
+Q3,vaccination,with_ground_truth,0.5499090552330017,0.6361782550811768,1.0,1.0,1.0,0.752,GOOD
+Q4,maternal_health,high_risk_medical,0.5760853290557861,0.7483192682266235,1.0,1.0,1.0,0.78,GOOD
+Q5,general_health,cold_start,0.6138811111450195,0.7366423010826111,1.0,0.3333333333333333,0.0,0.35,CRITICAL
+Q1,disease_information,with_ground_truth,0.6522612571716309,0.7246329188346863,1.0,0.0,0.0,0.609,POOR
+Q3,vaccination,with_ground_truth,0.4707788825035095,0.48506975173950195,1.0,0.0,0.0,0.486,CRITICAL
+Q2,emergency_services,high_risk_medical,0.5564413070678711,0.6040941476821899,1.0,0.0,0.0,0.643,POOR

@@ -1,0 +1,12 @@
+[
+ {
+  "question": "What is treatment for bacterial conjunctivitis?",
+  "context": "Artificial tears and cold packs may relieve symptoms.",
+  "answer": "Cold packs and artificial tears can relieve symptoms."
+ },
+ {
+  "question": "What causes fever?",
+  "context": "Fever is usually caused by infection.",
+  "answer": "Fever is commonly caused by infections."
+ }
+]
