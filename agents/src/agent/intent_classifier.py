@@ -3,30 +3,41 @@ from __future__ import annotations
 
 import json
 import re
-import sys
 import time
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
-from langchain_core.messages import AIMessage, HumanMessage, get_buffer_string
-from langchain_openai import ChatOpenAI
-from langgraph.graph import END, START, StateGraph
+from langchain_core.messages import HumanMessage, AIMessage, get_buffer_string
+from langgraph.graph import StateGraph, START, END
 from langsmith import traceable
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
+from agents.src.graph.state import ClarifyWithUser, AgentState, AgentInputState
+from agents.src.prompts.triage_prompt import intent_classifier_prompt
+from langchain_openai import ChatOpenAI
 from agents.src.config import (
-    ROUTER_API_KEY,
-    ROUTER_BASE_URL,
-    ROUTER_MAX_TOKENS,
-    ROUTER_MODEL,
-    ROUTER_TEMPERATURE,
+    LLM_MODEL, LLM_TEMPERATURE,
+    LLM_PROVIDER,
+    OPENAI_BASE_URL,
+    CUSTOM_LLM_API_KEY,
+    CUSTOM_LLM_BASE_URL,
+    CUSTOM_LLM_MODEL,
+    CUSTOM_LLM_MAX_TOKENS,
+    CUSTOM_LLM_TEMPERATURE,
 )
-from agents.src.graph.state import AgentInputState, AgentState
-from agents.src.utils import setup_logger
+from agents.src.utils import (
+    setup_logger,
+    sanitize_input,
+    retry_on_error,
+    create_error_response,
+    detect_user_language,
+    get_language_instruction,
+)
 
+# ===== LOGGING =====
 logger = setup_logger("intent_classifier_agent")
 
 ALLOWED_INTENTS = {
@@ -368,15 +379,14 @@ def classify_intent(state: AgentState):
         logger.warning("Router parse/validation issue: %s", parse_error)
         return {**base_update, "active_agent": "query_classifier", "rag_query": None}
 
-    if intent == "Emergency_Triage":
-        return {
-            **base_update,
-            "messages": [AIMessage(content=EMERGENCY_CONTACT_RESPONSE)],
-            "active_agent": "emergency_response",
-            "rag_query": None,
+        # Generate RAG query for medical information
+        rag_query_fallbacks = {
+            "si": "පරිශීලක අවශ්‍යතාව පැහැදිලි නැත; කරුණාකර ඔබගේ ගැටලුව නැවත පැහැදිලි කරන්න.",
+            "ta": "பயனர் தேவையை தெளிவாகப் புரிந்துகொள்ள முடியவில்லை; தயவுசெய்து உங்கள் கவலையை மீண்டும் தெளிவாகச் சொல்லுங்கள்.",
+            "en": "User intent unclear; please restate the concern.",
         }
-
-    if intent == "Non_Medical":
+        rag_query = intent_summary or rag_query_fallbacks.get(response_language, rag_query_fallbacks["en"])
+        logger.info(f"RAG query generated: {rag_query}")
         return {
             **base_update,
             "messages": [AIMessage(content=NON_MEDICAL_RESPONSE)],
@@ -385,24 +395,58 @@ def classify_intent(state: AgentState):
         }
 
     if intent == "Unclear":
-        return {**base_update, "active_agent": "query_classifier", "rag_query": None}
+        return {
+            **base_update,
+            "active_agent": "query_classifier",
+            "rag_query": None,
+        }
 
-    return {
-        **base_update,
-        "active_agent": "medical_info",
-        "rag_query": build_rag_query(latest_user_text, payload),
-    }
-
+# ===== GRAPH CONSTRUCTION =====
 
 intent_classifier_graph = StateGraph(AgentState, input_schema=AgentInputState)
-intent_classifier_graph.add_node(classify_intent)
-intent_classifier_graph.add_edge(START, "classify_intent")
-intent_classifier_graph.add_edge("classify_intent", END)
+
+intent_classifier_graph.add_node(clarify_with_user)
+intent_classifier_graph.add_edge(START, "clarify_with_user")
+intent_classifier_graph.add_edge("clarify_with_user", END)
 
 graph = intent_classifier_graph.compile()
 
-
 if __name__ == "__main__":
+    # Guard graph visualization
     output_path = Path("intent_classifier_graph.png")
     graph.get_graph().draw_mermaid_png(output_file_path=output_path)
-    logger.info("Graph exported to %s", output_path.resolve())
+    logger.info(f"Graph exported to {output_path.resolve()}")
+
+    logger.info("Starting Intent Classifier Agent (type 'quit' to exit)...")
+    messages = []
+    while True:
+        user_input = input("User: ")
+        if user_input.lower() in ["quit", "exit", "q"]:
+            break
+        
+        # Sanitize user input
+        user_input = sanitize_input(user_input)
+        
+        messages.append(HumanMessage(content=user_input))
+        state = {"messages": messages}
+        
+        # Run the graph
+        result = graph.invoke(state)
+        
+        # Append graph outputs to the transcript
+        new_messages = result.get("messages", [])
+        if isinstance(new_messages, list):
+            messages.extend(new_messages)
+
+        # Print the last message from the agent
+        last_message = messages[-1]
+        if isinstance(last_message, AIMessage):
+            logger.info(f"Agent: {last_message.content}")
+
+        # Check if the RAG query is ready
+        if result.get("rag_query"):
+            logger.info("RAG Query Ready:")
+            logger.info(result["rag_query"])
+            break
+
+

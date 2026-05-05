@@ -10,11 +10,14 @@ import {
   Loader2,
   Plus,
   Send,
+  Shield,
   Stethoscope,
   Trash2,
   UserRound,
 } from 'lucide-react';
 import { v4 as uuidv4 } from 'uuid';
+import AdminLogin from './components/admin/AdminLogin';
+import AdminLayout from './components/admin/AdminLayout';
 
 const STORAGE_KEY = 'medtriage_conversations';
 
@@ -179,6 +182,19 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
   const health = useHealth();
+
+  /*
+   * ADMIN PANEL ROUTING
+   * -------------------
+   * We use simple React state ('currentView') instead of react-router-dom
+   * to keep the dependency footprint small. The admin panel is a secondary
+   * view embedded inside the existing chat SPA. If multi-tab deep-linking
+   * or URL-based routing is ever needed, replace this with a proper router
+   * (e.g. react-router-dom v6+).
+   *
+   * Views: 'chat' | 'admin-login' | 'admin-panel'
+   */
+  const [currentView, setCurrentView] = useState('chat');
   const bottomRef = useRef(null);
 
   const activeConversation = useMemo(
@@ -318,6 +334,21 @@ export default function App() {
     }
   }
 
+  // ── Admin view rendering ──────────────────────────────────────────
+  if (currentView === 'admin-login') {
+    return (
+      <AdminLogin
+        onLogin={() => setCurrentView('admin-panel')}
+        onCancel={() => setCurrentView('chat')}
+      />
+    );
+  }
+
+  if (currentView === 'admin-panel') {
+    return <AdminLayout onLogout={() => setCurrentView('chat')} />;
+  }
+
+  // ── Chat view (default) ───────────────────────────────────────────
   return (
     <div className="appShell">
       <aside className="sidebar">
@@ -352,6 +383,30 @@ export default function App() {
                   deleteConversation(conversation.id);
                 }}
               />
+            </button>
+          ))}
+        </nav>
+      </aside>
+
+      <main className="chatPane">
+        <header className="topbar">
+          <div>
+            <h2>Medical Information Assistant</h2>
+            <p>Educational guidance only. Seek professional care for medical concerns.</p>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <div className={`healthBadge health-${health.status}`} title={health.detail}>
+              {health.status === 'checking' ? <Loader2 size={15} className="spin" /> : <Activity size={15} />}
+              <span>{health.status === 'ok' ? 'Backend online' : health.status}</span>
+            </div>
+            <button
+              className="adminTrigger"
+              type="button"
+              onClick={() => setCurrentView('admin-login')}
+              title="Admin Panel"
+              aria-label="Open admin panel"
+            >
+              <Shield size={16} />
             </button>
           ))}
         </nav>

@@ -31,14 +31,12 @@ if "agents" not in sys.modules:
 from langchain_core.messages import AIMessage, HumanMessage
 
 from backend.agent_service import extract_sources
-from backend.router_logger import RouterLogRecord, RouterLogger
 from backend.turn_logger import TurnLogRecord, TurnLogger, utc_iso_now
 from agents.src.utils import sanitize_input, setup_logger
 
 logger = setup_logger("api_server")
 _LOG_DB_PATH = Path(os.getenv("EVAL_LOG_DB_PATH", str(_HERE / "data" / "evaluation_logs.db")))
 turn_logger = TurnLogger(_LOG_DB_PATH)
-router_logger = RouterLogger()
 
 # ── App ───────────────────────────────────────────────────────────────────────
 app = FastAPI(title="Nenagov API", version="1.0.0")
@@ -80,7 +78,6 @@ async def health():
         "status": "ok",
         "service": "backend",
         "turn_log_sync": turn_logger.get_sync_status(),
-        "router_log_sync": router_logger.get_status(),
     }
 
 
@@ -134,7 +131,6 @@ async def chat(req: ChatRequest):
     active_agent = result.get("last_active_agent") or result.get("active_agent")
     rag_query = result.get("last_rag_query")
 
-    turn_index = None
     try:
         turn_index = turn_logger.log_turn(
             TurnLogRecord(
@@ -158,29 +154,6 @@ async def chat(req: ChatRequest):
         )
     except Exception as exc:
         logger.exception("Turn log persistence failed | session_id=%s | error=%s", session_id, exc)
-
-    route_intent = result.get("route_intent")
-    if route_intent:
-        try:
-            router_payload = router_logger.sanitize_payload(result.get("router_payload"))
-            router_logger.log_router_result(
-                RouterLogRecord(
-                    session_id=session_id,
-                    turn_index=turn_index,
-                    user_message=safe_message,
-                    language=result.get("route_language"),
-                    intent=route_intent,
-                    keywords=result.get("route_keywords") or [],
-                    english_translation_or_summary=result.get("route_summary"),
-                    router_model=result.get("router_model") or "",
-                    router_base_url=result.get("router_base_url"),
-                    router_payload=router_payload,
-                    created_at=created_at,
-                    latency_ms=int(result.get("router_latency_ms") or 0),
-                )
-            )
-        except Exception as exc:
-            logger.warning("Router log persistence failed | session_id=%s | error=%s", session_id, exc)
 
     return ChatResponse(response=ai_reply, sources=sources, session_id=session_id)
 
