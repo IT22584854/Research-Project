@@ -113,13 +113,13 @@ class RouterLogger:
             "english_translation_or_summary": str(payload.get("english_translation_or_summary") or "").strip(),
         }
 
-    def log_router_result(self, record: RouterLogRecord) -> None:
+    def log_router_result(self, record: RouterLogRecord) -> bool:
         self._retry_validate_if_needed()
         if not self._enabled:
             if not self._warning_emitted:
                 logger.warning("Router Supabase logging inactive: %s", self._reason)
                 self._warning_emitted = True
-            return
+            return False
 
         payload = self.sanitize_payload(record.router_payload)
         row = {
@@ -140,9 +140,11 @@ class RouterLogger:
         try:
             self._supabase.table(self._supabase_table).insert(row).execute()
             self._write_success += 1
+            return True
         except Exception as exc:  # pragma: no cover
             self._write_fail += 1
             logger.warning("Router Supabase insert failed; continuing chat response: %s", exc)
+            return False
 
     def get_status(self) -> dict:
         self._retry_validate_if_needed()

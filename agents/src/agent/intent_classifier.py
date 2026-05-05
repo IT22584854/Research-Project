@@ -2,7 +2,9 @@
 from __future__ import annotations
 
 import json
+import os
 import re
+import sys
 import time
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
@@ -15,7 +17,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[3]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from agents.src.graph.state import ClarifyWithUser, AgentState, AgentInputState
+from agents.src.graph.state import AgentState, AgentInputState
 from agents.src.prompts.triage_prompt import intent_classifier_prompt
 from langchain_openai import ChatOpenAI
 from agents.src.config import (
@@ -124,46 +126,35 @@ Ambulance Service: 1990
 Children and Women Welfare Hotline:1929
 General Government Helpline : 1919"""
 
-NON_MEDICAL_RESPONSE = (
-    "I can help with Sri Lankan medical and public-health questions. "
-    "Please ask a health-related question so I can route it safely."
-)
+ROUTER_SYSTEM_PROMPT = intent_classifier_prompt
 
-ROUTER_SYSTEM_PROMPT = """You are a specialized healthcare routing assistant for Sri Lankan queries.
-Your task is to classify and extract routing metadata from the user's query.
-
-Strict Rules:
-1. Never provide medical answers, diagnoses, or prescriptions.
-2. Never provide dosage instructions or emergency action instructions.
-3. You must output ONLY a valid JSON object. Do not include any conversational text outside the JSON.
-4. The JSON object must contain exactly these keys: "language", "intent", "keywords", and "english_translation_or_summary".
-5. Do not include rationale or any other key.
-
-Intent categories are:
-"Emergency_Triage",
-"Symptom_Information",
-"Disease_Information",
-"Facility_Locator",
-"Provider_Locator",
-"Appointment_Booking",
-"Medication_Information",
-"Vaccine_Information",
-"Test_Diagnostics",
-"Treatment_Procedure",
-"Cost_Insurance",
-"General_Health_Education",
-"Non_Medical",
-"Unclear"
-
-Return JSON only."""
-
-router_model = ChatOpenAI(
-    api_key=ROUTER_API_KEY,
-    base_url=ROUTER_BASE_URL,
-    model=ROUTER_MODEL,
-    temperature=ROUTER_TEMPERATURE,
-    max_tokens=ROUTER_MAX_TOKENS,
-)
+if LLM_PROVIDER == "custom_openai_compatible":
+    ROUTER_API_KEY = CUSTOM_LLM_API_KEY
+    ROUTER_BASE_URL = CUSTOM_LLM_BASE_URL
+    ROUTER_MODEL = CUSTOM_LLM_MODEL
+    ROUTER_TEMPERATURE = CUSTOM_LLM_TEMPERATURE
+    ROUTER_MAX_TOKENS = CUSTOM_LLM_MAX_TOKENS
+    router_model = ChatOpenAI(
+        api_key=ROUTER_API_KEY,
+        base_url=ROUTER_BASE_URL,
+        model=ROUTER_MODEL,
+        temperature=ROUTER_TEMPERATURE,
+        max_tokens=ROUTER_MAX_TOKENS,
+    )
+else:
+    ROUTER_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()
+    ROUTER_BASE_URL = OPENAI_BASE_URL
+    ROUTER_MODEL = LLM_MODEL
+    ROUTER_TEMPERATURE = LLM_TEMPERATURE
+    ROUTER_MAX_TOKENS = None
+    router_kwargs = {
+        "api_key": ROUTER_API_KEY,
+        "model": ROUTER_MODEL,
+        "temperature": ROUTER_TEMPERATURE,
+    }
+    if ROUTER_BASE_URL:
+        router_kwargs["base_url"] = ROUTER_BASE_URL
+    router_model = ChatOpenAI(**router_kwargs)
 
 logger.info(
     "Router model initialized | model=%s | base_url=%s | has_api_key=%s",
@@ -245,21 +236,6 @@ def parse_router_output(content: str) -> Tuple[Dict[str, Any], str | None]:
         return payload, "unsupported_intent"
 
     return payload, None
-
-
-def build_rag_query(user_message: str, router_payload: Dict[str, Any]) -> str:
-    keywords = router_payload.get("keywords") or []
-    keyword_text = ", ".join(keywords)
-    summary = router_payload.get("english_translation_or_summary") or ""
-    intent = router_payload.get("intent") or "General_Health_Education"
-
-    parts = [
-        f"Intent: {intent}",
-        f"Summary: {summary}" if summary else "",
-        f"Keywords: {keyword_text}" if keyword_text else "",
-        f"Original user query: {user_message}" if user_message else "",
-    ]
-    return "\n".join(part for part in parts if part).strip()
 
 
 def _keyword_candidates(text: str, patterns: Tuple[str, ...]) -> List[str]:
@@ -379,31 +355,20 @@ def classify_intent(state: AgentState):
         logger.warning("Router parse/validation issue: %s", parse_error)
         return {**base_update, "active_agent": "query_classifier", "rag_query": None}
 
-        # Generate RAG query for medical information
-        rag_query_fallbacks = {
-            "si": "පරිශීලක අවශ්‍යතාව පැහැදිලි නැත; කරුණාකර ඔබගේ ගැටලුව නැවත පැහැදිලි කරන්න.",
-            "ta": "பயனர் தேவையை தெளிவாகப் புரிந்துகொள்ள முடியவில்லை; தயவுசெய்து உங்கள் கவலையை மீண்டும் தெளிவாகச் சொல்லுங்கள்.",
-            "en": "User intent unclear; please restate the concern.",
-        }
-        rag_query = intent_summary or rag_query_fallbacks.get(response_language, rag_query_fallbacks["en"])
-        logger.info(f"RAG query generated: {rag_query}")
-        return {
-            **base_update,
-            "messages": [AIMessage(content=NON_MEDICAL_RESPONSE)],
-            "active_agent": "non_medical_response",
-            "rag_query": None,
-        }
-
-    if intent == "Unclear":
+    if intent in {"Unclear", "Non_Medical"}:
         return {**base_update, "active_agent": "query_classifier", "rag_query": None}
+
+    rag_query = payload.get("english_translation_or_summary") or latest_user_text
+    logger.info("RAG query generated from english_translation_or_summary: %s", rag_query)
+    return {**base_update, "active_agent": "medical_info", "rag_query": rag_query}
 
 # ===== GRAPH CONSTRUCTION =====
 
 intent_classifier_graph = StateGraph(AgentState, input_schema=AgentInputState)
 
-intent_classifier_graph.add_node(clarify_with_user)
-intent_classifier_graph.add_edge(START, "clarify_with_user")
-intent_classifier_graph.add_edge("clarify_with_user", END)
+intent_classifier_graph.add_node(classify_intent)
+intent_classifier_graph.add_edge(START, "classify_intent")
+intent_classifier_graph.add_edge("classify_intent", END)
 
 graph = intent_classifier_graph.compile()
 
