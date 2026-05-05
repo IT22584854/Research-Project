@@ -2,7 +2,6 @@
 from __future__ import annotations
 
 import json
-import os
 import re
 import sys
 import time
@@ -21,14 +20,11 @@ from agents.src.graph.state import AgentState, AgentInputState
 from agents.src.prompts.triage_prompt import intent_classifier_prompt
 from langchain_openai import ChatOpenAI
 from agents.src.config import (
-    LLM_MODEL, LLM_TEMPERATURE,
-    LLM_PROVIDER,
-    OPENAI_BASE_URL,
-    CUSTOM_LLM_API_KEY,
-    CUSTOM_LLM_BASE_URL,
-    CUSTOM_LLM_MODEL,
-    CUSTOM_LLM_MAX_TOKENS,
-    CUSTOM_LLM_TEMPERATURE,
+    ROUTER_API_KEY,
+    ROUTER_BASE_URL,
+    ROUTER_MAX_TOKENS,
+    ROUTER_MODEL,
+    ROUTER_TEMPERATURE,
 )
 from agents.src.utils import (
     setup_logger,
@@ -128,33 +124,16 @@ General Government Helpline : 1919"""
 
 ROUTER_SYSTEM_PROMPT = intent_classifier_prompt
 
-if LLM_PROVIDER == "custom_openai_compatible":
-    ROUTER_API_KEY = CUSTOM_LLM_API_KEY
-    ROUTER_BASE_URL = CUSTOM_LLM_BASE_URL
-    ROUTER_MODEL = CUSTOM_LLM_MODEL
-    ROUTER_TEMPERATURE = CUSTOM_LLM_TEMPERATURE
-    ROUTER_MAX_TOKENS = CUSTOM_LLM_MAX_TOKENS
-    router_model = ChatOpenAI(
-        api_key=ROUTER_API_KEY,
-        base_url=ROUTER_BASE_URL,
-        model=ROUTER_MODEL,
-        temperature=ROUTER_TEMPERATURE,
-        max_tokens=ROUTER_MAX_TOKENS,
-    )
-else:
-    ROUTER_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()
-    ROUTER_BASE_URL = OPENAI_BASE_URL
-    ROUTER_MODEL = LLM_MODEL
-    ROUTER_TEMPERATURE = LLM_TEMPERATURE
-    ROUTER_MAX_TOKENS = None
-    router_kwargs = {
-        "api_key": ROUTER_API_KEY,
-        "model": ROUTER_MODEL,
-        "temperature": ROUTER_TEMPERATURE,
-    }
-    if ROUTER_BASE_URL:
-        router_kwargs["base_url"] = ROUTER_BASE_URL
-    router_model = ChatOpenAI(**router_kwargs)
+router_kwargs = {
+    "api_key": ROUTER_API_KEY,
+    "model": ROUTER_MODEL,
+    "temperature": ROUTER_TEMPERATURE,
+}
+if ROUTER_BASE_URL:
+    router_kwargs["base_url"] = ROUTER_BASE_URL
+if ROUTER_MAX_TOKENS is not None:
+    router_kwargs["max_tokens"] = ROUTER_MAX_TOKENS
+router_model = ChatOpenAI(**router_kwargs)
 
 logger.info(
     "Router model initialized | model=%s | base_url=%s | has_api_key=%s",

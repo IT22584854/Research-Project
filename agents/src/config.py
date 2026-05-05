@@ -60,3 +60,32 @@ CUSTOM_LLM_BASE_URL = os.getenv("CUSTOM_LLM_BASE_URL", "")
 CUSTOM_LLM_MODEL = os.getenv("CUSTOM_LLM_MODEL", "Qwen/Qwen3-1.7B")
 CUSTOM_LLM_MAX_TOKENS = int(os.getenv("CUSTOM_LLM_MAX_TOKENS", "512"))
 CUSTOM_LLM_TEMPERATURE = float(os.getenv("CUSTOM_LLM_TEMPERATURE", "0.7"))
+
+
+def _optional_int(value: str) -> int | None:
+    value = value.strip()
+    return int(value) if value else None
+
+
+# === Router LLM Configuration ===
+_router_defaults_to_custom = LLM_PROVIDER == "custom_openai_compatible"
+ROUTER_API_KEY = os.getenv(
+    "ROUTER_API_KEY",
+    CUSTOM_LLM_API_KEY if _router_defaults_to_custom else os.getenv("OPENAI_API_KEY", "").strip(),
+).strip()
+ROUTER_BASE_URL = os.getenv(
+    "ROUTER_BASE_URL",
+    CUSTOM_LLM_BASE_URL if _router_defaults_to_custom else OPENAI_BASE_URL,
+).strip()
+ROUTER_MODEL = os.getenv(
+    "ROUTER_MODEL",
+    CUSTOM_LLM_MODEL if _router_defaults_to_custom else LLM_MODEL,
+).strip()
+ROUTER_TEMPERATURE = float(os.getenv(
+    "ROUTER_TEMPERATURE",
+    str(CUSTOM_LLM_TEMPERATURE if _router_defaults_to_custom else LLM_TEMPERATURE),
+))
+ROUTER_MAX_TOKENS = _optional_int(os.getenv(
+    "ROUTER_MAX_TOKENS",
+    str(CUSTOM_LLM_MAX_TOKENS) if _router_defaults_to_custom else "",
+))
