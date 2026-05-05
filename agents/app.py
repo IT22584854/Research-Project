@@ -34,6 +34,7 @@ from backend.agent_service import extract_sources
 from backend.router_logger import RouterLogger, RouterLogRecord
 from backend.turn_logger import TurnLogRecord, TurnLogger, utc_iso_now
 from agents.src.utils import sanitize_input, setup_logger
+from backend.admin_routes import router as admin_router
 
 logger = setup_logger("api_server")
 _LOG_DB_PATH = Path(os.getenv("EVAL_LOG_DB_PATH", str(_HERE / "data" / "evaluation_logs.db")))
@@ -52,6 +53,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.include_router(admin_router, prefix="/api/admin")
 
 
 # ── Request / Response models ────────────────────────────────────────────────

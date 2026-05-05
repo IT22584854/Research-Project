@@ -1055,3 +1055,173 @@ button {
     align-items: flex-start;
   }
 }
+
+/* ── New UI Element Styles ────────────────────────────────────────── */
+
+.fallbackBanner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background-color: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lastUpdatedText {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.iconAdminBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  color: #475569;
+  background: #ffffff;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.iconAdminBtn:hover {
+  border-color: #cbd5e1;
+  background: #f8fafc;
+  color: #0f766e;
+}
+
+.iconAdminBtn.refreshing svg {
+  animation: spin 1s linear infinite;
+}
+
+.tableFiltersRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.tableFilterInput,
+.tableFilterSelect,
+.tableFilterDate {
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #1e293b;
+  outline: none;
+  background: #ffffff;
+}
+
+.tableFilterInput {
+  flex: 1;
+  min-width: 200px;
+}
+
+.dateFilterGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dateSeparator {
+  color: #64748b;
+}
+
+.clearFiltersBtn {
+  padding: 8px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #64748b;
+  background: #f8fafc;
+  cursor: pointer;
+}
+
+.clearFiltersBtn:hover {
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+.paginationControls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-top: 1px solid #e2e8f0;
+  background: #f8fafc;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.paginationInfo {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.paginationActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pageSizeSelect {
+  padding: 6px 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #475569;
+  background: #ffffff;
+  outline: none;
+}
+
+.pageButtons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pageBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #475569;
+  cursor: pointer;
+}
+
+.pageBtn:hover:not(:disabled) {
+  background: #f1f5f9;
+  color: #0f766e;
+}
+
+.pageBtn:disabled {
+  background: #f8fafc;
+  color: #cbd5e1;
+  cursor: not-allowed;
+}
+
+.pageText {
+  font-size: 13px;
+  font-weight: 500;
+  color: #475569;
+}
