@@ -149,7 +149,7 @@ def get_supabase_rows():
 # =====================================================================
 
 @app.get("/agent-turns")
-def list_agent_turns(limit: int = 50, offset: int = 0):
+def list_agent_turns(limit: int = 100, offset: int = 0):
     """
     Return rows from agent_turn_logs where is_final_answer = true.
     Uses direct httpx REST call to avoid postgrest-py Range header bug.
