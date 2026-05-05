@@ -154,59 +154,136 @@ Each evaluation is automatically stored in the **`evaluations`** table.
 ### 1. Get Evaluatable Turns
 ## 🔁 API Routes
 
+1. Health / UI
+GET /
+
+Returns the frontend application.
+
+GET /supabase/rows
+
+Fetches raw rows from Supabase markdown loader.
+
+Response:
+
+{
+  "rows": [...],
+  "count": 120
+}
+2. Agent Turns
 GET /agent-turns
 
-Returns all records where:
+Fetch all evaluatable agent turns.
+
+Only returns:
 
 is_final_answer = true
 
-Used to populate the frontend evaluation dashboard.
+Query Params:
 
-2. Evaluate Single Turn
-POST /evaluate/turn/{turn_id}
+limit (default: 50)
+offset (default: 0)
 
-Evaluates a single Supabase record.
+Response:
 
-3. Evaluate Session
-POST /evaluate/session/{session_id}
+{
+  "turns": [...],
+  "count": 50,
+  "limit": 50,
+  "offset": 0
+}
+3. Single Turn Evaluation
+🔴 High-Risk Medical Mode
+POST /evaluate/turn/high-risk/{turn_id}
 
-Evaluates all final answers in a session.
+Evaluates a single turn using high-risk medical evaluation pipeline.
 
-4. Batch Evaluation
-POST /evaluate/batch
+Query Params:
 
-Runs background evaluation on multiple pending records.
+mode = high_risk_medical (default)
+🟢 Ground Truth Mode
+POST /evaluate/turn/ground-truth/{turn_id}
 
-5. Manual Evaluation
-POST /evaluate/high-risk
+Evaluates a single turn using retrieval-based ground truth evaluation.
+
+Query Params:
+
+mode = with_ground_truth (default)
+Response (both endpoints)
+{
+  "final_score": 0.87,
+  "rating": "good",
+  "metrics": {
+    ...
+  },
+  "turn_id": 12,
+  "session_id": "abc123",
+  "turn_index": 3
+}
+4. Session-Level Evaluation
+🔴 High-Risk Medical Mode
+POST /evaluate/session/high-risk/{session_id}
+
+Evaluates all final_answer turns in a session using medical safety pipeline.
+
+🟢 Ground Truth Mode
+POST /evaluate/session/ground-truth/{session_id}
+
+Evaluates all final_answer turns using retrieved context grounding.
+
+Response
+{
+  "session_id": "abc123",
+  "mode": "high_risk_medical",
+  "evaluated": 5,
+  "results": [
+    {
+      "turn_id": 1,
+      "turn_index": 0,
+      "final_score": 0.82
+    }
+  ]
+}
+5. Batch Evaluation (Background Jobs)
+🔴 High-Risk Batch
+POST /evaluate/batch/high-risk
+
+Queues background evaluation for pending turns.
+
+🟢 Ground Truth Batch
+POST /evaluate/batch/ground-truth
+
+Queues background evaluation for pending turns.
+
+Query Params:
+limit (default: 20)
+mode (optional override)
+Response:
+{
+  "status": "queued",
+  "mode": "high_risk_medical",
+  "pending": 42,
+  "queued": 20
+}
+6. Manual Evaluation (Testing / Debug)
+🟢 Ground Truth Manual
 POST /evaluate/ground-truth
-
-Used for testing or external input.
-
-🧑‍💻 Frontend Requirements
-1. Evaluation Dashboard
-
-Display a list containing:
-
-question
-answer
-session_id
-turn_index
-latency
-is_final_answer
-2. Evaluate Button
-
-Each row should include actions:
-
-Evaluate (Ground Truth)
-Evaluate (High Risk Medical)
-3. Evaluation Result Viewer
-📊 Metrics Panel
-Final score
-Rating badge (excellent, good, critical)
-Full metric breakdown
-🔍 Expandable Sections
-claim_details
-safe_details
-retrieved_sources
-found_urls
+🔴 High-Risk Manual
+POST /evaluate/high-risk
+Request Body
+{
+  "question": "string",
+  "answer": "string",
+  "start_timestamp": 0,
+  "end_timestamp": 0,
+  "mode": "with_ground_truth"
+}
+🧠 Notes
+Only is_final_answer = true rows are evaluated from Supabase.
+Batch jobs mark rows with evaluated_at after processing.
+High-risk mode includes:
+web verification
+self-consistency checks
+uncertainty penalties
+Ground truth mode relies on:
+Pinecone retrieval context
+semantic similarity scoring
