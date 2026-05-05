@@ -11,6 +11,7 @@ import {
   KEYWORD_GROUP_COLORS,
   LANGUAGE_CATEGORIES,
 } from '../../utils/mockAdminData';
+import { apiRequest, apiUrl } from '../../api';
 import { Activity, Users, Zap, TrendingUp, Download, RefreshCw, AlertCircle, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const INTENT_CATEGORIES = [
@@ -354,16 +355,11 @@ export default function IntentAnalyticsDashboard() {
 
   const fetchStatsAndKeywords = useCallback(async () => {
     try {
-      const statsRes = await fetch('/api/admin/router-logs/stats');
-      if (!statsRes.ok) throw new Error('Stats fetch failed');
-      const statsData = await statsRes.json();
+      const statsData = await apiRequest('/api/admin/router-logs/stats');
       setStats(statsData);
 
-      const kwRes = await fetch('/api/admin/router-logs/keywords');
-      if (kwRes.ok) {
-        const kwData = await kwRes.json();
-        setKeywordsData(kwData);
-      }
+      const kwData = await apiRequest('/api/admin/router-logs/keywords');
+      setKeywordsData(kwData);
       setFallbackMode(false);
     } catch (err) {
       console.error(err);
@@ -395,10 +391,7 @@ export default function IntentAnalyticsDashboard() {
       if (dateFrom) params.append('date_from', new Date(dateFrom).toISOString());
       if (dateTo) params.append('date_to', new Date(dateTo).toISOString());
 
-      const res = await fetch(`/api/admin/router-logs?${params.toString()}`);
-      if (!res.ok) throw new Error('Logs fetch failed');
-      
-      const data = await res.json();
+      const data = await apiRequest(`/api/admin/router-logs?${params.toString()}`);
       setLogs(data.data);
       setTotalCount(data.total_count);
       setTotalPages(data.total_pages);
@@ -456,7 +449,7 @@ export default function IntentAnalyticsDashboard() {
     if (dateFrom) params.append('date_from', new Date(dateFrom).toISOString());
     if (dateTo) params.append('date_to', new Date(dateTo).toISOString());
 
-    window.open(`/api/admin/router-logs/export?${params.toString()}`, '_blank');
+    window.open(apiUrl(`/api/admin/router-logs/export?${params.toString()}`), '_blank');
   };
 
   const clearFilters = () => {
