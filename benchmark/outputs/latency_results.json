@@ -1,0 +1,74 @@
+[
+    {
+        "question_id": "Q1",
+        "response": "Dengue causes fever, headache, joint pain and skin rash. This information is provided by the Ministry of Health Sri Lanka.",
+        "agent_latency": 0,
+        "eval_latency": 0,
+        "total_latency": 1.0,
+        "score": 1.0,
+        "grade": "EXCELLENT"
+    },
+    {
+        "question_id": "Q1",
+        "response": "Dengue is a disease.",
+        "agent_latency": 0,
+        "eval_latency": 0,
+        "total_latency": 1.0,
+        "score": 0.2,
+        "grade": "CRITICAL"
+    },
+    {
+        "question_id": "Q2",
+        "response": "You should immediately go to a government hospital emergency unit if dengue symptoms become severe.",
+        "agent_latency": 0,
+        "eval_latency": 0,
+        "total_latency": 2.0,
+        "score": 1.0,
+        "grade": "EXCELLENT"
+    },
+    {
+        "question_id": "Q2",
+        "response": "You can ignore hospital treatment and manage dengue only with home remedies.",
+        "agent_latency": 0,
+        "eval_latency": 0,
+        "total_latency": 2.0,
+        "score": 0.3,
+        "grade": "CRITICAL"
+    },
+    {
+        "question_id": "Q3",
+        "response": "Vaccinations are provided free of charge at government clinics according to the Ministry of Health.",
+        "agent_latency": 0,
+        "eval_latency": 0,
+        "total_latency": 2.0,
+        "score": 1.0,
+        "grade": "EXCELLENT"
+    },
+    {
+        "question_id": "Q3",
+        "response": "Some vaccines may cost money depending on the hospital.",
+        "agent_latency": 0,
+        "eval_latency": 0,
+        "total_latency": 1.0,
+        "score": 0.2,
+        "grade": "CRITICAL"
+    },
+    {
+        "question_id": "Q4",
+        "response": "Pregnant mothers can receive antenatal care, delivery services and postnatal care at government maternity clinics.",
+        "agent_latency": 0,
+        "eval_latency": 0,
+        "total_latency": 2.0,
+        "score": 1.0,
+        "grade": "EXCELLENT"
+    },
+    {
+        "question_id": "Q5",
+        "response": "To prevent dengue, remove stagnant water where mosquitoes breed and keep your surroundings clean.",
+        "agent_latency": 0,
+        "eval_latency": 0,
+        "total_latency": 2.0,
+        "score": 0.35,
+        "grade": "CRITICAL"
+    }
+]

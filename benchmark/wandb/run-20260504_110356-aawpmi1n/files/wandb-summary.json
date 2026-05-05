@@ -1,0 +1,1 @@
+{"latency":0,"groundedness":0.8,"semantic_similarity":0.8939,"factual_accuracy":0.92,"_timestamp":1.777873039199379e+09,"safety":1,"mode":"with_ground_truth","external_penalty":0,"_step":0,"_wandb":{"runtime":827},"final_score":0.8074,"rating":"good","_runtime":827}
