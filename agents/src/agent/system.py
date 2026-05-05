@@ -23,6 +23,17 @@ from agents.src.utils import setup_logger
 
 logger = setup_logger("agent_supervisor")
 
+ROUTER_STATE_KEYS = (
+    "route_language",
+    "route_intent",
+    "route_keywords",
+    "route_summary",
+    "router_model",
+    "router_base_url",
+    "router_payload",
+    "router_latency_ms",
+)
+
 try:
     from database.agent_logging import AgentStateLogger
     DB_LOGGING_ENABLED = True
@@ -96,7 +107,7 @@ def intent_classifier_agent(state: AgentState):
             updates["turn_type"] = "final"
             return Command(goto="medical_info_agent", update=updates)
 
-        logger.warning("Router produced no RAG query or direct response; routing to query classifier")
+        logger.warning("Router produced no RAG query; routing to query classifier")
         return Command(
             goto="query_classifier_agent",
             update={**updates, "active_agent": "query_classifier", "rag_query": None},
@@ -221,7 +232,7 @@ def medical_info_agent(state: AgentState) -> Command[Literal["finalize_response"
 def finalize_response(state: AgentState):
     logger.info("Finalizing response")
     messages = _copy_messages(state.get("messages", []))
-    return {
+    updates = {
         "messages": messages,
         "active_agent": None,
         "rag_query": None,
@@ -230,10 +241,15 @@ def finalize_response(state: AgentState):
         "turn_type": state.get("turn_type"),
         "new_message": True
     }
+    for key in ROUTER_STATE_KEYS:
+        if key in state:
+            updates[key] = state.get(key)
+    return updates
 
 
 workflow = StateGraph(AgentState, input_schema=AgentInputState)
 workflow.add_node("intent_classifier_agent", intent_classifier_agent)
+workflow.add_node("query_classifier_agent", query_classifier_agent)
 workflow.add_node("medical_info_agent", medical_info_agent)
 workflow.add_node("finalize_response", finalize_response)
 

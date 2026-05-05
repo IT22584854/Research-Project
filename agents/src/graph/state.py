@@ -55,6 +55,14 @@ class AgentState(MessagesState):
     critique_feedback: Annotated[Optional[str], overwrite_text] = None  # Feedback from critique
     grounding_context: Annotated[Optional[str], overwrite_text] = None
     grounding_sources: Annotated[Optional[List[Dict[str, Any]]], overwrite_any] = None
+    route_language: Annotated[Optional[str], overwrite_text] = None
+    route_intent: Annotated[Optional[str], overwrite_text] = None
+    route_keywords: Annotated[Optional[List[str]], overwrite_any] = None
+    route_summary: Annotated[Optional[str], overwrite_text] = None
+    router_model: Annotated[Optional[str], overwrite_text] = None
+    router_base_url: Annotated[Optional[str], overwrite_text] = None
+    router_payload: Annotated[Optional[Dict[str, Any]], overwrite_any] = None
+    router_latency_ms: Annotated[Optional[int], overwrite_any] = None
 
 # ===== STRUCTURED OUTPUT SCHEMAS =====
 
@@ -70,7 +78,15 @@ class ClarifyWithUser(BaseModel):
     intent_summary: str = Field(
         description="Either 'CONVERSATIONAL:<response>' for social messages, or 2-3 sentences describing what the user needs from RAG",
     )
-  
+
+
+class QueryFollowUp(BaseModel):
+    """Schema for a one-turn clarification question."""
+
+    follow_up_question: Optional[str] = Field(
+        description="One clarifying question to ask the user.",
+    )
+
 
 class gatheredSymptomInfo(BaseModel):
     """Schema for gathered symptom information from the user."""

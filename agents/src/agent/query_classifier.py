@@ -26,7 +26,7 @@ from agents.src.config import (
     LLM_TEMPERATURE,
     OPENAI_BASE_URL,
 )
-from agents.src.graph.state import AgentInputState, AgentState, ClarifyWithUser
+from agents.src.graph.state import AgentInputState, AgentState, QueryFollowUp
 from agents.src.prompts.triage_prompt import query_classifier_prompt
 from agents.src.utils import (
     create_error_response,
@@ -91,7 +91,7 @@ def query_classifier_follow_up(state: AgentState):
         if messages and isinstance(messages[-1], HumanMessage):
             sanitize_input(messages[-1].content)
 
-        structured_output_model = model.with_structured_output(ClarifyWithUser)
+        structured_output_model = model.with_structured_output(QueryFollowUp)
 
         @retry_on_error(logger=logger)
         def invoke_model():

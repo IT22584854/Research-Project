@@ -408,19 +408,6 @@ export default function App() {
             >
               <Shield size={16} />
             </button>
-          ))}
-        </nav>
-      </aside>
-
-      <main className="chatPane">
-        <header className="topbar">
-          <div>
-            <h2>Medical Information Assistant</h2>
-            <p>Educational guidance only. Seek professional care for medical concerns.</p>
-          </div>
-          <div className={`healthBadge health-${health.status}`} title={health.detail}>
-            {health.status === 'checking' ? <Loader2 size={15} className="spin" /> : <Activity size={15} />}
-            <span>{health.status === 'ok' ? 'Backend online' : health.status}</span>
           </div>
         </header>
 
