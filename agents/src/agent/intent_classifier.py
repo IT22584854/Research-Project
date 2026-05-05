@@ -395,11 +395,7 @@ def classify_intent(state: AgentState):
         }
 
     if intent == "Unclear":
-        return {
-            **base_update,
-            "active_agent": "query_classifier",
-            "rag_query": None,
-        }
+        return {**base_update, "active_agent": "query_classifier", "rag_query": None}
 
 # ===== GRAPH CONSTRUCTION =====
 
