@@ -225,6 +225,7 @@ node_modules/
 frontend/node_modules/
 frontend/dist/
 frontend/dev_test_logs/
+frontend/*.tgz
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -234,6 +235,11 @@ pnpm-debug.log*
 agents/chroma_db/
 agents/data/*.db
 agents/data/*.db-*
+agents/data/*.sqlite
+agents/data/*.sqlite3
+agents/data/*_stdout.log
+agents/data/*_stderr.log
+agents/data/backend_*.log
 agents/data/retrieval_chunks_cache*.jsonl.gz
 agents/data/retrieval_chunks_cache*.tmp
 agents/data/cache_test_tmp/
